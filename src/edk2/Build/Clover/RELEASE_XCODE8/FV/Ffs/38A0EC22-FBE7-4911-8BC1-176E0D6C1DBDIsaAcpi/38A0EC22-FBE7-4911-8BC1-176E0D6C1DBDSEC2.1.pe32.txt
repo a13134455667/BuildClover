@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/38A0EC22-FBE7-4911-8BC1-176E0D6C1DBDIsaAcpi/38A0EC22-FBE7-4911-8BC1-176E0D6C1DBDSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/PcAtChipsetPkg/IsaAcpiDxe/IsaAcpi/OUTPUT/IsaAcpi.efi

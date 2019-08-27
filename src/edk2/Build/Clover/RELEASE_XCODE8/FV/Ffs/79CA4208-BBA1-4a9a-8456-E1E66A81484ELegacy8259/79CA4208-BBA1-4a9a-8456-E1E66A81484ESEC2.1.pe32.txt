@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/79CA4208-BBA1-4a9a-8456-E1E66A81484ELegacy8259/79CA4208-BBA1-4a9a-8456-E1E66A81484ESEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/PcAtChipsetPkg/8259InterruptControllerDxe/8259/OUTPUT/Legacy8259.efi

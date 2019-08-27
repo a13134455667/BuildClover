@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/9622E42C-8E38-4a08-9E8F-54F784652F6BAcpiTableDxe/9622E42C-8E38-4a08-9E8F-54F784652F6BSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/OsxAcpiTableDxe/AcpiTableDxe/OUTPUT/AcpiTableDxe.efi

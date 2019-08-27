@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/CBD2E4D5-7068-4FF5-B462-9822B4AD8D60VariableRuntimeDxe/CBD2E4D5-7068-4FF5-B462-9822B4AD8D60SEC1.1.dpx /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe/OUTPUT/VariableRuntimeDxe.depex

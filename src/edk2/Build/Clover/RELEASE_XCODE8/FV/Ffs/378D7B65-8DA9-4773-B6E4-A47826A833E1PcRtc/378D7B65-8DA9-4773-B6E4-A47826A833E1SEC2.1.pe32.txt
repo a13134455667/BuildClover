@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/378D7B65-8DA9-4773-B6E4-A47826A833E1PcRtc/378D7B65-8DA9-4773-B6E4-A47826A833E1SEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/PcatRealTimeClockRuntimeDxe/PcatRealTimeClockRuntimeDxe/OUTPUT/PcRtc.efi

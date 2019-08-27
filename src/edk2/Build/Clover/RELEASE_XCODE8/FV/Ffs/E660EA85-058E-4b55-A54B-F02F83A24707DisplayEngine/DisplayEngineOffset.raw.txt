@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_RAW -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/E660EA85-058E-4b55-A54B-F02F83A24707DisplayEngine/DisplayEngineOffset.raw /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/E660EA85-058E-4b55-A54B-F02F83A24707DisplayEngine/DisplayEngine.offset

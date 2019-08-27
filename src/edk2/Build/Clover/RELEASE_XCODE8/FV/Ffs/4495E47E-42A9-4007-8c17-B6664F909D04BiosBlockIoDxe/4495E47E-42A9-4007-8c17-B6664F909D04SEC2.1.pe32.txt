@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/4495E47E-42A9-4007-8c17-B6664F909D04BiosBlockIoDxe/4495E47E-42A9-4007-8c17-B6664F909D04SEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/LegacyBios/BlockIoDxe/BlockIoDxe/OUTPUT/BiosBlockIoDxe.efi

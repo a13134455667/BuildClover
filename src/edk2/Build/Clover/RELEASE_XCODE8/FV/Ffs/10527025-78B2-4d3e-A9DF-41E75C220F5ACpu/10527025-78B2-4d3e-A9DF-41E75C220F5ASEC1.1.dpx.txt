@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/10527025-78B2-4d3e-A9DF-41E75C220F5ACpu/10527025-78B2-4d3e-A9DF-41E75C220F5ASEC1.1.dpx /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/CpuDxe/Cpu/OUTPUT/Cpu.depex

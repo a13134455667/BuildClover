@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_DXE_DEPEX -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/FC5C7020-1A48-4198-9BE2-EAD5ABC8CF2FBdsDxe/FC5C7020-1A48-4198-9BE2-EAD5ABC8CF2FSEC1.1.dpx /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/OsxBdsDxe/BdsDxe/OUTPUT/BdsDxe.depex

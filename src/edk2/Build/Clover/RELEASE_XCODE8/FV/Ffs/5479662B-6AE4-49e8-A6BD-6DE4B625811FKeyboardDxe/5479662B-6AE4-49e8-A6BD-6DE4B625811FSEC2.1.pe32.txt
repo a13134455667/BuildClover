@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/5479662B-6AE4-49e8-A6BD-6DE4B625811FKeyboardDxe/5479662B-6AE4-49e8-A6BD-6DE4B625811FSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/BiosKeyboard/KeyboardDxe/OUTPUT/KeyboardDxe.efi

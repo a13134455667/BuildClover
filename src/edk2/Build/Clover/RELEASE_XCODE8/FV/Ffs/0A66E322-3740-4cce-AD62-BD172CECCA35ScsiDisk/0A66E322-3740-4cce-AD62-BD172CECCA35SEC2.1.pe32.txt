@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/0A66E322-3740-4cce-AD62-BD172CECCA35ScsiDisk/0A66E322-3740-4cce-AD62-BD172CECCA35SEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/Drivers/DVDDisk/ScsiDiskDxe/OUTPUT/ScsiDisk.efi

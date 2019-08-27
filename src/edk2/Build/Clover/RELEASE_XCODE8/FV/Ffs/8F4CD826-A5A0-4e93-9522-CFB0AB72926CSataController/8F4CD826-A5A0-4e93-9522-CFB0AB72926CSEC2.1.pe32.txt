@@ -1,1 +1,0 @@
-GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/8F4CD826-A5A0-4e93-9522-CFB0AB72926CSataController/8F4CD826-A5A0-4e93-9522-CFB0AB72926CSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/Drivers/SataControllerDxe/SataControllerDxe/OUTPUT/SataController.efi

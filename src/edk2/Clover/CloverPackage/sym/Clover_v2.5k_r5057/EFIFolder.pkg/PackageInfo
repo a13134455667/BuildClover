@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<pkg-info format-version="2" identifier="org.clover.efifolder" version="v2.5k" install-location="/EFIROOTDIR" auth="root">
+	<payload installKBytes="4784" numberOfFiles="60"/>
+	<scripts>
+		<postinstall file="./postinstall"/>
+		<preinstall file="./preinstall"/>
+	</scripts>
+</pkg-info>

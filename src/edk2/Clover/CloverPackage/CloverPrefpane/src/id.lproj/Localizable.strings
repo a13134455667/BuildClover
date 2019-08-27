@@ -1,0 +1,10 @@
+"Always" = "Selalu";
+"Auto" = "Otomatis";
+"Boot Volume" = "Volume Boot";
+"ESP on [%@] %@" = "ESP di [%1$@] %2$@";
+"Never" = "Tak Pernah";
+"No" = "Tidak";
+"No description available" = "Tanpa keterangan";
+"Select the EFI directory" = "Pilih direktori EFI";
+"Set EFI directory" = "Setel direktori EFI";
+"Unknown" = "Tidak diketahui";

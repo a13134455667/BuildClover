@@ -1,0 +1,230 @@
+// =============================================================================
+// package
+// ----------------------------------------------------------------------------
+"MakingRootRW" = "Clover möchte das root Dateisystem schreib-/lesba machen.
+Die Änderung ist bis zum nächsten Neustart temporär";
+"GoToFailRootRW" = "Es kann keine Installation durchgeführt werden, solange das Dateisystem nicht schreib-/lesbar ist.";
+// ============================================================================
+// Installation
+// ----------------------------------------------------------------------------
+"UEFI.only_title" = "Installiert für ein UEFI-BIOS";
+"UEFI.only_description" = "Installiert Clover zur alleinigen Nutzung mit einem UEFI-BIOS.";
+
+// ============================================================================
+// Target
+// ----------------------------------------------------------------------------
+"Target.ESP_title" = "Installiert Clover in der ESP";
+"Target.ESP_description" = "Installiert Clover in der ESP (EFI System Partition) des Zielvolumes.
+ESP muss zuerst als FAT32 formatiert werden - im Terminal mit:
+
+1.diskutil list
+2.newfs_msdos -v EFI -F 32 /dev/rdiskXsY";
+
+// ============================================================================
+// Bootloader
+// ----------------------------------------------------------------------------
+
+"Bootloader_title" = "Bootloader";
+"Bootloader_description" = "Clover EFI benötigt 3 wichtige Dateien.
+boot0 (Für MBR der Festplatte) lädt boot1.
+boot1 (Für den Startbereich der Partition) sucht nach boot2.
+boot2 (Für das Root Verzeichniss der Partition) lädt /EFI/BOOT/CLOVERIA32.efi oder CLOVERX64.efi, und den Kernel etc.";
+
+"boot0af_title" = "Installiert boot0af in der MBR";
+"boot0af_description" = "Zum booten von Computern, die nur über ein LEGACY BIOS verfügen.
+boot0af (boot0 Aktiv zuerst) versucht die erste als MBR definierte & aktivierte Partition zu booten. Ist keine aktive Partition vorhanden, versucht er die erste EFI/FAT32/HFS Partition mit gültiger PBR Signatur (in als MBR und dann in als GPT definierten) zu booten.
+Diese Auswahl wird die gewählte HFS/FAT32 Partition als aktiv setzen.";
+
+"boot0ss_title" = "Installiert boot0ss in der MBR";
+"boot0ss_description" = "Zum booten von Computern, die nur über ein LEGACY BIOS verfügen.
+boot0ss (boot0 Signatur scannen) versucht die erste /EFI/FAT32/HFS Partition mit gültiger PBR Signatur (in als MBR und dann in als GPT definierten) zu booten. Wird keine Partition gefunden, wird versucht die aktive, im MBR definierte, Partition zu booten.
+Dies ist eine gute Wahl wenn Windows auf der selben Festplatte installiert ist, da Windows seine Partition aktiv haben möchte.
+Diese Auswahl wird keine Partition im MBR aktivieren.";
+
+"bootNo_title" = "MBR und PBR Sektoren nicht aktualisieren";
+"bootNo_description" = "Keine Installation der bootloader (boot0X, boot1X).
+Nützlich für UEFI Computer, die keine bootloader Dateien benötigen.
+Kann auch benutzt werden, wenn keine Updates für MBR und PBR gewünscht werden.";
+
+"AltBoot_title" = "Alternatives PBR booten benutzen";
+"AltBoot_description" = "Installiert alternatives PBR booten mit der Möglichkeit, zwischen mehreren boot Dateien zu wählen.
+Boot Datei = boot{gedrückte Taste}";
+
+"boot64_title" = "Installiert und bootet 64Bit zuerst";
+"boot64_description" = "Installiert die boot Dateien und startet zuerst im 64Bit Modus.
+Standard Bootablauf = Clover EFI 64Bit. Du kannst wählen zwischen...
+Drücke Taste 1 für boot1 = Chameleon boot,
+Drücke Taste 3 für boot3 = Clover EFI 32Bit boot,
+Drücke Taste 6 für boot6 = Clover EFI 64Bit boot.";
+
+// ============================================================================
+// CloverEFI
+// ----------------------------------------------------------------------------
+"CloverEFI_title" = "CloverEFI";
+"CloverEFI_description" = "Wähle die zu installierende Version von CloverEFI.";
+"cloverEFI.64.sata_title" = "CloverEFI 64Bit SATA";
+"cloverEFI.64.sata_description" = "CloverEFI 64Bit nutzt SATA um auf die Festplatten zuzugreifen";
+"cloverEFI.64.blockio_title" = "CloverEFI 64Bit BiosBlockIO";
+"cloverEFI.64.blockio_description" = "CloverEFI 64-bits nutzt Bios Block I/O um auf die Festplatten zuzugreifen";
+"cloverEFI.64.blockio2_title" = "CloverEFI 64Bit BiosBlockIO für NVIDIA NForce MCP79";
+"cloverEFI.64.blockio2_description" = "CloverEFI 64-bits nutzt Bios Block I/O um auf die Festplatten zuzugreifen";
+
+// ============================================================================
+// Drivers
+// ----------------------------------------------------------------------------
+"off_title" = "Treiber offline";
+"off_description" = "Installiert alle verfügbaren Treiber in EFI/CLOVER/drivers/off/
+Das 'off'-Verzeichnis wird von Clover nicht geladen und ist nur dann sinnvoll, wenn man über die EFI Shell Treiber tauschen oder defekte Treiber während des Bootvorgangs ersetzen muss.";
+
+"Drivers64_title" = "BIOS Treiber, 64 bit";
+"Drivers64_description" = "Treiber, welche für einen LEGACY-BIOS Bootvorgang benötigt werden.";
+
+"Recommended64_title" = "Empfohlene Treiber";
+"Recommended64_description" = "Eine Sammlung empfohlener Standard-Treiber.
+Diese Treiber sind verpflichtend, um einen fehlerfreien Bootvorgang zu gewährleisten und sollten daher unbedingt installiert werden.";
+
+"FileSystem64_title" = "Treiber für Dateisysteme.";
+"FileSystem64_description" = "Eine Sammlung von Treibern für verschiedene Dateisysteme.";
+
+"Drivers64FV2_title" = "FileVault 2 BIOS Treiber, 64 bit";
+"Drivers64FV2_description" = "Treiber für ein LEGACY-BIOS zum starten von einem mit  FileVault 2 verschlüsseltem Datenträger.";
+
+"ApfsDriverLoader_description" = "64bit Treiber für die Unterstützung APFS-formatierter Datenträger.";
+"AppleImageCodec_description" = "Dekodiert PNG und BMP für FileVault2.";
+"AppleImageLoader_description" = "Sicherer AppleEfiFat binary Treiber mit implementiertem AppleLoadImage Protokoll und EfiBinary Signatur Überprüfung.";
+"AppleKeyAggregator_description" = "Unterstützt den Anmeldedialog bei mit FileVault2 verschlüsselten Datenträgern.";
+"AppleKeyFeeder_description" = "Unterstützt PS/2 Tastaturen für FileVault2.";
+"AppleUISupport_description" = "Unterstützung für das EfiLoginUi Protokoll unter FileVault.";
+"AppleUITheme_description" = "Stellt UI Themes Unterstützung für FileVault2 zur Verfügung.";
+"AptioInputFix_description" = "Treiber zur Unterstützung von Computern mit einer AMI Aptio BIOS UEFI-Firmware.";
+"AptioMemoryFix_description" = "Aktuell empfohlener 64Bit-Treiber um Speicherprobleme in der UEFI-Firmware von AMI Aptio zu beheben. Dieser Treiber sollte NICHT mit anderen AptioFix Treibern verwendet werden.";
+"AudioDxe_description" = "HDA Treiber zur Unterstützung eines Startup Ton.";
+"FirmwareVolume_description" = "Erstellt ein FirmwareVolume mit cursor images für FileVault2.";
+"FSInject_description" = "Ermöglicht die Einbindung von im Clover Ordner hinterlegten Kernel Erweiterungen.";
+"GrubEXFAT_description" = "Treiber für das ExFAT Dateisystem.";
+"GrubISO9660_description" = "Treiber für das ISO9600 Dateisystem.";
+"GrubNTFS_description" = "Treiber für das NTFS Dateisystem.";
+"GrubUDF_description" = "Treiber für das UDF Dateisystem.";
+"SMCHelper_description" = "Wiederherstellen der NVRAM SMC Schlüssel durch FakeSMC.";
+"XhciDxe_description" = "USB 3.0 Treiber, 64bit";
+
+"Drivers64UEFI_title" = "UEFI Treiber, 64bit";
+"Drivers64UEFI_description" = "Treiber, welche für einen UEFI-BIOS Bootvorgang benötigt werden.";
+
+"Recommended64UEFI_title" = "Empfohlene Treiber";
+"Recommended64UEFI_description" = "Eine Sammlung empfohlener Standard-Treiber.
+Diese Treiber sind verpflichtend, um einen fehlerfreien Bootvorgang zu gewährleisten und sollten daher unbedingt installiert werden.";
+
+"HID64UEFI_title" = "Eingabegeräte (Maus, Tastatur etc)";
+"HID64UEFI_description" = "Eine Sammlung von Treibern für PS/2 und USB Eingabegeräte wie Maus, Tastatur, Trackpads etc.";
+
+"FileSystem64UEFI_title" = "Treiber für Dateisysteme.";
+"FileSystem64UEFI_description" = "Eine Sammlung von Treibern für verschiedene Dateisysteme.";
+
+"MemoryFix64UEFI_title" = "Memory Fix Treiber";
+"MemoryFix64UEFI_description" = "Eine Sammlung von Treibern zur Behebung von Speicherfehlern";
+
+"Drivers64UEFIFV2_title" = "FileVault 2 UEFI Treiber, 64bit";
+"Drivers64UEFIFV2_description" = "Eine Sammlung von UEFI-Treibern für die FileVault2 Unterstützung.";
+
+"Other64UEFI_title" = "Zusätzliche Treiber";
+"Other64UEFI_description" = "Eine Sammlung von Treibern, mit deren Hilfe einem UEFI-BIOS standardmässig fehlende Protokolle und Funktion zur Verfügung gestellt werden.";
+
+"ApfsDriverLoader.UEFI_description" = "64bit Treiber für die Unterstützung APFS-formatierter Datenträger.";
+"AppleEvent.UEFI_description" = "Erstellt ein AppleEvent Protokoll für FileVault2.";
+"AppleGraphicsConfig.UEFI_description" = "Erstellt ein optionales AppleGraphicsConfig Protokoll.";
+"AppleImageCodec.UEFI_description" = "Dekodiert PNG und BMP für FileVault2.";
+"AppleImageLoader.UEFI_description" = "Sicherer AppleEfiFat binary Treiber mit implementiertem AppleLoadImage Protokoll und EfiBinary Signatur Überprüfung.";
+"AppleKeyAggregator.UEFI_description" = "Unterstützt den Anmeldedialog bei mit FileVault2 verschlüsselten Datenträgern.";
+"AppleKeyFeeder.UEFI_description" = "Unterstützt PS/2 Tastaturen für FileVault2.";
+"AppleUISupport.UEFI_description" = "Unterstützung für das EfiLoginUi Protokoll unter FileVault.";
+"AppleUITheme.UEFI_description" = "Stellt UI Themes Unterstützung für FileVault2 zur Verfügung.";
+"AptioInputFix.UEFI_description" = "Treiber zur Unterstützung von Computern mit einer AMI Aptio BIOS UEFI-Firmware.";
+"AptioMemoryFix.UEFI_description" = "Aktuell empfohlener 64Bit-Treiber um Speicherprobleme in der UEFI-Firmware von AMI Aptio zu beheben. Dieser Treiber sollte NICHT mit anderen AptioFix Treibern verwendet werden.";
+"AudioDxe.UEFI_description" = "HDA Treiber, um einen Startup Ton beim booten abzuspielen.";
+"CsmVideoDxe.UEFI_description" = "64Bit Video-Treiber für Clovers GUI, erlaubt die Auswahl von mehr Auflösungen. Basierend auf dem CSM-Modul des UEFI-Bios, CSM muss dort aktiviert werden. Eventuell startet Clover nicht, es kann auch Probleme beim Aufwachen des Systems geben.
+Bitte Vorsichtsmaßnahmen treffen.";
+"DataHubDxe.UEFI_description" = "Essentielle DataHub Protokoll Unterstützung für macOS.
+Normalerweise schon vorhanden, kann aber trotzdem manchmal fehlen. In diesem Fall solltest Du eine Fehlermeldung sehen.";
+"EmuVariableUefi.UEFI_description" = "Umgehung zum speichern der UEFI Variablen ohne ein vorhandenes UEFI. 64Bit-Treiber zur Unterstützung der von macOS benötigten NVRAM Variablen. Meistens wird beim UEFI booten der Hardware NVRAM genutzt, aber in einigen wenigen Fällen wird dieser Treiber benötigt.
+Diesen Treiber nur benutzen, wenn es ohne ihn Probleme gibt.";
+"EnglishDxe.UEFI_description" = "Unterstützung eines UnicodeCollation Protokolls für die EFI Shell, sollte im UEFI keines vorhanden sein.";
+"Fat.UEFI_description" = "Treiber für das FAT Dateisystem.";
+"FirmwareVolume.UEFI_description" = "Erstellt ein FirmwareVolume mit cursor images für FileVault2.";
+"FSInject.UEFI_description" = "Ermöglicht die Einbindung von im Clover Ordner hinterlegten Kernel Erweiterungen.";
+"HashServiceFix.UEFI_description" = "Stellt die Hash Unterstützung bereit, wenn im nativen UEFI BIOS keine solche vorhanden ist.";
+"HFSPlus.UEFI_description" = "Alternativer Treiber für das HFS+ Dateisystem.";
+"NvmExpressDxe.UEFI_description" = "Treiber zur Unterstützung von NVM Express Geräten.";
+"OsxAptioFix3Drv.UEFI_description" = "Alternativer Treiber (v3) um Speicherproblem in der UEFI Firmware zu beheben. Dieser Treiber sollte NICHT mit anderen AptioFix Treibern zusammen verwendet werden.";
+"OsxAptioFixDrv.UEFI_description" = "Alter Treiber zur Behebung von UEFI Firmware Speicherproblem, wie z.B. in AMI Aptio. Dieser Treiber sollte NICHT mit anderen AptioFix Treibern zusammen verwendet werden.";
+"OsxFatBinaryDrv.UEFI_description" = "Treiber für die Unterstützung von FAT Binary executables für macOS 10.9 und älter.";
+"OsxLowMemFixDrv.UEFI_description" = "Einfache Variante des OsxAptioFixDrv, 64bit
+
+! Diesen Treiber niemals mit anderen AptioFix Treibern verwenden !";
+"PartitionDxe.UEFI_description" = "64Bit-Treiber zur Unterstützung unüblicher Partitionstabellen, wie z.B. GPT/MBR oder der Apple Partition Map.";
+"Ps2MouseDxe.UEFI_description" = "Treiber für PS/2 Maus, 64bit";
+"SMCHelper.UEFI_description" = "Wiederherstellen der NVRAM SMC Schlüssel durch FakeSMC.";
+"UsbKbDxe.UEFI_description" = "Tastaturtreiber für die UI Unterstützung während des Bootvorgangs.";
+"UsbMouseDxe.UEFI_description" = "Treiber für USB Maus, 64bit";
+"VBoxExt2.UEFI_description" = "Treiber für das ext2/3 Dateisystem aus VirtualBox, 64bit";
+"VBoxExt4.UEFI_description" = "Treiber für das ext4 Dateisystem aus VirtualBox, 64bit";
+"VBoxHfs.UEFI_description" = "Treiber für das HFS+ Dateisystem.";
+"VBoxIso9600.UEFI_description" = "Treiber für das ISO 9600 Dateisystem.";
+
+// ============================================================================
+// Themes
+// ----------------------------------------------------------------------------
+"Themes_title" = "Clover Themen";
+"Themes_description" = "CLOVER bietet verschiedene Themen, mit denen die Benutzeroberfläche angepasst werden kann. Hier findest Du eine kleine Auswahl solcher Themen.";
+
+"BGM_title" = "Black_Green";
+"BGM_description" = "Thema black_green von Blackosx,
+wird installiert in /EFI/CLOVER/themes/black_green.";
+
+"embedded_title" = "Embedded";
+"embedded_description" = "embedded theme from Clovy,
+Install to /EFI/CLOVER/themes/embedded";
+
+"metal_title" = "metal";
+"metal_description" = "Orginal Thema metal von Slice,
+wird installiert in /EFI/CLOVER/themes/metal.";
+
+"cesium_title" = "Cesium";
+"cesium_description" = "Vector SVG theme from Slice,
+Install to /EFI/CLOVER/themes/cesium";
+
+"clovy_title" = "Clovy Thema";
+"clovy_description" = "Orginal Clovy Thema von Slice,
+wird installiert in /EFI/CLOVER/themes/clovy.";
+
+"random_title" = "Zufall";
+"random_description" = "Zufälliges Thema,
+wird installiert in /EFI/CLOVER/themes/random.";
+
+"steampunkblack_title" = "SteamPunk Black";
+"steampunkblack_description" = "Thema steampunkblack von medik,
+wird installiert in /EFI/CLOVER/themes/steampunkblack.";
+
+"CloverThemeManager_title" = "CloverThemeManager.app";
+"CloverThemeManager_description" = "CloverThemeManager.app by blackosx
+Diese App hält Deine Clover Themen aktuell, entfernt oder installiert diese aus einer umfangreichen Sammlung.
+Die App wird standardmäßig im Ordner 'Programme' installiert.";
+// ============================================================================
+// RC Scripts
+// ----------------------------------------------------------------------------
+"rc.scripts.on.target_title" = "RC Skripte auf dem Ziellaufwerk installieren.";
+"rc.scripts.on.target_description" = "RC Skripte werden auf dem Ziellaufwerk installiert.
+Das Ziellaufwerk muss ein bootfähiges macOS System enthalten.";
+"rc.scripts.on.all.volumes_title" = "RC Skripte auf allen bootfähigen macOS Laufwerken installieren.";
+"rc.scripts.on.all.volumes_description" = "RC Skripte werden auf allen internen bootfähigen macOS Laufwerken, außer dem Ziellaufwerk installiert.";
+"OptionalRCScripts" = "RC Skripte (optional)";
+"disable_sleep_proxy_client_title" = "Deaktiviere den sleep proxy Client";
+"disable_sleep_proxy_client_description" = "Deaktiviere den mDNSResponder sleep proxy client Dienst. Verhindert das aufwachen des Systems zu jeder Stunde.";
+
+// ============================================================================
+// Clover Preference Pane
+// ----------------------------------------------------------------------------
+"CloverPrefpane_title" = "Clover Systemeinstellungen";
+"CloverPrefpane_description" = "Installiert das Clover Kontrollfeld in den Systemeinstellungen auf der Zielpartition. Der installierte CloverUpdater zeigt Dir dabei die aktuell installierte Version an und weist Dich auf Updates hin.";
+
+// ----------------------------------------------------------------------------

@@ -1,0 +1,249 @@
+// =============================================================================
+// package
+// ----------------------------------------------------------------------------
+"MakingRootRW" = "Clover akan membuat root File System menjadi read-write.
+Perubahan ini bersifat sementara hingga Reboot selanjutnya";
+"GoToFailRootRW" = "Tidak dapat menginstall sebelum File System menjadi Read-Write";
+// ============================================================================
+// Installation
+// ----------------------------------------------------------------------------
+"UEFI.only_title" = "Install Clover untuk UEFI";
+"UEFI.only_description" = "Install Clover untuk digunakan pada motherboard yang hanya mendukung UEFI.";
+
+// ============================================================================
+// Target
+// ----------------------------------------------------------------------------
+"Target.ESP_title" = "Install Clover pada ESP";
+"Target.ESP_description" = "Install Clover pada ESP (EFI System Partition) dari volume tujuan
+
+Format ESP dengan FAT32 di Mac, misalnya lewat Terminal:
+diskutil list
+newfs_msdos -v EFI -F 32 /dev/rdisk9s1";
+
+// ============================================================================
+// Bootloader
+// ----------------------------------------------------------------------------
+
+"Bootloader_title" = "Boot Sectors (Legacy)";
+"Bootloader_description" = "Clover EFI membutuhkan 3 files esensial:
+boot0 (pada sektor MBR) berfungsi untuk memuat boot1.
+boot1 (di bootsector Partisi) berfungsi untuk mencari boot2.
+boot2 (di direktori root pada Partisi), memuat /EFI/CLOVER/CLOVERX64.efi, kernel & dsb.";
+
+"boot0af_title" = "Install boot0af di MBR";
+"boot0af_description" = "Untuk BIOS-booting pada BIOS motherboard (Legacy).
+boot0af (boot0 Active First) mencoba boot partisi aktif di MBR.
+Jika tidak ada partisi aktif, ia akan boot partisi pertama EFI/FAT32/HFS
+(yang ada di MBR dan kemudian GPT) dengan signature PBR yang valid.
+Opsi ini akan menjadikan partisi HFS/FAT32 terpilih menjadi aktif.";
+
+"boot0ss_title" = "Install boot0ss di MBR";
+"boot0ss_description" = "Untuk BIOS-booting pada BIOS motherboard (Legacy).
+boot0ss (boot0 Signature Scanning) mencoba boot partisi pertama
+EFI/FAT32/HFS+ (di MBR lalu GPT) dengan signature PBR valid.
+Jika partisi tidak ditemukan, ia akan boot partisi aktif di MBR.
+Ini dianjurkan ketika Windows terinstall pada Disk yang sama
+karena partisinya butuh dalam keadaan aktif.
+Opsi ini tidak membuat partisi di MBR menjadi aktif.";
+
+"bootNo_title" = "Tanpa update sektor MBR dan PBR";
+"bootNo_description" = "Tanpa install bootloader apapun (boot0X, boot1X).
+Berguna untuk motherboard UEFI yang tidak membutuhkan file boot.
+Juga bermanfaat saat Anda tidak ingin upgrade sektor MBR atau PBR.";
+
+"AltBoot_title" = "Pakai alternatif boot PBR";
+"AltBoot_description" = "Install alternatif boot PBR dengan memilih boot melalui sebuah tombol.
+File to boot = boot{keypressed}";
+
+"boot64_title" = "Instal & Menjalankan mode 64bit terlebih dahulu";
+"boot64_description" = "Menginstal dan aktifkan boot mode 64bit.
+Boot utama = Clover EFI 64bit. Anda dapat..
+Tekan 1 untuk boot1 = Chameleon boot,
+Tekan 3 untuk boot3 = Clover EFI 32bit boot,
+Tekan 6 untuk boot6 = Clover EFI 64bit boot.";
+
+// ============================================================================
+// CloverEFI
+// ----------------------------------------------------------------------------
+"CloverEFI_title" = "Clover boot BIOS (Legacy)";
+"CloverEFI_description" = "Pilih varian Clover boot untuk diinstall di BIOS Legacy.";
+"cloverEFI.64.sata_title" = "Clover boot 64-bits SATA";
+"cloverEFI.64.sata_description" = "Clover boot 64-bits melalui SATA untuk akses Drives";
+"cloverEFI.64.blockio_title" = "Clover boot 64-bits BiosBlockIO";
+"cloverEFI.64.blockio_description" = "Clover boot 64-bits melalui Bios Block I/O untuk akses Drives";
+"cloverEFI.64.blockio2_title" = "Clover boot 64-bits BiosBlockIO untuk NVIDIA NForce MCP79";
+"cloverEFI.64.blockio2_description" = "Clover boot 64-bits melalui Bios Block I/O untuk akses drives di chipset NVIDIA NForce MCP79";
+
+// ============================================================================
+// Drivers
+// ----------------------------------------------------------------------------
+"off_title" = "Drivers off (non-Aktif)";
+"off_description" = "Install seluruh Drivers yang telah tersedia ke /EFI/CLOVER/drivers/off/
+
+Direktori off tidak dimuat oleh Clover dan hanya berguna saat Anda menjalankan EFI Shell untuk menyalin driver hilang atau mengganti yang rusak ketika boot jika diperlukan.";
+
+"Drivers64_title" = "Drivers BIOS, 64-bits";
+"Drivers64_description" = "Pilih drivers untuk BIOS-booting (Legacy).";
+
+"Recommended64_title" = "Drivers Rekomendasi";
+"Recommended64_description" = "Drivers yang dianjurkan, sebagian besar keharusan.";
+
+"FileSystem64_title" = "Drivers File System";
+"FileSystem64_description" = "Koleksi drivers untuk File System.";
+
+"Drivers64FV2_title" = "Drivers FileVault 2";
+"Drivers64FV2_description" = "Pilih drivers untuk BIOS-booting dengan FileVault 2.";
+
+"ApfsDriverLoader_description" = "Driver 64-bit untuk memuat File System APFS dari Container bagi macOS 10.13 atau yang lebih baru.";
+"AppleImageCodec_description" = "Untuk decode gambar PNG dan BMP pada UI Boot";
+"AppleImageLoader_description" = "Mengamankan binary driver AppleEfiFat menggunakan implementasi protokol AppleLoadImage dengan verifikasi signature EfiBinary.";
+"AppleKeyAggregator_description" = "Dukungan bagi Dialog UI Boot untuk FileVault 2";
+"AppleKeyFeeder_description" = "Dukungan Keyboard PS/2 untuk digunakan dengan FileVault 2";
+"AppleUISupport_description" = "Rangkaian protokol untuk mendukung EfiLoginUi bagi FileVault.";
+"AppleUITheme_description" = "Mendukung Themes UI saat boot";
+"AptioInputFix_description" = "Driver untuk membenahi masalah Input pada firmware UEFI, misalnya AMI Aptio.";
+"AptioMemoryFix_description" = "Driver 64-bit pilihan untuk membenahi masalah Memori pada firmware UEFI, misalnya AMI Aptio. Firmware lainnya mungkin juga kompatibel.";
+"AudioDxe_description" = "Driver HDA untuk memainkan Startup Sound ketika Boot.
+
+Setel terlebih dahulu perangkat dan Volume Audio melalui
+Startup sound output yang ada di menu Options.
+Tidak semua perangkat IOAudio didukung, butuh NVRAM aktif.";
+"FirmwareVolume_description" = "Membuat FirmwareVolume dengan gambar cursor.";
+"FSInject_description" = "Menyediakan injeksi kexts dari folder CLOVER.";
+"GrubEXFAT_description" = "Driver File System ExFAT dari GRUB.";
+"GrubISO9660_description" = "Driver File System ISO9600 dari GRUB.";
+"GrubNTFS_description" = "Driver File System NTFS dari GRUB.";
+"GrubUDF_description" = "Driver File System UDF dari GRUB.";
+"SMCHelper_description" = "Memulihkan keys FakeSMC yang tersisa di NVRAM";
+"XhciDxe_description" = "Driver USB 3.0, 64-bit";
+
+"Drivers64UEFI_title" = "Drivers UEFI, 64-bits";
+"Drivers64UEFI_description" = "Pilih drivers untuk UEFI-booting.";
+
+"Recommended64UEFI_title" = "Drivers Rekomendasi";
+"Recommended64UEFI_description" = "Drivers yang dianjurkan, sebagian besar keharusan.";
+
+"HID64UEFI_title" = "Drivers Perangkat HID";
+"HID64UEFI_description" = "Drivers PS/2 atau USB untuk Mouse dan Keyboard.";
+
+"FileSystem64UEFI_title" = "Drivers File System";
+"FileSystem64UEFI_description" = "Koleksi drivers untuk File System.";
+
+"MemoryFix64UEFI_title" = "Drivers Memory Fix";
+"MemoryFix64UEFI_description" = "Koleksi drivers Memory Fix untuk firmware UEFI. Gunakan salah satu.";
+
+"Drivers64UEFIFV2_title" = "Drivers FileVault 2";
+"Drivers64UEFIFV2_description" = "Pilih drivers untuk UEFI-booting dengan FileVault 2.";
+
+"Other64UEFI_title" = "Drivers Tambahan";
+"Other64UEFI_description" = "Terkadang firmware UEFI tidak mendukung protokol khusus atau butuh fungsi tambahan.";
+
+"ApfsDriverLoader.UEFI_description" = "Driver 64-bit untuk memuat File System APFS dari Container bagi macOS 10.13 atau yang lebih baru.";
+"AppleEvent.UEFI_description" = "Membuat protokol AppleEvent bagi FileVault2";
+"AppleGraphicsConfig.UEFI_description" = "Membuat protokol AppleGraphicsConfig opsional";
+"AppleImageCodec.UEFI_description" = "Untuk decode gambar PNG dan BMP pada UI Boot";
+"AppleImageLoader.UEFI_description" = "Mengamankan binary driver AppleEfiFat menggunakan implementasi protokol AppleLoadImage dengan verifikasi signature EfiBinary.";
+"AppleKeyAggregator.UEFI_description" = "Dukungan bagi Dialog UI Boot untuk FileVault 2";
+"AppleKeyFeeder.UEFI_description" = "Dukungan Keyboard PS/2 untuk digunakan dengan FileVault 2";
+"AppleUISupport.UEFI_description" = "Rangkaian protokol untuk mendukung EfiLoginUi bagi FileVault.";
+"AppleUITheme.UEFI_description" = "Mendukung Themes UI saat boot";
+"AptioInputFix.UEFI_description" = "Driver untuk membenahi masalah Input pada firmware UEFI, misalnya AMI Aptio.";
+"AptioMemoryFix.UEFI_description" = "Driver 64-bit pilihan untuk membenahi masalah Memori pada firmware UEFI, misalnya AMI Aptio. Firmware lainnya mungkin juga kompatibel.";
+"AudioDxe.UEFI_description" = "Driver HDA untuk memainkan Startup Sound ketika Boot.
+
+Setel terlebih dahulu perangkat dan Volume Audio melalui
+Startup sound output yang ada di menu Options.
+Tidak semua perangkat IOAudio didukung, butuh NVRAM aktif.";
+"CsmVideoDxe.UEFI_description" = "Driver video 64-bit untuk GUI Clover yang mendukung banyak resolusi.
+Bergantung modul CSM di UEFI BIOS, sehingga ia menjadi enabled.
+Ini bisa berakibat Clover gagal Boot dan Wake di sistem bermasalah.
+Gunakan dengan hati-hati.";
+"DataHubDxe.UEFI_description" = "Dukungan protokol DataHub yang dibutuhkan oleh MacOS.
+Biasanya sudah tersedia namun kadang-kadang hilang.
+Jika terlewatkan, maka akan muncul peringatan di layar.";
+"EmuVariableUefi.UEFI_description" = "Solusi masalah penyimpanan variabel NVRAM di Sistem tanpa perangkat UEFI. Biasanya UEFI boot memakai NVRAM dari perangkat,
+namun dalam kasus tertentu driver ini tetap dibutuhkan.
+Gunakan (hanya) jika tanpa memakainya, Anda menemui kendala.";
+"EnglishDxe.UEFI_description" = "Dukungan protokol UnicodeCollation bagi EFI Shell jika firmware UEFI tidak menyediakan.";
+"Fat.UEFI_description" = "Driver File System FAT.";
+"FirmwareVolume.UEFI_description" = "Membuat FirmwareVolume dengan gambar cursor.";
+"FSInject.UEFI_description" = "Menyediakan injeksi kexts dari folder CLOVER.";
+"HashServiceFix.UEFI_description" = "Mendukung Hash jika firmware UEFI native tidak menyediakan.";
+"HFSPlus.UEFI_description" = "Driver File System HFS+ (versi alternatif).";
+"NvmExpressDxe.UEFI_description" = "Driver untuk mendukung perangkat NVMExpress.";
+"OsxAptioFix3Drv.UEFI_description" = "Driver alternatif (v3) untuk membenahi masalah Memory di firmware UEFI.";
+"OsxAptioFixDrv.UEFI_description" = "Driver 64-bit lawas untuk membenahi masalah Memory pada firmware UEFI misalnya AMI Aptio.";
+"OsxFatBinaryDrv.UEFI_description" = "Driver untuk mendukung FAT Binary executables bagi OS X 10.9 atau versi sebelumnya.";
+"OsxLowMemFixDrv.UEFI_description" = "Varian sederhana driver OsxAptioFixDrv (jangan pakai bersamaan).";
+"PartitionDxe.UEFI_description" = "Driver 64-bit untuk dukungan Skema Partisi yang tidak biasa, semisal:
+Hybrid GPT/MBR atau Apple Partition Map.";
+"Ps2MouseDxe.UEFI_description" = "Driver Mouse PS/2, 64-bit";
+"SMCHelper.UEFI_description" = "Memulihkan keys FakeSMC yang tersisa di NVRAM";
+"UsbKbDxe.UEFI_description" = "Driver Keyboard USB, untuk dukungan UI boot";
+"UsbMouseDxe.UEFI_description" = "Driver Mouse USB, 64-bit";
+"VBoxExt2.UEFI_description" = "Driver File System EXT2/3 dari VirtualBox, 64-bit";
+"VBoxExt4.UEFI_description" = "Driver File System EXT4 dari VirtualBox, 64-bit";
+"VBoxHfs.UEFI_description" = "Driver File System HFS+ dari VirtualBox, 64-bit";
+"VBoxIso9600.UEFI_description" = "Driver File System ISO 9600.";
+
+// ============================================================================
+// Themes
+// ----------------------------------------------------------------------------
+"Themes_title" = "Themes";
+"Themes_description" = "Pilih Themes untuk diinstall.";
+
+"BGM_title" = "BGM Theme";
+"BGM_description" = "Theme Black Green & Moody kreasi Blackosx,
+Install ke /EFI/CLOVER/themes/BGM";
+
+"embedded_title" = "embedded";
+"embedded_description" = "Theme embedded kreasi Clovy,
+Install ke /EFI/CLOVER/themes/embedded";
+
+"metal_title" = "metal";
+"metal_description" = "Theme metal (asli) kreasi Slice,
+Install ke /EFI/CLOVER/themes/metal";
+
+"cesium_title" = "cesium";
+"cesium_description" = "Theme Vector SVG kreasi Slice,
+Install ke /EFI/CLOVER/themes/cesium";
+
+"clovy_title" = "Clovy";
+"clovy_description" = "Theme Vector SVG kreasi Clovy,
+Install ke /EFI/CLOVER/themes/Clovy";
+
+"random_title" = "random (acak)";
+"random_description" = "Theme random kreasi Slice,
+Ia akan mengacak koleksi themes yang ada.
+Install ke /EFI/CLOVER/themes/random";
+
+"steampunkblack_title" = "steampunkblack";
+"steampunkblack_description" = "Theme steampunkblack kreasi medik,
+Install ke /EFI/CLOVER/themes/steampunkblack";
+
+"CloverThemeManager_title" = "CloverThemeManager.app";
+"CloverThemeManager_description" = "Aplikasi CloverThemeManager kreasi blackosx;
+Menjamin Themes Anda up to date. Hapus / perbarui dari repo.
+Install ke /Applications";
+// ============================================================================
+// RC Scripts
+// ----------------------------------------------------------------------------
+"rc.scripts.on.target_title" = "Install rc.scripts di Volume Tujuan";
+"rc.scripts.on.target_description" = "Install semua rc.scripts di Volume yang dituju.
+Harus berupa Volume Sistem OSX yang bootable.";
+"rc.scripts.on.all.volumes_title" = "Install rc.scripts di semua Volumes OSX";
+"rc.scripts.on.all.volumes_description" = "Install semua rc.scripts di seluruh Volumes Internal OSX yang bootable;
+selain Volume Tujuan.";
+"OptionalRCScripts" = "Install rc.scripts Opsional";
+"disable_sleep_proxy_client_title" = "Matikan Sleep Proxy Client";
+"disable_sleep_proxy_client_description" = "Matikan layanan mDNSResponder Sleep Proxy Client.
+Ini mencegah Sistem agar tidak Wake dari Sleep tiap jam.";
+
+// ============================================================================
+// Clover Preference Pane
+// ----------------------------------------------------------------------------
+"CloverPrefpane_title" = "Install Panel Preferensi Clover";
+"CloverPrefpane_description" = "Install Panel Preferensi Clover di Volume Tujuan.
+Memuat CloverUpdater yang memberitahu Anda tentang pembaruan.";
+
+// ----------------------------------------------------------------------------

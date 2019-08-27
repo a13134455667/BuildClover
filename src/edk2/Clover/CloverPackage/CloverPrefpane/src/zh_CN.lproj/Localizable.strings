@@ -1,0 +1,10 @@
+"Always" = "总是";
+"Auto" = "自动";
+"Boot Volume" = "开机宗卷";
+"ESP on [%@] %@" = "在 [%1$@] %2$@ 的ESP";
+"Never" = "从不";
+"No" = "不";
+"No description available" = "没有描述";
+"Select the EFI directory" = "选择 EFI 目录";
+"Set EFI directory" = "设置 EFI 目录";
+"Unknown" = "未知";

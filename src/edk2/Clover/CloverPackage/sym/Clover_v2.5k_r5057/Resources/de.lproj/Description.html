@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <title></title>
+  <style type="text/css">
+	  body {font-family: 'Helvetica Neue', 'Lucida Grande', sans-serif; text-align: left; font-size: 13px; margin-bottom: 0; padding-bottom: 0; font-weight: 400; color: #404040;}
+    p.p1 {margin: 0}
+    p.p2 {margin: 0.5em 0}
+    span.s1 {font-weight: 600 }
+    ul {font-weight: 600}
+    li {margin: 0 0 .4em 0; font-weight: 400}
+  </style>
+</head>
+<body>
+<p class="p1">
+	<span class="s1">Clover v2 </span>
+	Ist Open Source basierend auf mehreren Projekten: Clover, rEFIt, XNU,
+VirtualBox. 
+	<span>Der Haupbestandteil ist EDK2 in der aktuellen Revision.</span>
+</p>
+
+<p class="p2"><a href="http://sourceforge.net/projects/cloverefiboot/">http://sourceforge.net/projects/cloverefiboot/</a></p>
+
+<p><b>Hauptmerkmale:</b></p>  
+<ul>
+<li>macOS, Windows EFI und Linux EFI native booten</li>
+<li>Der EFI Bootloader stellt RuntimeServices für das OS bereit, was mit Legacy
+Bootloadern nicht möglich ist.</li>
+<li>Clover ist größtenteils in der Lage, die nötigen Einstellungen passend zur
+Hardware selbst vorzunehmen. Der Benutzer kann aber mit der config.plist
+ebenfalls diverse Einstellungen vornehmen.</li>
+<li>Mit Clover kann man im Kontrollfeld Startvolume innerhalb der
+Systemeinstellungen in ein anderes OS booten.</li>
+<li>Die in der config.plist eingestellte UUID wird im OS übernommen.</li>
+<li>SMBIOS wird auf Standard 2.6 angepasst.</li>
+<li>ACPI wird auf Standard 4.0 korrigiert.</li>
+<li>Die eigene DSDT wird von der gebooteten Partition oder aus dem EFI Ordner
+geladen.</li>
+<li>DSDT Anpassung on the fly durch Anpassungen/Muster.</li>
+<li>Anpassbare Korrekturen für den Neustart/Energiesparmodus, sowie den
+PCIRootUID Wert.</li>
+<li>Injektor zum anpassen der Videoeigenschaften einer grossen Anzahl
+unterstützter ATI, NVidia und Intel Grafikkarten.</li>
+<li>USB Anpassung (LegacyOff, Ownership, Builtin, clock-id) bis zu USB 3.0.</li>
+<li>Injektor für HDA und Ethernet builtin Hardware.</li>
+<li>CPU Turbo und P- und C-states Generator.</li>
+<li>Laden von ACPI Tabellen (SSDT-xx, APIC, BOOT, SLIC, SLIT, SRAT, UEFI...).</li>
+<li>Extra Kernel-Erweiterungen können geladen werden.</li>
+<li>Kernel und kext Anpassungen on the fly.</li>
+<li>NVRAM Variablen für können für unterschiedliche Anforderungen gesetzt
+werden.</li>
+<li>Automatisches Booten nach Zeitvorgabe, anpassbare Oberfläche, sichern von
+Bildschirmfotos der Einstellungen mit F10.</li>
+<li>Sichern des boot.log im OS und des preboot.log mit F2.</li>
+</ul>
+</body>
+</html>

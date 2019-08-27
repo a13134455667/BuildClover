@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<pkg-info format-version="2" identifier="org.clover.biosboot" version="v2.5k" install-location="/" auth="root">
+	<payload installKBytes="944" numberOfFiles="25"/>
+</pkg-info>

@@ -1,0 +1,231 @@
+// =============================================================================
+// package
+// ----------------------------------------------------------------------------
+"MakingRootRW" = "Clover 想要开启 根文件系统 的可读写权限。
+此项修改是临时的, 下一次重启后失效";
+"GoToFailRootRW" = "无法安装 因为不能保证文件系统是否有 读写权限";
+// ============================================================================
+// Installation
+// ----------------------------------------------------------------------------
+"UEFI.only_title" = "仅安装 UEFI 启动版本";
+"UEFI.only_description" = "仅安装 UEFI 主板专用的 Clover 版本。";
+
+// ============================================================================
+// Target
+// ----------------------------------------------------------------------------
+"Target.ESP_title" = "安装 Clover 到 ESP 系统分区";
+"Target.ESP_description" = "安装 Clover 到目标磁区的 ESP (EFI) 系统分区
+
+需要在 Mac 下, 先将 EFI 系统区 格式化为 Fat32 格式。
+
+参考 Fat32 手动格式化指令:
+diskutil list
+newfs_msdos -v EFI -F 32 /dev/rdisk9s1";
+
+// ============================================================================
+// Bootloader
+// ----------------------------------------------------------------------------
+
+"Bootloader_title" = "引导器";
+"Bootloader_description" = "简而言之，Clover EFI 需要三个必要的文件。
+boot0 (在硬盘的 MBR) 负责载入 boot1。
+boot1 (在分区的开机磁区 boot-sector) 搜寻 boot2。
+boot2 (在分区的根目录) 载入 /EFI/CLOVER/CLOVERIA32.efi 或 CLOVERX64.efi 及系统核心等等。";
+
+"boot0af_title" = "安装 boot0af 进 MBR";
+"boot0af_description" = "BIOS 主板 之 BIOS 启动 专用。
+boot0af (优先激活 boot0) 优先引导 MBR 的 激活分区, 如果没有激活分区, 将引导第一个含 有效 PBR 签名 的 EFI/FAT32/HFS 分区 (优先引导MBR，其次引导GPT)。
+本安装将 会 设置 HFS 及 Fat32 安装分区为激活分区。";
+
+"boot0ss_title" = "安装 boot0ss 进 MBR";
+"boot0ss_description" = "BIOS 主板 之 BIOS 启动 专用。
+boot0ss (boot0 签名扫描) 引导器 优先引导第一个含 有效 PBR 签名 的 EFI/FAT32/HFS 分区(优先引导MBR, 其次引导GPT), 如果没有找到分区，将引导 MBR 的 激活分区。
+本引导器 是推荐选择, 当你已经安装了 Windows 在相同磁盘。因为 Windows 想让它的分区成为 激活分区。
+本安装将 不会 设置 任何 MBR 里的分区为激活分区。";
+
+"bootNo_title" = "不更新 MBR 及 PBR 磁区";
+"bootNo_description" = "不安装任何引导文件 (boot0X, boot1X)。
+适用于不需要任何引导文件的 UEFI 主板。
+适用于不需要更新 MBR 及 PBR 磁区。";
+
+"AltBoot_title" = "安装 PBR 的多重开机选项";
+"AltBoot_description" = "安装 PBR 的多重开机选项，boot1=变色龙 引导，boot6=64位 Clover 引导。
+可设定 开机 boot = boot{按键} 进行多重开机设置。";
+
+"boot64_title" = "安装 64位版本 引导 并让它优先启动";
+"boot64_description" = "安装 32位+64位 引导文件，并优先启用 64位版本。
+默认启动引导 = Clover 引导 64位版本。你可以…
+按 1 选 boot1 = 变色龙 引导,
+按 3 选 boot3 = Clover 引导 32位版本,
+按 6 选 boot6 = Clover 引导 64位版本。";
+
+// ============================================================================
+// CloverEFI
+// ----------------------------------------------------------------------------
+"CloverEFI_title" = "CloverEFI";
+"CloverEFI_description" = "选择要安装的 CloverEFI 版本。";
+"cloverEFI.64.sata_title" = "CloverEFI 64位版本 SATA";
+"cloverEFI.64.sata_description" = "CloverEFI 64位版本, 使用 SATA 模式存取硬盘";
+"cloverEFI.64.blockio_title" = "CloverEFI 64位版本 BiosBlockIO";
+"cloverEFI.64.blockio_description" = "CloverEFI 64位版本, 使用 Bios Block I/O 模式存取硬盘";
+"cloverEFI.64.blockio2_title" = "CloverEFI 64位版本, 使用 BiosBlockIO 模式于 NVIDIA NForce MCP79";
+"cloverEFI.64.blockio2_description" = "CloverEFI 64位版本, 使用 Bios Block I/O 模式存取 NVIDIA NForce MCP79 芯片组";
+
+// ============================================================================
+// Drivers
+// ----------------------------------------------------------------------------
+"off_title" = "停用驱动";
+"off_description" = "安装 所有 EFI/CLOVER/drivers/off/ 目录下可用的驱动
+off 目录不会被 Clover 加载 并且当启动时需要, 你必须使用 EFI shell 来 拷贝一个丢失的驱动 或 替换一个损坏的驱动。";
+
+"Drivers64_title" = "BIOS 驱动, 64位版本";
+"Drivers64_description" = "选择 BIOS-启动 的驱动。";
+
+"Recommended64_title" = "推荐驱动";
+"Recommended64_description" = "推荐驱动, 大多数是必要的。";
+
+"FileSystem64_title" = "文件系统驱动";
+"FileSystem64_description" = "文件系统驱动 的集合。";
+
+"Drivers64FV2_title" = "文件保险箱 BIOS 驱动, 64位版本";
+"Drivers64FV2_description" = "选择 已开启 文件保险箱 的 BIOS-引导 驱动。";
+
+"ApfsDriverLoader_description" = "加载 容器里 APFS 文件系统 的 64位版本驱动";
+"AppleImageCodec_description" = "解码 启动界面 的 PNG 和 BMP 图像";
+"AppleImageLoader_description" = "安全 AppleEfiFat 二进制驱动, 实施 AppleLoadImage 协议 并有 EfiBinary 签名验证。";
+"AppleKeyAggregator_description" = "支持 文件保险箱 开机界面的 对话框";
+"AppleKeyFeeder_description" = "支持 使用 文件保险箱 时的 PS/2 键盘";
+"AppleUISupport_description" = "支持 文件保险箱 中 EfiLoginUi 的协议集。";
+"AppleUITheme_description" = "支持 启动界面主题";
+"AptioInputFix_description" = "修正 UEFI 固件 输入问题, 例如 AMI Aptio。";
+"AptioMemoryFix_description" = "64位版本, 提供 UEFI 固件的 内存问题修正, 例如 AMI Aptio";
+"AudioDxe_description" = "HDA 驱动, 播放 启动音";
+"FirmwareVolume_description" = "新建 含有光标图像的 固件宗卷";
+"FSInject_description" = "提供 Clover文件夹中 内核扩展 的注入。";
+"GrubEXFAT_description" = "ExFAT 文件系统 驱动, 来自 GRUB。";
+"GrubISO9660_description" = "ISO 9600 文件系统 驱动, 来自 GRUB。";
+"GrubNTFS_description" = "NTFS 文件系统 驱动, 来自 GRUB。";
+"GrubUDF_description" = "UDF 文件系统 驱动, 来自 GRUB。";
+"SMCHelper_description" = "恢复 FakeSMC 在 nvram 遗留的 SMC 键值";
+"XhciDxe_description" = "USB 3.0 驱动, 64位版本";
+
+"Drivers64UEFI_title" = "UEFI 驱动, 64位版本";
+"Drivers64UEFI_description" = "选择 UEFI-引导 的驱动。";
+
+"Recommended64UEFI_title" = "推荐驱动";
+"Recommended64UEFI_description" = "推荐驱动, 大多数是必要的。";
+
+"HID64UEFI_title" = "人机接口设备";
+"HID64UEFI_description" = "PS2/USB 驱动, 支持 鼠标和键盘。";
+
+"FileSystem64UEFI_title" = "文件系统驱动";
+"FileSystem64UEFI_description" = "文件系统驱动 的集合。";
+
+"MemoryFix64UEFI_title" = "内存修正驱动";
+"MemoryFix64UEFI_description" = "内存修正驱动集。";
+
+"Drivers64UEFIFV2_title" = "文件保险箱 UEFI 驱动, 64位版本";
+"Drivers64UEFIFV2_description" = "选择 UEFI-引导 文件保险箱 驱动。";
+
+"Other64UEFI_title" = "更多驱动";
+"Other64UEFI_description" = "有些时候, bios UEFI 会缺少对 特定协议 或 一些功能 的 支持。";
+
+"ApfsDriverLoader.UEFI_description" = "加载 容器里 APFS 文件系统 的 64位版本驱动";
+"AppleEvent.UEFI_description" = "新建 文件保险箱 的 AppleEvent 协议";
+"AppleGraphicsConfig.UEFI_description" = "新建 可选的 AppleGraphicsConfig 协议";
+"AppleImageCodec.UEFI_description" = "解码 启动界面 的 PNG 和 BMP 图像";
+"AppleImageLoader.UEFI_description" = "安全 AppleEfiFat 二进制驱动, 实施 AppleLoadImage 协议 并有 EfiBinary 签名验证。";
+"AppleKeyAggregator.UEFI_description" = "支持 文件保险箱 开机界面的 对话框";
+"AppleKeyFeeder.UEFI_description" = "支持 使用 文件保险箱 时的 PS/2 键盘";
+"AppleUISupport.UEFI_description" = "支持 文件保险箱 中 EfiLoginUi 的协议集。";
+"AppleUITheme.UEFI_description" = "支持 启动界面主题";
+"AptioInputFix.UEFI_description" = "修正 UEFI 固件 输入问题, 例如 AMI Aptio。";
+"AptioMemoryFix.UEFI_description" = "64位版本, 提供 UEFI 固件的 内存问题修正, 例如 AMI Aptio";
+"AudioDxe.UEFI_description" = "HDA 驱动, 开机时播放 启动音";
+"CsmVideoDxe.UEFI_description" = "64位版本 视频驱动, 允许 Clover 图形界面 支持更多分辨率。
+基于 UEFI BIOS 的 CSM 模块, 并且 CSM 必须启动。
+可能导致 Clover 无法启动, 也可能会发生 系统唤醒 相关问题。
+请谨慎使用。";
+"DataHubDxe.UEFI_description" = "此驱动 提供 DataHub 协定支持, MacOSX 强制启用。
+通常已启用, 但有时可能遗漏。可在屏幕 warning 中查看。";
+"EmuVariableUefi.UEFI_description" = "存储 非 UEFI-引导 中 UEFI 变量 的替代方法。";
+"EnglishDxe.UEFI_description" = "支持 EFI Shell 使用的 UnicodeCollation 协议, 如果 UEFI 遗漏了它。";
+"Fat.UEFI_description" = "FAT 文件系统 驱动。";
+"FirmwareVolume.UEFI_description" = "新建 含有光标图像的 固件宗卷";
+"FSInject.UEFI_description" = "提供 Clover文件夹中 内核扩展 的注入。";
+"HashServiceFix.UEFI_description" = "修正 Hash 的支持, 如果原生 UEFI BIOS 缺失了它";
+"HFSPlus.UEFI_description" = "另外的 HFS+ 文件系统 驱动。";
+"NvmExpressDxe.UEFI_description" = "支持 NVM Express 设备 驱动。";
+"OsxAptioFix3Drv.UEFI_description" = "另外的 修正 UEFI 固件 内存问题 驱动 (v3)";
+"OsxAptioFixDrv.UEFI_description" = "老版 64位版本 驱动, 修正 UEFI 固件 内存问题, 例如 AMI Aptio";
+"OsxFatBinaryDrv.UEFI_description" = "支持 OSX 10.9 及以后的 FAT 二进制 可执行文件。";
+"OsxLowMemFixDrv.UEFI_description" = "64位版本, 提供 UEFI 固件 内存问题修正, 例如 AMI Aptio。
+为 OsxAptioFixDrv 的简化版本, 请勿与 OsxAptioFixDrv 同时使用。";
+"PartitionDxe.UEFI_description" = "64位版本驱动, 支持非常态的分区图, 例如 混合 GPT/MBR 或 Apple 分区图。";
+"Ps2MouseDxe.UEFI_description" = "64位版本, PS/2 鼠标 驱动";
+"SMCHelper.UEFI_description" = "恢复 FakeSMC 在 nvram 遗留的 SMC 键值";
+"UsbKbDxe.UEFI_description" = "键盘驱动, 支持 启动界面";
+"UsbMouseDxe.UEFI_description" = "64位版本, USB 鼠标 驱动";
+"VBoxExt2.UEFI_description" = "64位版本, 来自 virtualbox 的 ext2/3 文件系统驱动";
+"VBoxExt4.UEFI_description" = "64位版本, 来自 virtualbox 的 ext4 文件系统驱动";
+"VBoxHfs.UEFI_description" = "HFS+ 文件系统驱动。";
+"VBoxIso9600.UEFI_description" = "ISO 9600 文件系统驱动。";
+
+// ============================================================================
+// Themes
+// ----------------------------------------------------------------------------
+"Themes_title" = "开机主题";
+"Themes_description" = "选择 来安装 开机主题。";
+
+"BGM_title" = "Black_Green_Moody";
+"BGM_description" = "选择安装来自 Blackosx 的 BGM (Black Green and Moody) 主题,
+安装位置 /EFI/CLOVER/themes/BGM";
+
+"embedded_title" = "内置的";
+"embedded_description" = "选择安装来自 Clovy 的 内置主题,
+安装位置 /EFI/CLOVER/themes/embedded";
+
+"metal_title" = "metal";
+"metal_description" = "选择安装来自 Slice 的原始 metal 主题,
+安装位置 /EFI/CLOVER/themes/metal";
+
+"cesium_title" = "cesium";
+"cesium_description" = "选择安装来自 Slice 的 Vector SVG 主题, 
+安装位置 /EFI/CLOVER/themes/cesium";
+
+"clovy_title" = "Clovy";
+"clovy_description" = "选择安装来自 Clovy 的 Vector SVG 主题,
+安装位置 /EFI/CLOVER/themes/Clovy";
+
+"random_title" = "随机";
+"random_description" = "选择安装随机主题,
+安装位置 /EFI/CLOVER/themes/random, 随机选择一个其它的主题";
+
+"steampunkblack_title" = "steampunkblack";
+"steampunkblack_description" = "选择安装来自 medik 的 steampunkblack 主题,
+安装位置 /EFI/CLOVER/themes/steampunkblack";
+
+"CloverThemeManager_title" = "CloverThemeManager.app";
+"CloverThemeManager_description" = "CloverThemeManager.app by blackosx,
+保持你的主题为最新, 也可以移除主题, 或者从花样繁多的主题库中选择一个安装。
+安装位置 /Applications";
+// ============================================================================
+// RC Scripts
+// ----------------------------------------------------------------------------
+"rc.scripts.on.target_title" = "安装 RC 脚本 到目标宗卷";
+"rc.scripts.on.target_description" = "安装全部 RC scripts 到目标宗卷。
+目标宗卷必须是 可启动的 OSX 系统宗卷。";
+"rc.scripts.on.all.volumes_title" = "安装全部 RC 脚本 到全部可启动的 OSX 宗卷";
+"rc.scripts.on.all.volumes_description" = "安装全部 RC 脚本 到全部内置可启动的 OSX 宗卷。";
+"OptionalRCScripts" = "选择安装 RC 脚本";
+"disable_sleep_proxy_client_title" = "停用 sleep proxy client";
+"disable_sleep_proxy_client_description" = "停用 mDNSResponder sleep proxy client 服务。可以避免系统休眠时, 每小时自动唤醒";
+
+// ============================================================================
+// Clover Preference Pane
+// ----------------------------------------------------------------------------
+"CloverPrefpane_title" = "安装 Clover 系统偏好设置 面板";
+"CloverPrefpane_description" = "安装 Clover 系统偏好设置 面板 到目标宗卷。 
+包含可提醒 Clover 更新信息的 Clover 更新软体。";
+
+// ----------------------------------------------------------------------------

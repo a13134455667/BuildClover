@@ -1,0 +1,231 @@
+// =============================================================================
+// package
+// ----------------------------------------------------------------------------
+"MakingRootRW" = "Clover wants to make the root file system read-write.
+The change is temporary until the next reboot";
+"GoToFailRootRW" = "Cannot install without ensuring the file system is read-write";
+// ============================================================================
+// Installation
+// ----------------------------------------------------------------------------
+"UEFI.only_title" = "UEFIブート用にインストール";
+"UEFI.only_description" = "UEFI対応マザーボード専用。";
+
+// ============================================================================
+// Target
+// ----------------------------------------------------------------------------
+"Target.ESP_title" = "ESPにインストール";
+"Target.ESP_description" = "ターゲットボリュームのESP (EFI System Partition) にインストール
+
+※ESPは、あらかじめMac上でFat32にてフォーマットする必要があります。
+
+Fat32フォーマットのコマンド例:
+diskutil list
+newfs_msdos -v EFI -F 32 /dev/rdisk9s1";
+
+// ============================================================================
+// Bootloader
+// ----------------------------------------------------------------------------
+
+"Bootloader_title" = "Bootloader (ブートローダー)";
+"Bootloader_description" = "Clover EFI は、主に以下の3ファイルを参照します。
+boot0 (ドライブのMBR上)：boot1をロードします。
+boot1 (パーティションのbootセクタ上)：boot2を参照します。
+boot2 (パーティションのrootディレクトリ上)：/EFI/CLOVER/CLOVERIA32.efiまたはCLOVERX64.efi、およびkernel等をロードします。";
+
+"boot0af_title" = "boot0afをMBRにインストール";
+"boot0af_description" = "BIOSマザーボードでのBIOSブートに。
+boot0af (boot0 Active First) ブートローダーは、まずMBRのアクティブパーティションを参照して起動を試みます。もしMBRのアクティブパーティションがなければ、EFI/FAT32/HFSの第一パーティションから有効なPBRシグネチャーを参照して起動を試みます (MBR→GPTの順)。
+この設定では選択されたHFS/Fat32パーティションがアクティブになります。";
+
+"boot0ss_title" = "boot0ssをMBRにインストール";
+"boot0ss_description" = "BIOSマザーボードでのBIOSブートに。
+boot0ss (boot0 Signature Scanning) ブートローダーはEFI/FAT32/HFSの第一パーティションから有効なPBRシグネチャーを参照して (MBR→GPTの順) 起動します。もしシグネチャーが見つからない場合はMBRのアクティブパーティションから起動します。
+Windowsでは起動ディスクのアクティブ化が必要なため、このオプションはWindowsがインストールされているディスクへのインストールに有効です。
+この設定では、MBRのどのパーティションもアクティブ化しません。";
+
+"bootNo_title" = "MBR・PBRセクターともアップデートしない";
+"bootNo_description" = "ブートローダーをインストールしません (boot0X、boot1X)。
+ブートローダーが不要なUEFIマザーボードに。
+またMBR・PBRのアップグレードが不要な場合もこのオプションを選択してください。";
+
+"AltBoot_title" = "代替ブートPBRを使用";
+"AltBoot_description" = "boot1の代替起動PBRはキー押下で選択可能。
+起動セクター選択 = 起動中に {キー連打}";
+
+"boot64_title" = "64bitブート用ブートローダーのインストール";
+"boot64_description" = "ブートファイルをインストールし、64bitブート優先に設定。
+デフォルトブート = Clover EFI 64bitに設定され、起動時に…
+1キー押下でboot1から起動 = Chameleonから起動、
+3キー押下でboot3から起動 = Clover EFI 32bitから起動、
+6キー押下でboot6から起動 = Clover EFI 64bitから起動します。";
+
+// ============================================================================
+// CloverEFI
+// ----------------------------------------------------------------------------
+"CloverEFI_title" = "CloverEFI";
+"CloverEFI_description" = "CloverEFIのバージョンを選択。";
+"cloverEFI.64.sata_title" = "CloverEFI 64bit SATA版";
+"cloverEFI.64.sata_description" = "SATA接続ドライブ用CloverEFI 64bit版";
+"cloverEFI.64.blockio_title" = "CloverEFI 64bit版 BiosBlockIO";
+"cloverEFI.64.blockio_description" = "Bios Block I/O接続ドライブ用CloverEFI 64bit版";
+"cloverEFI.64.blockio2_title" = "CloverEFI 64bit版 BiosBlockIO";
+"cloverEFI.64.blockio2_description" = "Bios Block I/O接続ドライブ用CloverEFI 64bit版";
+
+// ============================================================================
+// Drivers
+// ----------------------------------------------------------------------------
+"off_title" = "Drivers off";
+"off_description" = "Installs all available drivers in EFI/CLOVER/drivers/off/
+off directory isn't loaded by Clover any how and this is only helpfull if you have to use the EFI shell to copy a missing driver or replace a bad one during the boot if a need be.";
+
+"Drivers64_title" = "BIOS Drivers, 64 bit";
+"Drivers64_description" = "Select drivers for BIOS-booting.";
+
+"Recommended64_title" = "Recommended drivers";
+"Recommended64_description" = "Recommended drivers, mostly mandatory.";
+
+"FileSystem64_title" = "File System drivers";
+"FileSystem64_description" = "A collection of file system drivers.";
+
+"Drivers64FV2_title" = "FileVault 2 BIOS Drivers, 64 bit";
+"Drivers64FV2_description" = "Select drivers for BIOS-booting with FileVault 2.";
+
+"ApfsDriverLoader_description" = "Supports APFS filesystem driver from container for macOS 10.14.";
+"AppleImageCodec_description" = "Decode PNG and BMP for FileVault2.";
+"AppleImageLoader_description" = "Secure AppleEfiFat binary driver with implementation of AppleLoadImage protocol with EfiBinary signature verification.";
+"AppleKeyAggregator_description" = "Support for boot UI dialog for FileVault2.";
+"AppleKeyFeeder_description" = "Support for PS/2 keyboard to use with FileVault2";
+"AppleUISupport_description" = "Set of protocols for support EfiLoginUi for FileVault.";
+"AppleUITheme_description" = "Create boot UI Themes support for FileVault2.";
+"AptioInputFix_description" = "Driver to fix input problems on UEFI firmware such as AMI Aptio.";
+"AptioMemoryFix_description" = "AMI AptioなどのUEFIファームウェアでメモリーの問題を修正する64bitドライバ";
+"AudioDxe_description" = "HDA driver to play Startup Sound";
+"FirmwareVolume_description" = "Create FirmwareVolume with cursor images for FileVault2.";
+"FSInject_description" = "Provide injection of kernel extensions from Clover folder.";
+"GrubEXFAT_description" = "ExFAT filesystem driver.";
+"GrubISO9660_description" = "ISO9600 filesystem driver.";
+"GrubNTFS_description" = "NTFS filesystem driver.";
+"GrubUDF_description" = "UDF filesystem driver.";
+"SMCHelper_description" = "Restore SMC keys left in NVRAM by FakeSMC.";
+"XhciDxe_description" = "USB 3.0 driver, 64bit";
+
+"Drivers64UEFI_title" = "UEFI Drivers";
+"Drivers64UEFI_description" = "Select drivers for UEFI-booting.";
+
+"Recommended64UEFI_title" = "Recommended drivers";
+"Recommended64UEFI_description" = "Recommended drivers, mostly mandatory.";
+
+"HID64UEFI_title" = "Human Interface Devices";
+"HID64UEFI_description" = "PS2/USB drivers for mouses and keyboards.";
+
+"FileSystem64UEFI_title" = "File System drivers";
+"FileSystem64UEFI_description" = "A collection of file system drivers.";
+
+"MemoryFix64UEFI_title" = "Memory fix drivers";
+"MemoryFix64UEFI_description" = "A collection of memory fix drivers.";
+
+"Drivers64UEFIFV2_title" = "FileVault 2 UEFI Drivers";
+"Drivers64UEFIFV2_description" = "Select drivers for UEFI-booting with FileVault 2.";
+
+"Other64UEFI_title" = "Additional drivers";
+"Other64UEFI_description" = "Some times a bios UEFI may lack support for a particular protocol or some functionality.";
+
+"ApfsDriverLoader.UEFI_description" = "Supports APFS filesystem driver from container for macOS 10.14.";
+"AppleEvent.UEFI_description" = "Create AppleEvent protocol for FileVault2.";
+"AppleGraphicsConfig.UEFI_description" = "Create optional AppleGraphicsConfig protocol.";
+"AppleImageCodec.UEFI_description" = "Decode PNG and BMP for FileVault2.";
+"AppleImageLoader.UEFI_description" = "Secure AppleEfiFat binary driver with implementation of AppleLoadImage protocol with EfiBinary signature verification.";
+"AppleKeyAggregator.UEFI_description" = "Support for boot UI dialog for FileVault2.";
+"AppleKeyFeeder.UEFI_description" = "Support for PS/2 keyboard to use with FileVault2";
+"AppleUISupport.UEFI_description" = "Set of protocols for support EfiLoginUi for FileVault.";
+"AppleUITheme.UEFI_description" = "Create boot UI Themes support for FileVault2.";
+"AptioInputFix.UEFI_description" = "Driver to fix input problems on UEFI firmware such as AMI Aptio.";
+"AptioMemoryFix.UEFI_description" = "AMI AptioなどのUEFIファームウェアでメモリーの問題を修正する64bitドライバ";
+"AudioDxe.UEFI_description" = "HDA driver to play Startup Sound at boot time";
+"CsmVideoDxe.UEFI_description" = "CloverのGUIで幅広い解像度設定を可能する64bitビデオドライバ。
+UEFI BIOSのCMSモジュールから構成されているため、BIOSでCSMを有効にする必要があります。
+CloverのOS起動機能との関連はなく、またスリープ復帰時の動作に問題が出る可能性があります。
+あらかじめご注意の上、ご使用ください。";
+"DataHubDxe.UEFI_description" = "MacOSXで必要なデータハブプロトコルをサポート。
+通常これはすでにシステムに実装されていますが、場合によっては読み込みに失敗します。この際はアラートが表示されます。";
+"EmuVariableUefi.UEFI_description" = "MacOSXのNVRAM変数をサポートするための64bitドライバ。
+UEFI起動では、通常はハードウェアNVRAMを使用しますが、まれにこのドライバが必要になることがあります。
+システムの動作に問題がある場合にのみ使用してください";
+"EnglishDxe.UEFI_description" = "Support for UnicodeCollation protocol used by EFI Shell if it missed in UEFI.";
+"Fat.UEFI_description" = "FAT filesystem driver.";
+"FirmwareVolume.UEFI_description" = "Create FirmwareVolume with cursor images for FileVault2.";
+"FSInject.UEFI_description" = "Provide injection of kernel extensions from Clover folder.";
+"HashServiceFix.UEFI_description" = "Fix Hash support if absent in native UEFI BIOS.";
+"HFSPlus.UEFI_description" = "Alternate HFS+ filesystem driver.";
+"NvmExpressDxe.UEFI_description" = "Driver for support NVM Express devices.";
+"OsxAptioFix3Drv.UEFI_description" = "Alternate driver (v3) to fix Memory problems on UEFI firmware. Do not use with other AptioFix together.";
+"OsxAptioFixDrv.UEFI_description" = "Old 64-bits Driver to fix Memory problems on UEFI firmware such as AMI Aptio. Do not use with other AptioFix together.";
+"OsxFatBinaryDrv.UEFI_description" = "Driver for support FAT Binary executables for OS X 10.9 and older.";
+"OsxLowMemFixDrv.UEFI_description" = "OsxAptioFixDrvの簡易版 -64bit (OsxAptioFixDrvと併用不可)";
+"PartitionDxe.UEFI_description" = "ハイブリッドGPT/MBRやアップルパーティションマップなど、特殊なパーティションマップをサポートする64bitドライバ。";
+"Ps2MouseDxe.UEFI_description" = "PS/2マウスドライバ -64bit";
+"SMCHelper.UEFI_description" = "Restore SMC keys left in NVRAM by FakeSMC.";
+"UsbKbDxe.UEFI_description" = "Keyboard driver for boot UI support.";
+"UsbMouseDxe.UEFI_description" = "USBマウスドライバ -64bit";
+"VBoxExt2.UEFI_description" = "virtual boxのext2/3ファイルシステムドライバ -64bit";
+"VBoxExt4.UEFI_description" = "virtual boxのext4ファイルシステムドライバ -64bit";
+"VBoxHfs.UEFI_description" = "HFS+ filesystem driver.";
+"VBoxIso9600.UEFI_description" = "ISO 9600 filesystem driver.";
+
+// ============================================================================
+// Themes
+// ----------------------------------------------------------------------------
+"Themes_title" = "テーマ";
+"Themes_description" = "テーマを選択。";
+
+"BGM_title" = "Black_Green_Moody";
+"BGM_description" = "Blackosx制作『BGM（Black Green and Moody）』を、
+/EFI/CLOVER/themes/BGMにインストール";
+
+"embedded_title" = "Embedded";
+"embedded_description" = "embedded theme from Clovy,
+Install to /EFI/CLOVER/themes/embedded";
+
+"metal_title" = "metal";
+"metal_description" = "Slice制作のオリジナルテーマ『metal』を、
+/EFI/CLOVER/themes/metalにインストール";
+
+"cesium_title" = "cesium";
+"cesium_description" = "Vector SVG theme from Slice,
+Install to /EFI/CLOVER/themes/cesium";
+
+"clovy_title" = "Clovy";
+"clovy_description" = "Vector SVG theme from Clovy,
+Install to /EFI/CLOVER/themes/Clovy";
+
+"random_title" = "Random";
+"random_description" = "random theme,
+Install to /EFI/CLOVER/themes/random choose a theme from others";
+
+"steampunkblack_title" = "SteamPunk Black";
+"steampunkblack_description" = "Bijo制作『Bootcamp』を、
+/EFI/CLOVER/themes/bootcampにインストール";
+
+"CloverThemeManager_title" = "Clover テーマ";
+"CloverThemeManager_description" = "CloverThemeManager.app by blackosx keeps your Themes up to date, remove or install them by choosing from a wide selection.
+Install to /Applications";
+// ============================================================================
+// RC Scripts
+// ----------------------------------------------------------------------------
+"rc.scripts.on.target_title" = "RCスクリプトをターゲットボリュームにインストール";
+"rc.scripts.on.target_description" = "すべてのRCスクリプトをターゲットボリュームにインストール。
+ターゲットボリュームは起動可能なOSXシステムボリュームであることが必要。";
+"rc.scripts.on.all.volumes_title" = "RCスクリプトを他のすべてのOSXボリュームにインストール";
+"rc.scripts.on.all.volumes_description" = "RCスクリプトを、ターゲットボリューム以外のOSXを起動可能なすべての内蔵ボリュームにインストールします。";
+"OptionalRCScripts" = "オプションのRCスクリプト";
+"disable_sleep_proxy_client_title" = "Disable sleep proxy client";
+"disable_sleep_proxy_client_description" = "mDNSResponder sleep proxy client serviceを無効化します。これにより、1時間ごとにスリープから復帰する問題を解決します。";
+
+// ============================================================================
+// Clover Preference Pane
+// ----------------------------------------------------------------------------
+"CloverPrefpane_title" = "Clover環境設定をインストール";
+"CloverPrefpane_description" = "ターゲットボリュームにClover環境設定をインストール。
+環境設定内のCloverUpdaterは、Cloverのアップデートをお知らせします。";
+
+// ----------------------------------------------------------------------------

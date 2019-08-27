@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<pkg-info format-version="2" identifier="org.clover.drivers64.mandatory.audiodxe" version="v2.5k" install-location="/EFIROOTDIR/EFI/CLOVER/drivers/BIOS" auth="root">
+	<payload installKBytes="48" numberOfFiles="2"/>
+	<scripts>
+		<preinstall file="./preinstall"/>
+	</scripts>
+</pkg-info>

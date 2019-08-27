@@ -1,0 +1,244 @@
+// =============================================================================
+// package
+// ----------------------------------------------------------------------------
+"MakingRootRW" = "Clover veut passer le système de fichier en lecture/écriture.
+
+Ce changement sera actif jusqu’au prochain redémarrage";
+"GoToFailRootRW" = "Installation impossible sans passer le système de fichier en lecture/écriture";
+// ============================================================================
+// Installation
+// ----------------------------------------------------------------------------
+"UEFI.only_title" = "Installation pour carte mère UEFI seulement";
+"UEFI.only_description" = "Installation de Clover pour les cartes mères UEFI uniquement.";
+
+// ============================================================================
+// Target
+// ----------------------------------------------------------------------------
+"Target.ESP_title" = "Installe Clover dans la partition EFI";
+"Target.ESP_description" = "Installe Clover dans l’ESP (EFI System Partition) du volume cible.
+
+L’EFI doit d’abord être formatée depuis le Mac en FAT32.
+
+Pour le formatage en FAT32, utilisez des commandes du style :
+
+diskutil list
+
+sudo newfs_msdos -v EFI -F 32 /dev/rdisk9s1";
+
+// ============================================================================
+// Bootloader
+// ----------------------------------------------------------------------------
+
+"Bootloader_title" = "Secteurs de boot";
+"Bootloader_description" = "Clover nécessite trois fichiers essentiels
+
+En bref :
+
+boot0 (sur disque MBR) responsable du chargement boot1.
+boot1 (sur le secteur de boot de la partition) recherche boot2.
+boot2 (à la racine du répertoire de la partition) pour charger /EFI/CLOVER/CLOVERIA32.efi ou CLOVERX64.efi, le kernel etc.";
+
+"boot0af_title" = "Installe boot0af dans le MBR";
+"boot0af_description" = "Nécessaire pour démarrer depuis le BIOS des anciennes cartes-mère (Legacy).
+boot0af (boot0 Active First) Clover essaie de démarrer la partition active définie dans le MBR. S’il n’y a pas de partition active, il va essayé de démarrer la première partition EFI/FAT32/HFS (définie dans le MBR puis dans la GPT) ayant une signature PBR valide.
+Ce choix va activer la partition HFS/FAT32 sélectionnée.";
+
+"boot0ss_title" = "Installe boot0ss dans le MBR";
+"boot0ss_description" = "Nécessaire pour démarrer depuis le BIOS des anciennes cartes-mère (Legacy).
+boot0ss (boot0 Signature Scanning) Clover va d’abord essayé de démarrer la première partition EFI/FAT32/HFS (définie dans le MBR puis dans la GPT) ayant une signature PBR valide. Si aucune partition n’a été trouvée, il va essayé de démarrer la partition active définie dans le MBR.
+Ce bootloader est un bon choix quand vous avez Windows installé sur le même disque car Windows nécessite que sa partition soit active.
+Ce choix ne va activer aucune partition dans le MBR.";
+
+"bootNo_title" = "Ne pas mettre à jour les secteurs de boot";
+"bootNo_description" = "N’installe aucun secteur de démarrage (boot0X, boot1X).
+Utile pour les cartes mères UEFI qui n’ont pas besoin de fichier boot.
+Cette option peut aussi être utilisée pour éviter la mise à jour des secteurs de boot (MBR et PBR).";
+
+"AltBoot_title" = "Installation d’un sélecteur de fichier boot";
+"AltBoot_description" = "Installe un sélecteur de boot dans le PBR.
+Permet de sélectionner le fichier à booter par l’appui d’une touche.
+Fichier à booter = boot{touche}";
+
+"boot64_title" = "Installer & Démarrer en mode 64 bit";
+"boot64_description" = "Installer les fichiers boot et configurer le mode 64 bit en premier.
+Mode de boot par défaut = Clover 64 bit. Vous pouvez…
+
+Presser la touche 1 pour boot1 = Chameleon boot,
+Presser la touche 3 pour boot3 = Clover 32 bit boot,
+Presser la touche 6 pour boot6 = Clover 64 bit boot.";
+
+// ============================================================================
+// CloverEFI
+// ----------------------------------------------------------------------------
+"CloverEFI_title" = "Clover pour le mode BIOS (legacy)";
+"CloverEFI_description" = "Sélectionner la version de Clover à installer.";
+"cloverEFI.64.sata_title" = "Clover 64 bit SATA";
+"cloverEFI.64.sata_description" = "Clover 64 bit utilisant SATA pour l’accès au disques";
+"cloverEFI.64.blockio_title" = "Clover 64 bit BiosBlockIO";
+"cloverEFI.64.blockio_description" = "Clover 64 bit utilisant les Bios Block I/O pour l’accès au disques";
+"cloverEFI.64.blockio2_title" = "Clover 64 bit BiosBlockIO avec le chipset NVIDIA Force MCP79";
+"cloverEFI.64.blockio2_description" = "Clover 64 bit utilisant les Bios Block I/O avec le chipset NVIDIA Force MCP79 pour l’accès au disques";
+
+// ============================================================================
+// Drivers
+// ----------------------------------------------------------------------------
+"off_title" = "Drivers off";
+"off_description" = "Installe tous les pilotes dans EFI/CLOVER/drivers/off/
+Les pilotes contenus dans le répertoire off ne sont pas chargés par Clover.  En utilisant le shell EFI, l’utilisateur peut copier un fichier manquant ou remplacer un fichier afin de pouvoir démarrer.";
+
+"Drivers64_title" = "Pilotes pour le mode BIOS (Legacy), 64 bit";
+"Drivers64_description" = "Selectionnez les pilotes pour le mode BIOS (Legacy).";
+
+"Recommended64_title" = "Pilotes recommandés";
+"Recommended64_description" = "Pilotes recommandés et quasi-obligatoires";
+
+"FileSystem64_title" = "Pilotes de système de fichiers";
+"FileSystem64_description" = "Une sélection de pilotes pour système de fichier";
+
+"Drivers64FV2_title" = "Pilotes FileVault 2 BIOS, 64 bit";
+"Drivers64FV2_description" = "Sélectionnez les pilotes pour le mode BIOS (Legacy) avec FileVault 2.";
+
+"ApfsDriverLoader_description" = "Pilote 64 bit pour charger le pilote APFS directement à partir de macOS 10.14+.";
+"AppleImageCodec_description" = "Décodeur PNG et BMP pour FileVault 2.";
+"AppleImageLoader_description" = "Pilote AppleEfiFat binary sécurisé avec l’implémentation du protocole AppleLoadImage avec vérification de la signature EfiBinary.";
+"AppleKeyAggregator_description" = "Support de la boîte de dialogue dans FileVault2.";
+"AppleKeyFeeder_description" = "Prise en charge du clavier PS/2 pour FileVault 2.";
+"AppleUISupport_description" = "Ensemble de protocoles  EfiLoginUi pour FileVault.";
+"AppleUITheme_description" = "Crée un thème de démarrage prenant en charge FileVault 2.";
+"AptioInputFix_description" = "Pilote pour corriger les problèmes d’entrée des Firmware UEFI tels que les AMI Aptio.";
+"AptioMemoryFix_description" = "Pilote 64 bit pour corriger les problèmes de mémoire sur les firmwares UEFI tels que les AMI Aptio.";
+"AudioDxe_description" = "Pilote HDA pour le son au démarrage.";
+"FirmwareVolume_description" = "Crée FirmwareVolume avec des images de curseur pour FileVault 2.";
+"FSInject_description" = "Fournit l’injection des kexts du dossier Clover.";
+"GrubEXFAT_description" = "Pilote GRUB pour système de fichiers ExFAT.";
+"GrubISO9660_description" = "Pilote GRUB pour système de fichiers ISO 9600.";
+"GrubNTFS_description" = "Pilote GRUB pour système de fichiers NTFS.";
+"GrubUDF_description" = "Pilote GRUB pour système de fichiers UDF.";
+"SMCHelper_description" = "Restaure les clés SMC laissées en NVRAM par FakeSMC.";
+"XhciDxe_description" = "Pilote USB 3.0, 64bit";
+
+"Drivers64UEFI_title" = "Pilotes UEFI";
+"Drivers64UEFI_description" = "Sélectionnez les pilotes pour le démarrage UEFI.";
+
+"Recommended64UEFI_title" = "Pilotes recommandés";
+"Recommended64UEFI_description" = "Pilotes recommandés et quasi-obligatoires";
+
+"HID64UEFI_title" = "Pilotes d’interface";
+"HID64UEFI_description" = "Pilotes PS2/USB pour souris et claviers.";
+
+"FileSystem64UEFI_title" = "Pilotes de système de fichiers";
+"FileSystem64UEFI_description" = "Une sélection de pilotes pour système de fichier";
+
+"MemoryFix64UEFI_title" = "Pilotes de correction de mémoire";
+"MemoryFix64UEFI_description" = "Ensemble de pilotes de correction de mémoire.";
+
+"Drivers64UEFIFV2_title" = "Pilotes UEFI FileVault 2, 64 bit";
+"Drivers64UEFIFV2_description" = "Sélectionnez les pilotes pour le démarrage UEFI avec FileVault 2.";
+
+"Other64UEFI_title" = "Pilotes additionnels";
+"Other64UEFI_description" = "Parfois, un firmware UEFI peut ne pas prendre en charge un protocole particulier ou certaines fonctionnalités.";
+
+"ApfsDriverLoader.UEFI_description" = "Pilote 64 bit pour charger le pilote APFS directement à partir de macOS 10.14+.";
+"AppleEvent.UEFI_description" = "Crée un protocole AppleEvent pour FileVault 2.";
+"AppleGraphicsConfig.UEFI_description" = "Crée un protocole optionnel AppleGraphicsConfig.";
+"AppleImageCodec.UEFI_description" = "Décodeur PNG et BMP pour FileVault 2.";
+"AppleImageLoader.UEFI_description" = "Pilote AppleEfiFat binary sécurisé avec l’implémentation du protocole AppleLoadImage avec vérification de la signature EfiBinary.";
+"AppleKeyAggregator.UEFI_description" = "Support de la boîte de dialogue dans FileVault2.";
+"AppleKeyFeeder.UEFI_description" = "Prise en charge du clavier PS/2 pour FileVault 2.";
+"AppleUISupport.UEFI_description" = "Ensemble de protocoles  EfiLoginUi pour FileVault.";
+"AppleUITheme.UEFI_description" = "Crée un thème de démarrage prenant en charge FileVault 2.";
+"AptioInputFix.UEFI_description" = "Pilote pour corriger les problèmes d’entrée des Firmware UEFI tels que les AMI Aptio.";
+"AptioMemoryFix.UEFI_description" = "Pilote 64 bit pour corriger les problèmes de mémoire sur les firmwares UEFI tels que les AMI Aptio.";
+"AudioDxe.UEFI_description" = "Pilote audio HDA pour le son au démarrage.
+Peut être configuré à partir du menu de Clover dans les options :
+Sélection du périphérique de sortie et du volume (pour le matériel supporté uniquement).";
+"CsmVideoDxe.UEFI_description" = "Pilote vidéo 64 bit pour l’interface graphique (GUI) de Clover permettant d’avoir un plus large éventail de résolutions.
+Ce driver est basé sur le module CSM des firmwares UEFI et nécessite que CSM soit activé.
+Clover peut ne pas démarrer avec ce driver et il peut aussi provoquer des problèmes de sortie de veille.
+À utiliser avec précaution.";
+"DataHubDxe.UEFI_description" = "Ce driver ajoute le protocole DataHub qui est nécessaire pour macOS.
+En général, ce protocole est déjà présent dans la majorité des cas mais il se peut qu’il manque sur certaines configurations. Dans ce cas vous devriez voir des avertissements à l’écran.";
+"EmuVariableUefi.UEFI_description" = "Pilote 64 bit pour le support des variables en NVRAM nécessaire à macOS.
+La plupart des firmwares UEFI utilisent une NVRAM matérielle mais dans de rares cas, ce driver est nécessaire.
+À n’utiliser que si vous avez des problèmes de NVRAM.";
+"EnglishDxe.UEFI_description" = "Support du protocole UnicodeCollation utilisé dans le Shell EFI s’il est absent du firmware UEFI natif.";
+"Fat.UEFI_description" = "Pilote de système de fichiers FAT.";
+"FirmwareVolume.UEFI_description" = "Crée FirmwareVolume avec des images de curseur pour FileVault 2.";
+"FSInject.UEFI_description" = "Fournit l’injection des kexts du dossier Clover.";
+"HashServiceFix.UEFI_description" = "Correction du support Hash en cas d’absence dans le firmware UEFI natif.";
+"HFSPlus.UEFI_description" = "Pilote alternatif de système de fichiers HFS+.";
+"NvmExpressDxe.UEFI_description" = "Pilote pour les périphériques NVM Express.";
+"OsxAptioFix3Drv.UEFI_description" = "Pilote alternatif (v3) pour résoudre les problèmes de mémoire avec certains firmwares UEFI.";
+"OsxAptioFixDrv.UEFI_description" = "Ancien pilote 64 bit pour résoudre les problèmes de mémoire avec certains firmwares UEFI tels que AMI Aptio.";
+"OsxFatBinaryDrv.UEFI_description" = "Pilote pour la prise en charge des exécutables FAT binary pour OS X 10.9+.";
+"OsxLowMemFixDrv.UEFI_description" = "Variante simplifiée du driver 64 bit OsxAptioFixDrv (les 2 pilotes ne doivent pas être installés simultanément).";
+"PartitionDxe.UEFI_description" = "Pilote 64 bit permettant le support de tables de partition non communes telles que Hybrid GPT/MBR ou Apple Partition.";
+"Ps2MouseDxe.UEFI_description" = "Pilotes 64 bit pour souris PS/2.";
+"SMCHelper.UEFI_description" = "Restaure les clés SMC laissées en NVRAM par FakeSMC.";
+"UsbKbDxe.UEFI_description" = "Pilote de clavier pour la prise en charge dans l’interface utilisateur d’amorçage.";
+"UsbMouseDxe.UEFI_description" = "Pilote 64 bit pour souris USB.";
+"VBoxExt2.UEFI_description" = "Pilote 64 bit pour lire les partitions formatées en ext2/3.";
+"VBoxExt4.UEFI_description" = "Pilote 64 bit pour lire les partitions formatées en ext4.";
+"VBoxHfs.UEFI_description" = "Pilote pour système de fichiers HFS+.";
+"VBoxIso9600.UEFI_description" = "Pilote GRUB pour système de fichiers ISO 9600.";
+
+// ============================================================================
+// Themes
+// ----------------------------------------------------------------------------
+"Themes_title" = "Thèmes";
+"Themes_description" = "Sélectionnez un thème.";
+
+"BGM_title" = "Black Green Moody";
+"BGM_description" = "BGM (thème Black Green and Moody) par Blackosx,
+Sera installé dans /EFI/CLOVER/themes/BGM";
+
+"embedded_title" = "Embedded";
+"embedded_description" = "Thème par défaut de Clover.
+Sera installé dans /EFI/CLOVER/themes/embedded";
+
+"metal_title" = "Metal";
+"metal_description" = "Le thème original Metal par Slice,
+Sera installé dans /EFI/CLOVER/themes/metal";
+
+"cesium_title" = "cesium";
+"cesium_description" = "Thème SVG par Slice.
+Sera installé dans /EFI/CLOVER/themes/cesium";
+
+"clovy_title" = "Clovy";
+"clovy_description" = "Thème SVG par Slice.
+Sera installé dans /EFI/CLOVER/themes/Clovy";
+
+"random_title" = "Random";
+"random_description" = "Thème Random par Slice,
+Choisit un thème au hasard et sera installé dans /EFI/CLOVER/themes/";
+
+"steampunkblack_title" = "SteamPunk Black";
+"steampunkblack_description" = "Thème steampunkblack par medik.
+Sera installé dans /EFI/CLOVER/themes/steampunkblack";
+
+"CloverThemeManager_title" = "Gestionnaire de thèmes pour Clover";
+"CloverThemeManager_description" = "CloverThemeManager.app par blackosx met à jour vos thèmes, les supprime ou les installe parmi un vaste choix.
+
+S’installe dans le dossier /Applications";
+// ============================================================================
+// RC Scripts
+// ----------------------------------------------------------------------------
+"rc.scripts.on.target_title" = "RC scripts sur le volume de destination";
+"rc.scripts.on.target_description" = "Installation de tous les RC scripts sur le volume de destination.
+
+Le volume de destination doit être un volume macOS bootable.";
+"rc.scripts.on.all.volumes_title" = "RC scripts sur tous les autres volumes macOS bootables";
+"rc.scripts.on.all.volumes_description" = "Installation de tous les RC scripts sur tous les volumes internes macOS bootables autre que le volume de destination.";
+"OptionalRCScripts" = "RC Scripts optionnels";
+"disable_sleep_proxy_client_title" = "Désactive le client proxy de mise en veille.";
+"disable_sleep_proxy_client_description" = "Script pour désactiver le service Bonjour 'sleep proxy client' afin d’éviter que le système ne se réveille toutes les heures.";
+
+// ============================================================================
+// Clover Preference Pane
+// ----------------------------------------------------------------------------
+"CloverPrefpane_title" = "Installe le panneau de préférence de Clover";
+"CloverPrefpane_description" = "Installe le panneau de préférence de Clover sur le volume de destination.
+
+Inclus aussi CloverUpdater qui vous notifie des nouvelles mises à jour de Clover.";
+
+// ----------------------------------------------------------------------------

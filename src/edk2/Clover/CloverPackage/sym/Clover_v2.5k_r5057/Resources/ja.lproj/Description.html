@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <title></title>
+  <style type="text/css">
+	  body {font-family: 'Helvetica Neue', 'Lucida Grande', sans-serif; text-align: left; font-size: 13px; margin-bottom: 0; padding-bottom: 0; font-weight: 400; color: #404040;}
+    p.p1 {margin: 0}
+    p.p2 {margin: 0.5em 0}
+    span.s1 {font-weight: 600 }
+    ul {font-weight: 600}
+    li {margin: 0 0 .4em 0; font-weight: 400}
+  </style>
+</head>
+<body>
+<p class="p1">
+	<span class="s1">Clover v2 </span>
+	は、Clover、rEFIt、XNU、VirtualBoxベースのオープンソースプロジェクトです。 
+	<span>メインはEDK2の最新リビジョンです。</span>
+</p>
+
+<p class="p2"><a href="http://sourceforge.net/projects/cloverefiboot/">http://sourceforge.net/projects/cloverefiboot/</a></p>
+
+<p><b>おもな特徴:</b></p>  
+<ul>
+<li>macOS 10.xx、Windows EFIとLinux EFIのブートをサポート</li>
+<li>これまでのブートローダーでは非対応の、OSランタイムサービスをサポートしたEFIブートローダーです</li>
+<li>ハードウェア構成をほぼ自動で認識し、デフォルトで各プロパティを設定します。また、ユーザーがconfig.plistを介して設定を変更することも可能です。</li>
+<li>システム環境設定の起動ディスクから、リスタートするOSを選択可能</li>
+<li>Config.plistで設定したUUIDはOSにそのまま反映されます</li>
+<li>SMBIOSはstandard 2.6に更新されます</li>
+<li>ACPIはstandard 4.0に更新されます</li>
+<li>カスタムDSDTはブートパーティションまたはEFIフォルダからロードされます</li>
+<li>DSDT patching on the fly by fixes and by patterns;</li>
+<li>RestartFix、sleep/wake fixesおよびPCIRootUID値はカスタマイズ可能です</li>
+<li>ATI・Nvidia・Intelの、幅広いカードに対応するグラフィックス・インジェクターも。 カスタマイズ可能です。</li>
+<li>USB fix (LegacyOff, Ownership, Builtin, clock-id) はUSB 3.0対応</li>
+<li>HDAインジェクターとEthernetビルトインインジェクター</li>
+<li>CPUターボブーストとP/Cステートジェネレーター</li>
+<li>ACPIテーブルをロードします (SSDT-xx, APIC, BOOT, SLIC, SLIT, SRAT, UEFIなど)</li>
+<li>Extra kernel extensions loading;</li>
+<li>Kernel and kext patching on the fly;</li>
+<li>Set NVRAM variables for different purpose;</li>
+<li>デフォルトではタイムアウト後にブートします。GUIはカスタマイズ可能。GUI上でF10の押下によりスクリーンショットを保存します</li>
+<li>OSのboot.logとGUIのpreboot.logの保存はF2キーを押下してください</li>
+</ul>
+</body>
+</html>

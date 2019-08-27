@@ -1,0 +1,235 @@
+// =============================================================================
+// package
+// ----------------------------------------------------------------------------
+"MakingRootRW" = "Clover wants to make the root file system read-write.
+The change is temporary until the next reboot";
+"GoToFailRootRW" = "Cannot install without ensuring the file system is read-write";
+// ============================================================================
+// Installation
+// ----------------------------------------------------------------------------
+"UEFI.only_title" = "Instalacja dla komputerów z UEFI";
+"UEFI.only_description" = "Instalacja Clover tylko w trybie UEFI.";
+
+// ============================================================================
+// Target
+// ----------------------------------------------------------------------------
+"Target.ESP_title" = "Instalacja Clover na ESP";
+"Target.ESP_description" = "Instaluj Clover na ESP (EFI System Partition) dysku docelowego
+
+Należy najpierw sformatować ESP jako Fat32 (zalecane) lub HFS na Mac.
+
+Dla Fat32 w terminalu nalezy użyc komend:
+diskutil list
+newfs_msdos -v EFI -F 32 /dev/rdiskXsY (gdzie X to numer dysku a Y to numer partycji)
+
+Dla HFS w terminalu nalezy użyc komend:
+diskutil list
+newfs_hfs -v EFI /dev/rdiskXsY (gdzie X to numer dysku a Y to numer partycji)";
+
+// ============================================================================
+// Bootloader
+// ----------------------------------------------------------------------------
+
+"Bootloader_title" = "Bootloader";
+"Bootloader_description" = "Clover EFI wymaga trzech podstawowych plików. (w skrócie)
+boot0 (w głównym rekordzie startowym dysku) odpowiedzialny za ładowanie boot1.
+boot1 (w boot sektorze partycji) odpowiedzialny za odnajdowanie boot2.
+boot2 (w głównym katalogu partycji) odpowiedzialny za ładowanie /EFI/BOOT/CLOVERIA32.efi lub CLOVERX64.efi, kernel etc.";
+
+"boot0af_title" = "Zainstaluj boot0af w sektorze MBR";
+"boot0af_description" = "Opcja przeznaczona dla uruchamiania przez klasyczny BIOS.
+boot0af uruchamia aktywną partycję zdefiniowaną w MBR. Jeżeli nie ma zdefiniowanej aktywnej partycji, boot0af uruchomi pierwszą partycję EFI/FAT32/HFS (najpierw zdefiniowaną w MBR następnie w GPT) z sygnaturą PBR.
+Ta opcja ustawi wybraną partycję jako aktywną.";
+
+"boot0ss_title" = "Zainstaluj boot0ss w sektorze MBR";
+"boot0ss_description" = "Opcja przeznaczona dla uruchamiania przez klasyczny BIOS.
+boot0ss (boot0 Signature Scanning) uruchomi pierwszą partycję EFI/FAT32/HFS (najpierw zdefiniowaną w MBR następnie w GPT) z sygnaturą PBR. Jeżeli żadna partycja nie zostanie odnaleziona boot0ss uruchomi aktywną partycję zdefiniowaną w MBR.
+Ta opcja jest przydatna kiedy posiadasz zainstalowanego Windowsa na tym samym dysku z Mac OS X, ponieważ Windows wymaga aktywnej partycji.
+Ta opcja nie ustawi wybranej partycji jako aktywnej.";
+
+"bootNo_title" = "Nie aktualizuj sektorów MBR oraz PBR";
+"bootNo_description" = "Nie instaluj żadnego bootloader'a (boot0X, boot1X).
+Jest to użyteczne dla płyt z UEFI, które nie wymagają plików bootloader'a.
+Jest to także przydatne kiedy nie chcesz aktualizować sektorów MBR oraz PBR";
+
+"AltBoot_title" = "Użyj alternatywnego uruchamiania z PBR.";
+"AltBoot_description" = "Instaluj alternatywny sposób uruchamiania używając PBR z opcją wyboru bootloader'a po wciśnięciu klawisza.
+Plik do uruchomienia = boot{wciśnięty_klawisz}";
+
+"boot64_title" = "Instalacja i startowanie w trybie 64 bitowym";
+"boot64_description" = "Instaluje plik boot i startuje system w 64 bitach.
+Podczas rozruchu można:
+Wcisnąć klawisz 1 do uruchomienia boot1 = Chameleon boot,
+Wcisnąć klawisz 3 do uruchomienia boot3 = Clover EFI 32bit boot,
+Wcisnąć klawisz 6 do uruchomienia boot6 = Clover EFI 64bit boot.";
+
+// ============================================================================
+// CloverEFI
+// ----------------------------------------------------------------------------
+"CloverEFI_title" = "CloverEFI";
+"CloverEFI_description" = "Wybierz wersję CloverEFI do zainstalowania.";
+"cloverEFI.64.sata_title" = "CloverEFI 64 bity SATA";
+"cloverEFI.64.sata_description" = "CloverEFI 64 bity przy użyciu kontrolera SATA do uzyskania dostępu do dysków";
+"cloverEFI.64.blockio_title" = "CloverEFI 64 bity BiosBlockIO";
+"cloverEFI.64.blockio_description" = "CloverEFI 64 bity przy użyciu Bios Block I/O do uzyskania dostępu do dysków.";
+"cloverEFI.64.blockio2_title" = "CloverEFI 64 bity BiosBlockIO";
+"cloverEFI.64.blockio2_description" = "CloverEFI 64 bity przy użyciu Bios Block I/O do uzyskania dostępu do dysków.";
+
+// ============================================================================
+// Drivers
+// ----------------------------------------------------------------------------
+"off_title" = "Drivers off";
+"off_description" = "Installs all available drivers in EFI/CLOVER/drivers/off/
+off directory isn't loaded by Clover any how and this is only helpfull if you have to use the EFI shell to copy a missing driver or replace a bad one during the boot if a need be.";
+
+"Drivers64_title" = "BIOS Drivers, 64 bit";
+"Drivers64_description" = "Select drivers for BIOS-booting.";
+
+"Recommended64_title" = "Recommended drivers";
+"Recommended64_description" = "Recommended drivers, mostly mandatory.";
+
+"FileSystem64_title" = "File System drivers";
+"FileSystem64_description" = "A collection of file system drivers.";
+
+"Drivers64FV2_title" = "FileVault 2 BIOS Drivers, 64 bit";
+"Drivers64FV2_description" = "Select drivers for BIOS-booting with FileVault 2.";
+
+"ApfsDriverLoader_description" = "Supports APFS filesystem driver from container for macOS 10.14.";
+"AppleImageCodec_description" = "Decode PNG and BMP for FileVault2.";
+"AppleImageLoader_description" = "Secure AppleEfiFat binary driver with implementation of AppleLoadImage protocol with EfiBinary signature verification.";
+"AppleKeyAggregator_description" = "Support for boot UI dialog for FileVault2.";
+"AppleKeyFeeder_description" = "Support for PS/2 keyboard to use with FileVault2";
+"AppleUISupport_description" = "Set of protocols for support EfiLoginUi for FileVault.";
+"AppleUITheme_description" = "Create boot UI Themes support for FileVault2.";
+"AptioInputFix_description" = "Driver to fix input problems on UEFI firmware such as AMI Aptio.";
+"AptioMemoryFix_description" = "Sterownik (64-ro bitowy) naprawiający problem z pamięcią w trybie UEFI na BIOSach AMI Aptio.";
+"AudioDxe_description" = "HDA driver to play Startup Sound";
+"FirmwareVolume_description" = "Create FirmwareVolume with cursor images for FileVault2.";
+"FSInject_description" = "Provide injection of kernel extensions from Clover folder.";
+"GrubEXFAT_description" = "ExFAT filesystem driver.";
+"GrubISO9660_description" = "ISO9600 filesystem driver.";
+"GrubNTFS_description" = "NTFS filesystem driver.";
+"GrubUDF_description" = "UDF filesystem driver.";
+"SMCHelper_description" = "Restore SMC keys left in NVRAM by FakeSMC.";
+"XhciDxe_description" = "USB 3.0 driver, 64bit";
+
+"Drivers64UEFI_title" = "UEFI Drivers";
+"Drivers64UEFI_description" = "Select drivers for UEFI-booting.";
+
+"Recommended64UEFI_title" = "Recommended drivers";
+"Recommended64UEFI_description" = "Recommended drivers, mostly mandatory.";
+
+"HID64UEFI_title" = "Human Interface Devices";
+"HID64UEFI_description" = "PS2/USB drivers for mouses and keyboards.";
+
+"FileSystem64UEFI_title" = "File System drivers";
+"FileSystem64UEFI_description" = "A collection of file system drivers.";
+
+"MemoryFix64UEFI_title" = "Memory fix drivers";
+"MemoryFix64UEFI_description" = "A collection of memory fix drivers.";
+
+"Drivers64UEFIFV2_title" = "FileVault 2 UEFI Drivers";
+"Drivers64UEFIFV2_description" = "Select drivers for UEFI-booting with FileVault 2.";
+
+"Other64UEFI_title" = "Additional drivers";
+"Other64UEFI_description" = "Some times a bios UEFI may lack support for a particular protocol or some functionality.";
+
+"ApfsDriverLoader.UEFI_description" = "Supports APFS filesystem driver from container for macOS 10.14.";
+"AppleEvent.UEFI_description" = "Create AppleEvent protocol for FileVault2.";
+"AppleGraphicsConfig.UEFI_description" = "Create optional AppleGraphicsConfig protocol.";
+"AppleImageCodec.UEFI_description" = "Decode PNG and BMP for FileVault2.";
+"AppleImageLoader.UEFI_description" = "Secure AppleEfiFat binary driver with implementation of AppleLoadImage protocol with EfiBinary signature verification.";
+"AppleKeyAggregator.UEFI_description" = "Support for boot UI dialog for FileVault2.";
+"AppleKeyFeeder.UEFI_description" = "Support for PS/2 keyboard to use with FileVault2";
+"AppleUISupport.UEFI_description" = "Set of protocols for support EfiLoginUi for FileVault.";
+"AppleUITheme.UEFI_description" = "Create boot UI Themes support for FileVault2.";
+"AptioInputFix.UEFI_description" = "Driver to fix input problems on UEFI firmware such as AMI Aptio.";
+"AptioMemoryFix.UEFI_description" = "Sterownik (64-ro bitowy) naprawiający problem z pamięcią w trybie UEFI na BIOSach AMI Aptio.";
+"AudioDxe.UEFI_description" = "HDA driver to play Startup Sound at boot time";
+"CsmVideoDxe.UEFI_description" = "Sterownik grafiki (64-ro bitowy) - aktywuje dodatkowe rozdzielczości w menu Clover.
+Bazuje na module CSM pochodzącym z UEFI BIOS.
+Clover może nie wystartować z tym sterownikiem oraz może powodować problemy z wybudzeniem z uśpienia.";
+"DataHubDxe.UEFI_description" = "Sterownik (64-ro bitowy) obligatoryjnie wymagany przez Mac OS X.
+Zwykle jest on obecny w BIOSie ale czasami go brakuje. W takiej sytuacji zostanie wyświetlony komunikat na ekranie.
+Obecność tego sterownika jest zawsze bezpieczna.";
+"EmuVariableUefi.UEFI_description" = "Sterownik (64-ro bitowy) wymagany dla płyt głównych z BIOSem Phoenix w celu załadowania informacji z NVRAMu.
+Należy użyć tylko w przypadku kiedy nie są ładowane parametry z NVRAM !";
+"EnglishDxe.UEFI_description" = "Support for UnicodeCollation protocol used by EFI Shell if it missed in UEFI.";
+"Fat.UEFI_description" = "FAT filesystem driver.";
+"FirmwareVolume.UEFI_description" = "Create FirmwareVolume with cursor images for FileVault2.";
+"FSInject.UEFI_description" = "Provide injection of kernel extensions from Clover folder.";
+"HashServiceFix.UEFI_description" = "Fix Hash support if absent in native UEFI BIOS.";
+"HFSPlus.UEFI_description" = "Alternate HFS+ filesystem driver.";
+"NvmExpressDxe.UEFI_description" = "Driver for support NVM Express devices.";
+"OsxAptioFix3Drv.UEFI_description" = "Alternate driver (v3) to fix Memory problems on UEFI firmware. Do not use with other AptioFix together.";
+"OsxAptioFixDrv.UEFI_description" = "Old 64-bits Driver to fix Memory problems on UEFI firmware such as AMI Aptio. Do not use with other AptioFix together.";
+"OsxFatBinaryDrv.UEFI_description" = "Driver for support FAT Binary executables for OS X 10.9 and older.";
+"OsxLowMemFixDrv.UEFI_description" = "Prostsza wersja sterownika OsxAptioFixDrv, 64 bity (NIE UŻYWAĆ OBU RÓWNOCZEŚNIE).";
+"PartitionDxe.UEFI_description" = "Sterownik (64-ro bitowy) odpowiedzialny za mapę partycji typu: hybryda GPT/MBR lub Schemat Partycji Apple.
+Obecność tego sterownika jest zawsze bezpieczna.";
+"Ps2MouseDxe.UEFI_description" = "Sterownik (64-ro bitowy) myszy na PS/2.";
+"SMCHelper.UEFI_description" = "Restore SMC keys left in NVRAM by FakeSMC.";
+"UsbKbDxe.UEFI_description" = "Keyboard driver for boot UI support.";
+"UsbMouseDxe.UEFI_description" = "Sterownik (64-ro bitowy) myszy na USB.";
+"VBoxExt2.UEFI_description" = "Sterownik (64-ro bitowy) dla formatu ext2/3 z VirtualBox'a.";
+"VBoxExt4.UEFI_description" = "Sterownik (64-ro bitowy) dla formatu ext4 z VirtualBox'a.";
+"VBoxHfs.UEFI_description" = "HFS+ filesystem driver.";
+"VBoxIso9600.UEFI_description" = "ISO 9600 filesystem driver.";
+
+// ============================================================================
+// Themes
+// ----------------------------------------------------------------------------
+"Themes_title" = "Motywy graficzne";
+"Themes_description" = "Wybierz w celu zainstalowania.";
+
+"BGM_title" = "Black_Green_Moody";
+"BGM_description" = "Motyw BGM (Black Green i Moody) od Blackosx,
+Lokalizacja motywu: /EFI/CLOVER/themes/BGM";
+
+"embedded_title" = "Embedded";
+"embedded_description" = "embedded theme from Clovy,
+Install to /EFI/CLOVER/themes/embedded";
+
+"metal_title" = "metal";
+"metal_description" = "Oryginalny motyw metal od Slice,
+Lokalizacja instalacji motywu: /EFI/CLOVER/themes/metal";
+
+"cesium_title" = "cesium";
+"cesium_description" = "Vector SVG theme from Slice,
+Install to /EFI/CLOVER/themes/cesium";
+
+"clovy_title" = "Clovy";
+"clovy_description" = "Vector SVG theme from Clovy,
+Install to /EFI/CLOVER/themes/Clovy";
+
+"random_title" = "Random";
+"random_description" = "random theme,
+Install to /EFI/CLOVER/themes/random choose a theme from others";
+
+"steampunkblack_title" = "SteamPunk Black";
+"steampunkblack_description" = "Motyw BootCamp od Bijo,
+Lokalizacja instalacji motywu: /EFI/CLOVER/themes/bootcamp.";
+
+"CloverThemeManager_title" = "Motywy dla Clover";
+"CloverThemeManager_description" = "CloverThemeManager.app by blackosx keeps your Themes up to date, remove or install them by choosing from a wide selection.
+Install to /Applications";
+// ============================================================================
+// RC Scripts
+// ----------------------------------------------------------------------------
+"rc.scripts.on.target_title" = "Instaluj skrypty RC na dysku docelowym";
+"rc.scripts.on.target_description" = "Instaluj wszystkie skrypty RC na dysku docelowym.
+Dysk docelowy musi być bootlowalnym dyskiem systemowym OSX.";
+"rc.scripts.on.all.volumes_title" = "Instaluj wszystkie skrypty RC na wszystkich bootowalnych dyskach systemowych OSX.";
+"rc.scripts.on.all.volumes_description" = "Instaluj wszystkie skrypty RC na wszystkich wewnętrznych bootowalnych dyskach systemowych OSX.";
+"OptionalRCScripts" = "Opcjonalne skrypty RC";
+"disable_sleep_proxy_client_title" = "Disable sleep proxy client";
+"disable_sleep_proxy_client_description" = "Wyłącz mDNSResponder - usługi klienta proxy sleepu. Zapobiega to automatycznemu wybudzaniu ze sleepu co godzinę.";
+
+// ============================================================================
+// Clover Preference Pane
+// ----------------------------------------------------------------------------
+"CloverPrefpane_title" = "Zainstaluj panel preferencji Clover";
+"CloverPrefpane_description" = "Instaluje panel preferencji Clover na dysku docelowym.
+Zawiera CloverUpdater, który poinformuje Cię o dostępnych aktualizacjach.";
+
+// ----------------------------------------------------------------------------

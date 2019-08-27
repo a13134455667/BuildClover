@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <title></title>
+  <style type="text/css">
+	  body {font-family: 'Helvetica Neue', 'Lucida Grande', sans-serif; text-align: left; font-size: 13px; margin-bottom: 0; padding-bottom: 0; font-weight: 400; color: #404040;}
+    p.p1 {margin: 0}
+    p.p2 {margin: 0.5em 0}
+    span.s1 {font-weight: 600 }
+    ul {font-weight: 600}
+    li {margin: 0 0 .4em 0; font-weight: 400}
+  </style>
+</head>
+<body>
+<p class="p1">
+	<span class="s1">Clover v2 </span>
+	to bootloader typu open source bazujący na różnych projektach: Clover,
+rEFIt, XNU, VirtualBox. 
+	<span>Podstawą Clover v2 jest ostatnie wydanie EDK2.</span>
+</p>
+
+<p class="p2"><a href="http://sourceforge.net/projects/cloverefiboot/">http://sourceforge.net/projects/cloverefiboot/</a></p>
+
+<p><b>Główne funkcje:</b></p>  
+<ul>
+<li>Uruchamianie macOS 10.xx, Windows EFI oraz Linux EFI</li>
+<li>Obsługa RuntimeServices dla systemów operacyjnych, nie dostępna w innych
+bootloaderach</li>
+<li>Automatyczna detekcja sprzętu z możliwością ręcznej edycji ustawień w
+pliku. Konfiguracyjnym config.plist</li>
+<li>Dzięki Clover można przełączać się między systemami za pośrednictwem panelu
+preferencji </li>
+<li>UUID zapisany w config.plist będzie taki sam jak w OS.</li>
+<li>SMBIOS poprawiany do standardu 2.6</li>
+<li>Tabele ACPI poprawiane do standardu 4.0.</li>
+<li>Niestandardowe tabele DSDT ładowane z bootowanej partycji lub z katalogu EFI</li>
+<li>DSDT patching on the fly by fixes and by patterns;</li>
+<li>Konfigurowalny RestartFix, poprawka sleep/wake oraz wstrzykiwanie PCIRootUID</li>
+<li>Obsługa szerokiego zakresu kart graficznych ATI, Nvidia oraz Intel z
+możliwością ręcznej. Konfiguracji w pliku config.plist.</li>
+<li>Poprawka dla USB (łącznie z obsługą USB 3.0)</li>
+<li>Wstrzykiwanie ID dla karty dźwiękowej oraz informacji karty sieciowej</li>
+<li>Generowanie stanów turbo, P-State oraz C-State w celu uzyskania natywnego
+zarządzania</li>
+<li>Ładowanie tabel ACPI (SSDT-xx, APIC, BOOT, SLIC, SLIT, SRAT, UEFI...)</li>
+<li>Extra kernel extensions loading;</li>
+<li>Kernel and kext patching on the fly;</li>
+<li>Set NVRAM variables for different purpose;</li>
+<li>Domyślny rozruch systemu po upływie ustalonego czasu, konfigurowalne GUI
+oraz zapisywanie screenów z GUI za pomocą klawisza F10</li>
+<li>Zapisywanie boot.log w OS oraz preboot.log w GUI za pomocą klawisza F2</li>
+</ul>
+</body>
+</html>

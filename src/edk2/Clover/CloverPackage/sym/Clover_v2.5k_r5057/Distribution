@@ -1,0 +1,884 @@
+<?xml version="1.0"?>
+
+<installer-gui-script minSpecVersion='1'>
+
+	<options hostArchitectures='i386' allow-external-scripts='true'/>
+	<domains enable_anywhere="true"/>
+
+	<welcome file='Welcome.html'/>
+	<!-- license file="License.rtf" sla="EA0401" -->
+	<readme file='Description.html'/>
+	<conclusion file="Conclusion.html"/>
+	<background file='background.tiff' alignment='topleft' scaling='proportional'/>
+  <background-darkAqua file="background.tiff" alignment='topleft' scaling="proportional"/>
+  
+	<title>Clover v2.5k r5057 EFI bootloader</title>
+
+	<script>
+    
+	function installCheckScript()
+	{
+		var obj = system.ioregistry.matchingClass("AppleSMC");
+		if (obj) {
+			system.log('installCheckScript: Found AppleSMC');
+			my.result.message = system.localizedStringWithFormat('Intel_Mac_message');
+			my.result.type = 'Fatal';
+			return false;
+		}
+		system.log('installCheckScript: Passed.');
+		return false;
+	}
+
+	function volCheckScript()
+	{
+		system.log('volCheckScript: Passed.');
+		return true;
+	}
+  
+	function upgrade_allowed(){
+		var upgradable = true;
+		var upgradeAction = my.choice.packageUpgradeAction;
+
+		if((upgradeAction == "downgrade") || (upgradeAction == "mixed")){
+			my.choice.tooltip = system.localizedString('Newer_Package_Installed_message');
+			upgradable = false;
+		}
+
+		return upgradable;
+	}
+
+	function systemHasGPT(){
+		var obj = system.ioregistry.matchingName("EFI System Partition");
+		if (obj)
+			return true;
+		return false;
+	}
+
+	function checkFileExists(file){
+		if (my.target) {
+			return system.files.fileExistsAtPath(my.target.mountpoint + file)
+		}
+		return false;
+	}
+  
+  function cloverPackageFirstRun(){
+    var installer_plist = '/Library/Preferences/com.projectosx.clover.installer.plist';
+    if (checkFileExists(my.target.mountpoint + installer_plist)) {
+      return false;
+    }
+		return true;
+	}
+
+	function choicePreviouslySelected(option) {
+		var installer_plist = '/Library/Preferences/com.projectosx.clover.installer.plist';
+		if (checkFileExists(installer_plist)) {
+			dict = system.files.plistAtPath(my.target.mountpoint + installer_plist);
+			return dict[option] == undefined ? false : dict[option];
+		}
+		return false;
+	}
+
+	function checkBootFromUEFI() {
+		var classObjects = system.ioregistry.matchingName('efi','IODeviceTree');
+		if (classObjects) {
+			for(var i = 0; i &lt; classObjects.length; i++) {
+				var obj = classObjects[i];
+				if ( obj.hasOwnProperty("firmware-vendor") != true)
+					continue;
+				if (obj["firmware-vendor"].toString() == 'C,L,O,V,E,R') {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+  
+  function checkFileSystemIsWritable()
+	{
+    var writable = true;
+    var cmd = '[[ yes == $(diskutil info / | grep -i \'read-only volume:\' | awk \'{print $NF}\' | tr \'[:upper:]\' \'[:lower:]\') ]]'
+    r = system.run('/bin/bash', '-c', cmd);
+    system.log('checkFileSystemIsWritable diskutil result = ' + r);
+
+    writable = (r != 0);
+    
+    if (writable) {
+      system.log('checkFileSystemIsWritable: file system is writable: Passed');
+    } else {
+      system.log('checkFileSystemIsWritable: root file system is read only, try to make it RW...');
+      var cmd2 = '/usr/bin/osascript -e\''
+      cmd2 += 'do shell script "mount -uw /'
+      cmd2 += '" with prompt '
+      cmd2 += '"' + system.localizedString('MakingRootRW') + '"'
+      cmd2 += ' with administrator privileges\''
+      
+      try
+      {
+        r2 = system.run('/bin/bash', '-c', cmd2);
+        writable = (r2 == 0);
+        if (writable) {
+          system.log('mount -uw / succeded.');
+        }
+      } catch (e) {
+        system.log('mount -uw / returned with error: ' + e);
+        writable = false;
+      }
+    
+      if (writable == false) {
+        my.result.message = system.localizedString('GoToFailRootRW');
+        my.result.type = 'Fatal';
+      }
+    }
+
+		return writable;
+	}
+
+	</script>
+  <installation-check script="checkFileSystemIsWritable()"/>
+
+	<choices-outline>
+		<line choice="Pre"/>
+		<line choice="UEFI.only"/>
+		<line choice="Target.ESP"/>
+		<line choice="BiosBoot"/>
+		<line choice="Utils"/>
+		<line choice="EFIFolder"/>
+		<line choice="off"/>
+		<line choice="Bootloader">
+			<line choice="bootNo"/>
+			<line choice="boot0af"/>
+			<line choice="boot0ss"/>
+		</line>
+		<line choice="AltBoot"/>
+		<line choice="CloverEFI">
+			<line choice="cloverEFI.64.sata"/>
+			<line choice="cloverEFI.64.blockio"/>
+		</line>
+		<line choice="Drivers64">
+			<line choice="Recommended64">
+				<line choice="AudioDxe"/>
+				<line choice="FSInject"/>
+				<line choice="SMCHelper"/>
+				<line choice="XhciDxe"/>
+			</line>
+			<line choice="FileSystem64">
+				<line choice="ApfsDriverLoader"/>
+				<line choice="GrubEXFAT"/>
+				<line choice="GrubISO9660"/>
+				<line choice="GrubNTFS"/>
+				<line choice="GrubUDF"/>
+			</line>
+			<line choice="Drivers64FV2">
+				<line choice="AppleImageCodec"/>
+				<line choice="AppleKeyAggregator"/>
+				<line choice="AppleUITheme"/>
+				<line choice="FirmwareVolume"/>
+			</line>
+		</line>
+		<line choice="Drivers64UEFI">
+			<line choice="Recommended64UEFI">
+				<line choice="AudioDxe.UEFI"/>
+				<line choice="DataHubDxe.UEFI"/>
+				<line choice="FSInject.UEFI"/>
+				<line choice="SMCHelper.UEFI"/>
+			</line>
+			<line choice="HID64UEFI">
+				<line choice="Ps2MouseDxe.UEFI"/>
+				<line choice="UsbKbDxe.UEFI"/>
+				<line choice="UsbMouseDxe.UEFI"/>
+			</line>
+			<line choice="FileSystem64UEFI">
+				<line choice="ApfsDriverLoader.UEFI"/>
+				<line choice="Fat.UEFI"/>
+				<line choice="VBoxExt2.UEFI"/>
+				<line choice="VBoxExt4.UEFI"/>
+				<line choice="VBoxHfs.UEFI"/>
+				<line choice="VBoxIso9600.UEFI"/>
+			</line>
+			<line choice="MemoryFix64UEFI">
+				<line choice="OsxAptioFix3Drv.UEFI"/>
+				<line choice="OsxAptioFixDrv.UEFI"/>
+				<line choice="OsxLowMemFixDrv.UEFI"/>
+			</line>
+			<line choice="Drivers64UEFIFV2">
+				<line choice="AppleImageCodec.UEFI"/>
+				<line choice="AppleKeyAggregator.UEFI"/>
+				<line choice="AppleKeyFeeder.UEFI"/>
+				<line choice="AppleUITheme.UEFI"/>
+				<line choice="FirmwareVolume.UEFI"/>
+				<line choice="HashServiceFix.UEFI"/>
+			</line>
+			<line choice="Other64UEFI">
+				<line choice="CsmVideoDxe.UEFI"/>
+				<line choice="EmuVariableUefi.UEFI"/>
+				<line choice="EnglishDxe.UEFI"/>
+				<line choice="NvmExpressDxe.UEFI"/>
+				<line choice="OsxFatBinaryDrv.UEFI"/>
+				<line choice="PartitionDxe.UEFI"/>
+			</line>
+		</line>
+		<line choice="rc.scripts.on.target"/>
+		<line choice="rc.scripts.on.all.volumes"/>
+		<line choice="rc.scripts.core"/>
+		<line choice="OptionalRCScripts">
+			<line choice="disable_sleep_proxy_client"/>
+		</line>
+		<line choice="CloverPrefpane"/>
+		<line choice="Post"/>
+	</choices-outline>
+
+	<choice
+		id="Pre"
+		title="Pre"
+		description="Pre"
+		start_visible="false" start_selected="true">
+		<pkg-ref id="org.clover.pre"/>
+	</choice>
+
+	<choice
+		id="UEFI.only"
+		title="UEFI.only_title"
+		description="UEFI.only_description"
+		start_visible="true" start_selected="choicePreviouslySelected('org.clover.uefi.only')">
+		<pkg-ref id="org.clover.uefi.only"/>
+	</choice>
+
+	<choice
+		id="Target.ESP"
+		title="Target.ESP_title"
+		description="Target.ESP_description"
+		start_visible="true" start_selected="choicePreviouslySelected('org.clover.target.esp')"
+		selected="choices['UEFI.only'].selected || choices['Target.ESP'].selected">
+		<pkg-ref id="org.clover.target.esp"/>
+	</choice>
+
+	<choice
+		id="BiosBoot"
+		title="BiosBoot"
+		description="BiosBoot"
+		start_visible="false" start_selected="false">
+		<pkg-ref id="org.clover.biosboot"/>
+	</choice>
+
+	<choice
+		id="Utils"
+		title="Utils"
+		description="Utils"
+		start_visible="false" start_selected="true">
+		<pkg-ref id="org.clover.utils"/>
+	</choice>
+
+	<choice
+		id="EFIFolder"
+		title="EFIFolder"
+		description="EFIFolder"
+		start_visible="false" start_selected="true">
+		<pkg-ref id="org.clover.efifolder"/>
+	</choice>
+
+	<choice
+		id="off"
+		title="off_title"
+		description="off_description"
+		start_visible="true" start_selected="choicePreviouslySelected('org.clover.off')">
+		<pkg-ref id="org.clover.off"/>
+	</choice>
+
+	<choice
+		id="Bootloader"
+		title="Bootloader_title"
+		description="Bootloader_description"
+		enabled="!choices['UEFI.only'].selected" visible="!choices['UEFI.only'].selected">
+	</choice>
+
+	<choice
+		id="AltBoot"
+		title="AltBoot_title"
+		description="AltBoot_description"
+		start_selected="choicePreviouslySelected('org.clover.bootloader.altboot')" visible="choices['boot0af'].selected || choices['boot0ss'].selected"
+		selected="!choices['UEFI.only'].selected &amp;&amp; choices['AltBoot'].selected">
+		<pkg-ref id="org.clover.biosboot"/>
+		<pkg-ref id="org.clover.utils"/>
+		<pkg-ref id="org.clover.bootloader.altboot"/>
+	</choice>
+
+	<choice
+		id="bootNo"
+		title="bootNo_title"
+		description="bootNo_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="choicePreviouslySelected('org.clover.bootloader.bootno') || checkBootFromUEFI()"
+		selected="(choices['UEFI.only'].selected) || !(choices['boot0af'].selected || choices['boot0ss'].selected)">
+		<pkg-ref id="org.clover.bootloader.bootno"/>
+	</choice>
+
+	<choice
+		id="boot0af"
+		title="boot0af_title"
+		description="boot0af_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="choicePreviouslySelected('org.clover.bootloader.boot0af')"
+		selected="!(choices['bootNo'].selected || choices['boot0ss'].selected)">
+		<pkg-ref id="org.clover.biosboot"/>
+		<pkg-ref id="org.clover.utils"/>
+		<pkg-ref id="org.clover.bootloader.boot0af"/>
+	</choice>
+
+	<choice
+		id="boot0ss"
+		title="boot0ss_title"
+		description="boot0ss_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="choicePreviouslySelected('org.clover.bootloader.boot0ss')"
+		selected="!(choices['bootNo'].selected || choices['boot0af'].selected)">
+		<pkg-ref id="org.clover.biosboot"/>
+		<pkg-ref id="org.clover.utils"/>
+		<pkg-ref id="org.clover.bootloader.boot0ss"/>
+	</choice>
+
+	<choice
+		id="CloverEFI"
+		title="CloverEFI_title"
+		description="CloverEFI_description"
+		enabled="!choices['UEFI.only'].selected" visible="!choices['UEFI.only'].selected">
+	</choice>
+
+	<choice
+		id="cloverEFI.64.sata"
+		title="cloverEFI.64.sata_title"
+		description="cloverEFI.64.sata_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="choicePreviouslySelected('org.clover.cloverefi.64.sata')"
+		selected="(!choices['UEFI.only'].selected) &amp;&amp; !(choices['cloverEFI.64.blockio'].selected)">
+		<pkg-ref id="org.clover.biosboot"/>
+		<pkg-ref id="org.clover.cloverefi.64.sata"/>
+	</choice>
+
+	<choice
+		id="cloverEFI.64.blockio"
+		title="cloverEFI.64.blockio_title"
+		description="cloverEFI.64.blockio_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="choicePreviouslySelected('org.clover.cloverefi.64.blockio')"
+		selected="(!choices['UEFI.only'].selected) &amp;&amp; !(choices['cloverEFI.64.sata'].selected)">
+		<pkg-ref id="org.clover.biosboot"/>
+		<pkg-ref id="org.clover.cloverefi.64.blockio"/>
+	</choice>
+
+	<choice
+		id="Drivers64"
+		title="Drivers64_title"
+		description="Drivers64_description"
+		enabled="!choices['UEFI.only'].selected" visible="!choices['UEFI.only'].selected">
+	</choice>
+
+	<choice
+		id="Recommended64"
+		title="Recommended64_title"
+		description="Recommended64_description"
+		enabled="!choices['UEFI.only'].selected" visible="!choices['UEFI.only'].selected">
+	</choice>
+
+	<choice
+		id="AudioDxe"
+		title="AudioDxe"
+		description="AudioDxe_description"
+		start_visible="true" enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; (cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64.mandatory.audiodxe'))" visible="!choices['UEFI.only'].selected">
+		<pkg-ref id="org.clover.drivers64.mandatory.audiodxe"/>
+	</choice>
+
+	<choice
+		id="FSInject"
+		title="FSInject"
+		description="FSInject_description"
+		start_visible="true" enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; (cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64.mandatory.fsinject'))" visible="!choices['UEFI.only'].selected">
+		<pkg-ref id="org.clover.drivers64.mandatory.fsinject"/>
+	</choice>
+
+	<choice
+		id="SMCHelper"
+		title="SMCHelper"
+		description="SMCHelper_description"
+		start_visible="true" enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; (cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64.mandatory.smchelper'))" visible="!choices['UEFI.only'].selected">
+		<pkg-ref id="org.clover.drivers64.mandatory.smchelper"/>
+	</choice>
+
+	<choice
+		id="XhciDxe"
+		title="XhciDxe"
+		description="XhciDxe_description"
+		start_visible="true" enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; (cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64.mandatory.xhcidxe'))" visible="!choices['UEFI.only'].selected">
+		<pkg-ref id="org.clover.drivers64.mandatory.xhcidxe"/>
+	</choice>
+
+	<choice
+		id="FileSystem64"
+		title="FileSystem64_title"
+		description="FileSystem64_description">
+	</choice>
+
+	<choice
+		id="ApfsDriverLoader"
+		title="ApfsDriverLoader"
+		description="ApfsDriverLoader_description"
+		start_selected="cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64.apfsdriverloader')">
+		<pkg-ref id="org.clover.drivers64.apfsdriverloader"/>
+	</choice>
+
+	<choice
+		id="GrubEXFAT"
+		title="GrubEXFAT"
+		description="GrubEXFAT_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64.grubexfat')">
+		<pkg-ref id="org.clover.drivers64.grubexfat"/>
+	</choice>
+
+	<choice
+		id="GrubISO9660"
+		title="GrubISO9660"
+		description="GrubISO9660_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64.grubiso9660')">
+		<pkg-ref id="org.clover.drivers64.grubiso9660"/>
+	</choice>
+
+	<choice
+		id="GrubNTFS"
+		title="GrubNTFS"
+		description="GrubNTFS_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64.grubntfs')">
+		<pkg-ref id="org.clover.drivers64.grubntfs"/>
+	</choice>
+
+	<choice
+		id="GrubUDF"
+		title="GrubUDF"
+		description="GrubUDF_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64.grubudf')">
+		<pkg-ref id="org.clover.drivers64.grubudf"/>
+	</choice>
+
+	<choice
+		id="Drivers64FV2"
+		title="Drivers64FV2_title"
+		description="Drivers64FV2_description"
+		enabled="!choices['UEFI.only'].selected" visible="!choices['UEFI.only'].selected">
+	</choice>
+
+	<choice
+		id="AppleImageCodec"
+		title="AppleImageCodec"
+		description="AppleImageCodec_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; choicePreviouslySelected('org.clover.fv2.drivers64.appleimagecodec')"
+		selected="choices['AppleImageCodec'].selected">
+		<pkg-ref id="org.clover.fv2.drivers64.appleimagecodec"/>
+	</choice>
+
+	<choice
+		id="AppleKeyAggregator"
+		title="AppleKeyAggregator"
+		description="AppleKeyAggregator_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; choicePreviouslySelected('org.clover.fv2.drivers64.applekeyaggregator')"
+		selected="choices['AppleKeyAggregator'].selected">
+		<pkg-ref id="org.clover.fv2.drivers64.applekeyaggregator"/>
+	</choice>
+
+	<choice
+		id="AppleUITheme"
+		title="AppleUITheme"
+		description="AppleUITheme_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; choicePreviouslySelected('org.clover.fv2.drivers64.appleuitheme')"
+		selected="choices['AppleUITheme'].selected">
+		<pkg-ref id="org.clover.fv2.drivers64.appleuitheme"/>
+	</choice>
+
+	<choice
+		id="FirmwareVolume"
+		title="FirmwareVolume"
+		description="FirmwareVolume_description"
+		enabled="!choices['UEFI.only'].selected" start_selected="!choices['UEFI.only'].selected &amp;&amp; choicePreviouslySelected('org.clover.fv2.drivers64.firmwarevolume')"
+		selected="choices['FirmwareVolume'].selected">
+		<pkg-ref id="org.clover.fv2.drivers64.firmwarevolume"/>
+	</choice>
+
+	<choice
+		id="Drivers64UEFI"
+		title="Drivers64UEFI_title"
+		description="Drivers64UEFI_description">
+	</choice>
+
+	<choice
+		id="Recommended64UEFI"
+		title="Recommended64UEFI_title"
+		description="Recommended64UEFI_description">
+	</choice>
+
+	<choice
+		id="AudioDxe.UEFI"
+		title="AudioDxe"
+		description="AudioDxe.UEFI_description"
+		start_visible="true" start_selected="cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64uefi.mandatory.audiodxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.mandatory.audiodxe.uefi"/>
+	</choice>
+
+	<choice
+		id="DataHubDxe.UEFI"
+		title="DataHubDxe"
+		description="DataHubDxe.UEFI_description"
+		start_visible="true" start_selected="cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64uefi.mandatory.datahubdxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.mandatory.datahubdxe.uefi"/>
+	</choice>
+
+	<choice
+		id="FSInject.UEFI"
+		title="FSInject"
+		description="FSInject.UEFI_description"
+		start_visible="true" start_selected="cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64uefi.mandatory.fsinject.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.mandatory.fsinject.uefi"/>
+	</choice>
+
+	<choice
+		id="SMCHelper.UEFI"
+		title="SMCHelper"
+		description="SMCHelper.UEFI_description"
+		start_visible="true" start_selected="cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64uefi.mandatory.smchelper.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.mandatory.smchelper.uefi"/>
+	</choice>
+
+	<choice
+		id="HID64UEFI"
+		title="HID64UEFI_title"
+		description="HID64UEFI_description">
+	</choice>
+
+	<choice
+		id="Ps2MouseDxe.UEFI"
+		title="Ps2MouseDxe"
+		description="Ps2MouseDxe.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.ps2mousedxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.ps2mousedxe.uefi"/>
+	</choice>
+
+	<choice
+		id="UsbKbDxe.UEFI"
+		title="UsbKbDxe"
+		description="UsbKbDxe.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.usbkbdxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.usbkbdxe.uefi"/>
+	</choice>
+
+	<choice
+		id="UsbMouseDxe.UEFI"
+		title="UsbMouseDxe"
+		description="UsbMouseDxe.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.usbmousedxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.usbmousedxe.uefi"/>
+	</choice>
+
+	<choice
+		id="FileSystem64UEFI"
+		title="FileSystem64UEFI_title"
+		description="FileSystem64UEFI_description">
+	</choice>
+
+	<choice
+		id="ApfsDriverLoader.UEFI"
+		title="ApfsDriverLoader"
+		description="ApfsDriverLoader.UEFI_description"
+		start_selected="cloverPackageFirstRun() || choicePreviouslySelected('org.clover.drivers64uefi.apfsdriverloader.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.apfsdriverloader.uefi"/>
+	</choice>
+
+	<choice
+		id="Fat.UEFI"
+		title="Fat"
+		description="Fat.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.fat.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.fat.uefi"/>
+	</choice>
+
+	<choice
+		id="VBoxExt2.UEFI"
+		title="VBoxExt2"
+		description="VBoxExt2.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.vboxext2.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.vboxext2.uefi"/>
+	</choice>
+
+	<choice
+		id="VBoxExt4.UEFI"
+		title="VBoxExt4"
+		description="VBoxExt4.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.vboxext4.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.vboxext4.uefi"/>
+	</choice>
+
+	<choice
+		id="VBoxHfs.UEFI"
+		title="VBoxHfs"
+		description="VBoxHfs.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.vboxhfs.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.vboxhfs.uefi"/>
+	</choice>
+
+	<choice
+		id="VBoxIso9600.UEFI"
+		title="VBoxIso9600"
+		description="VBoxIso9600.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.vboxiso9600.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.vboxiso9600.uefi"/>
+	</choice>
+
+	<choice
+		id="MemoryFix64UEFI"
+		title="MemoryFix64UEFI_title"
+		description="MemoryFix64UEFI_description">
+	</choice>
+
+	<choice
+		id="OsxAptioFix3Drv.UEFI"
+		title="OsxAptioFix3Drv"
+		description="OsxAptioFix3Drv.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.osxaptiofix3drv.uefi')"
+		selected="(my.choice.selected &amp;&amp; !(choices['OsxAptioFixDrv.UEFI'].selected || choices['OsxLowMemFixDrv.UEFI'].selected))">
+		<pkg-ref id="org.clover.drivers64uefi.osxaptiofix3drv.uefi"/>
+	</choice>
+
+	<choice
+		id="OsxAptioFixDrv.UEFI"
+		title="OsxAptioFixDrv"
+		description="OsxAptioFixDrv.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.osxaptiofixdrv.uefi')"
+		selected="(my.choice.selected &amp;&amp; !(choices['OsxAptioFix3Drv.UEFI'].selected || choices['OsxLowMemFixDrv.UEFI'].selected))">
+		<pkg-ref id="org.clover.drivers64uefi.osxaptiofixdrv.uefi"/>
+	</choice>
+
+	<choice
+		id="OsxLowMemFixDrv.UEFI"
+		title="OsxLowMemFixDrv"
+		description="OsxLowMemFixDrv.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.osxlowmemfixdrv.uefi')"
+		selected="(my.choice.selected &amp;&amp; !(choices['OsxAptioFix3Drv.UEFI'].selected || choices['OsxAptioFixDrv.UEFI'].selected))">
+		<pkg-ref id="org.clover.drivers64uefi.osxlowmemfixdrv.uefi"/>
+	</choice>
+
+	<choice
+		id="Drivers64UEFIFV2"
+		title="Drivers64UEFIFV2_title"
+		description="Drivers64UEFIFV2_description">
+	</choice>
+
+	<choice
+		id="AppleImageCodec.UEFI"
+		title="AppleImageCodec"
+		description="AppleImageCodec.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.fv2.drivers64uefi.appleimagecodec.uefi')">
+		<pkg-ref id="org.clover.fv2.drivers64uefi.appleimagecodec.uefi"/>
+	</choice>
+
+	<choice
+		id="AppleKeyAggregator.UEFI"
+		title="AppleKeyAggregator"
+		description="AppleKeyAggregator.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.fv2.drivers64uefi.applekeyaggregator.uefi')">
+		<pkg-ref id="org.clover.fv2.drivers64uefi.applekeyaggregator.uefi"/>
+	</choice>
+
+	<choice
+		id="AppleKeyFeeder.UEFI"
+		title="AppleKeyFeeder"
+		description="AppleKeyFeeder.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.fv2.drivers64uefi.applekeyfeeder.uefi')">
+		<pkg-ref id="org.clover.fv2.drivers64uefi.applekeyfeeder.uefi"/>
+	</choice>
+
+	<choice
+		id="AppleUITheme.UEFI"
+		title="AppleUITheme"
+		description="AppleUITheme.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.fv2.drivers64uefi.appleuitheme.uefi')">
+		<pkg-ref id="org.clover.fv2.drivers64uefi.appleuitheme.uefi"/>
+	</choice>
+
+	<choice
+		id="FirmwareVolume.UEFI"
+		title="FirmwareVolume"
+		description="FirmwareVolume.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.fv2.drivers64uefi.firmwarevolume.uefi')">
+		<pkg-ref id="org.clover.fv2.drivers64uefi.firmwarevolume.uefi"/>
+	</choice>
+
+	<choice
+		id="HashServiceFix.UEFI"
+		title="HashServiceFix"
+		description="HashServiceFix.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.fv2.drivers64uefi.hashservicefix.uefi')">
+		<pkg-ref id="org.clover.fv2.drivers64uefi.hashservicefix.uefi"/>
+	</choice>
+
+	<choice
+		id="Other64UEFI"
+		title="Other64UEFI_title"
+		description="Other64UEFI_description">
+	</choice>
+
+	<choice
+		id="CsmVideoDxe.UEFI"
+		title="CsmVideoDxe"
+		description="CsmVideoDxe.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.csmvideodxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.csmvideodxe.uefi"/>
+	</choice>
+
+	<choice
+		id="EmuVariableUefi.UEFI"
+		title="EmuVariableUefi"
+		description="EmuVariableUefi.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.emuvariableuefi.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.emuvariableuefi.uefi"/>
+	</choice>
+
+	<choice
+		id="EnglishDxe.UEFI"
+		title="EnglishDxe"
+		description="EnglishDxe.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.englishdxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.englishdxe.uefi"/>
+	</choice>
+
+	<choice
+		id="NvmExpressDxe.UEFI"
+		title="NvmExpressDxe"
+		description="NvmExpressDxe.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.nvmexpressdxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.nvmexpressdxe.uefi"/>
+	</choice>
+
+	<choice
+		id="OsxFatBinaryDrv.UEFI"
+		title="OsxFatBinaryDrv"
+		description="OsxFatBinaryDrv.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.osxfatbinarydrv.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.osxfatbinarydrv.uefi"/>
+	</choice>
+
+	<choice
+		id="PartitionDxe.UEFI"
+		title="PartitionDxe"
+		description="PartitionDxe.UEFI_description"
+		start_selected="choicePreviouslySelected('org.clover.drivers64uefi.partitiondxe.uefi')">
+		<pkg-ref id="org.clover.drivers64uefi.partitiondxe.uefi"/>
+	</choice>
+
+	<choice
+		id="rc.scripts.on.target"
+		title="rc.scripts.on.target_title"
+		description="rc.scripts.on.target_description"
+		start_visible="true" start_selected="checkFileExists('/System/Library/CoreServices/boot.efi') &amp;&amp; choicePreviouslySelected('org.clover.rc.scripts.on.target')" start_enabled="checkFileExists('/System/Library/CoreServices/boot.efi')">
+		<pkg-ref id="org.clover.rc.scripts.on.target"/>
+	</choice>
+
+	<choice
+		id="rc.scripts.on.all.volumes"
+		title="rc.scripts.on.all.volumes_title"
+		description="rc.scripts.on.all.volumes_description"
+		start_visible="true" start_selected="choicePreviouslySelected('org.clover.rc.scripts.on.all.volumes')">
+		<pkg-ref id="org.clover.rc.scripts.on.all.volumes"/>
+	</choice>
+
+	<choice
+		id="rc.scripts.core"
+		title="rc.scripts.core"
+		description="rc.scripts.core"
+		start_visible="false"
+		selected="choices['rc.scripts.on.target'].selected || choices['rc.scripts.on.all.volumes'].selected">
+		<pkg-ref id="org.clover.rc.scripts.core"/>
+	</choice>
+
+	<choice
+		id="OptionalRCScripts"
+		title="OptionalRCScripts"
+		description="OptionalRCScripts"
+		enabled="choices['rc.scripts.core'].selected">
+	</choice>
+
+	<choice
+		id="disable_sleep_proxy_client"
+		title="disable_sleep_proxy_client_title"
+		description="disable_sleep_proxy_client_description"
+		start_selected="choicePreviouslySelected('org.clover.optional.rc.scripts.disable.sleep.proxy.client')" enabled="choices['OptionalRCScripts'].enabled">
+		<pkg-ref id="org.clover.optional.rc.scripts.disable.sleep.proxy.client"/>
+	</choice>
+
+	<choice
+		id="CloverPrefpane"
+		title="CloverPrefpane_title"
+		description="CloverPrefpane_description"
+		start_selected="checkFileExists('/bin/launchctl') &amp;&amp; choicePreviouslySelected('org.clover.cloverprefpane')" start_enabled="checkFileExists('/bin/launchctl')">
+		<pkg-ref id="org.clover.cloverprefpane"/>
+	</choice>
+
+	<choice
+		id="Post"
+		title="Post"
+		description="Post"
+		start_visible="false" start_selected="true">
+		<pkg-ref id="org.clover.post"/>
+	</choice>
+
+	<pkg-ref id="org.clover.pre" installKBytes='0' version='v2.5k.0.0.1566830592'>#Pre.pkg</pkg-ref>
+	<pkg-ref id="org.clover.uefi.only" installKBytes='912' version='v2.5k.0.0.1566830592'>#UEFI.only.pkg</pkg-ref>
+	<pkg-ref id="org.clover.target.esp" installKBytes='0' version='v2.5k.0.0.1566830592'>#Target.ESP.pkg</pkg-ref>
+	<pkg-ref id="org.clover.biosboot" installKBytes='944' version='v2.5k.0.0.1566830592'>#BiosBoot.pkg</pkg-ref>
+	<pkg-ref id="org.clover.utils" installKBytes='140' version='v2.5k.0.0.1566830592'>#Utils.pkg</pkg-ref>
+	<pkg-ref id="org.clover.efifolder" installKBytes='4784' version='v2.5k.0.0.1566830592'>#EFIFolder.pkg</pkg-ref>
+	<pkg-ref id="org.clover.off" installKBytes='804' version='v2.5k.0.0.1566830592'>#off.pkg</pkg-ref>
+	<pkg-ref id="org.clover.bootloader.altboot" installKBytes='0' version='v2.5k.0.0.1566830592'>#AltBoot.pkg</pkg-ref>
+	<pkg-ref id="org.clover.bootloader.bootno" installKBytes='0' version='v2.5k.0.0.1566830592'>#bootNo.pkg</pkg-ref>
+	<pkg-ref id="org.clover.bootloader.boot0af" installKBytes='0' version='v2.5k.0.0.1566830592'>#boot0af.pkg</pkg-ref>
+	<pkg-ref id="org.clover.bootloader.boot0ss" installKBytes='0' version='v2.5k.0.0.1566830592'>#boot0ss.pkg</pkg-ref>
+	<pkg-ref id="org.clover.cloverefi.64.sata" installKBytes='0' version='v2.5k.0.0.1566830592'>#cloverEFI.64.sata.pkg</pkg-ref>
+	<pkg-ref id="org.clover.cloverefi.64.blockio" installKBytes='0' version='v2.5k.0.0.1566830592'>#cloverEFI.64.blockio.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.mandatory.audiodxe" installKBytes='48' version='v2.5k.0.0.1566830592'>#AudioDxe.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.mandatory.fsinject" installKBytes='24' version='v2.5k.0.0.1566830592'>#FSInject.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.mandatory.smchelper" installKBytes='8' version='v2.5k.0.0.1566830592'>#SMCHelper.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.mandatory.xhcidxe" installKBytes='40' version='v2.5k.0.0.1566830592'>#XhciDxe.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.apfsdriverloader" installKBytes='12' version='v2.5k.0.0.1566830592'>#ApfsDriverLoader.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.grubexfat" installKBytes='56' version='v2.5k.0.0.1566830592'>#GrubEXFAT.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.grubiso9660" installKBytes='60' version='v2.5k.0.0.1566830592'>#GrubISO9660.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.grubntfs" installKBytes='64' version='v2.5k.0.0.1566830592'>#GrubNTFS.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64.grubudf" installKBytes='60' version='v2.5k.0.0.1566830592'>#GrubUDF.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64.appleimagecodec" installKBytes='20' version='v2.5k.0.0.1566830592'>#AppleImageCodec.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64.applekeyaggregator" installKBytes='8' version='v2.5k.0.0.1566830592'>#AppleKeyAggregator.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64.appleuitheme" installKBytes='4' version='v2.5k.0.0.1566830592'>#AppleUITheme.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64.firmwarevolume" installKBytes='8' version='v2.5k.0.0.1566830592'>#FirmwareVolume.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.mandatory.audiodxe.uefi" installKBytes='48' version='v2.5k.0.0.1566830592'>#AudioDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.mandatory.datahubdxe.uefi" installKBytes='8' version='v2.5k.0.0.1566830592'>#DataHubDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.mandatory.fsinject.uefi" installKBytes='24' version='v2.5k.0.0.1566830592'>#FSInject.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.mandatory.smchelper.uefi" installKBytes='8' version='v2.5k.0.0.1566830592'>#SMCHelper.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.ps2mousedxe.uefi" installKBytes='12' version='v2.5k.0.0.1566830592'>#Ps2MouseDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.usbkbdxe.uefi" installKBytes='24' version='v2.5k.0.0.1566830592'>#UsbKbDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.usbmousedxe.uefi" installKBytes='12' version='v2.5k.0.0.1566830592'>#UsbMouseDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.apfsdriverloader.uefi" installKBytes='12' version='v2.5k.0.0.1566830592'>#ApfsDriverLoader.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.fat.uefi" installKBytes='32' version='v2.5k.0.0.1566830592'>#Fat.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.vboxext2.uefi" installKBytes='20' version='v2.5k.0.0.1566830592'>#VBoxExt2.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.vboxext4.uefi" installKBytes='20' version='v2.5k.0.0.1566830592'>#VBoxExt4.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.vboxhfs.uefi" installKBytes='32' version='v2.5k.0.0.1566830592'>#VBoxHfs.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.vboxiso9600.uefi" installKBytes='28' version='v2.5k.0.0.1566830592'>#VBoxIso9600.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.osxaptiofix3drv.uefi" installKBytes='24' version='v2.5k.0.0.1566830592'>#OsxAptioFix3Drv.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.osxaptiofixdrv.uefi" installKBytes='24' version='v2.5k.0.0.1566830592'>#OsxAptioFixDrv.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.osxlowmemfixdrv.uefi" installKBytes='4' version='v2.5k.0.0.1566830592'>#OsxLowMemFixDrv.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64uefi.appleimagecodec.uefi" installKBytes='20' version='v2.5k.0.0.1566830592'>#AppleImageCodec.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64uefi.applekeyaggregator.uefi" installKBytes='8' version='v2.5k.0.0.1566830592'>#AppleKeyAggregator.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64uefi.applekeyfeeder.uefi" installKBytes='8' version='v2.5k.0.0.1566830592'>#AppleKeyFeeder.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64uefi.appleuitheme.uefi" installKBytes='4' version='v2.5k.0.0.1566830592'>#AppleUITheme.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64uefi.firmwarevolume.uefi" installKBytes='8' version='v2.5k.0.0.1566830592'>#FirmwareVolume.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.fv2.drivers64uefi.hashservicefix.uefi" installKBytes='16' version='v2.5k.0.0.1566830592'>#HashServiceFix.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.csmvideodxe.uefi" installKBytes='32' version='v2.5k.0.0.1566830592'>#CsmVideoDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.emuvariableuefi.uefi" installKBytes='24' version='v2.5k.0.0.1566830592'>#EmuVariableUefi.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.englishdxe.uefi" installKBytes='8' version='v2.5k.0.0.1566830592'>#EnglishDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.nvmexpressdxe.uefi" installKBytes='32' version='v2.5k.0.0.1566830592'>#NvmExpressDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.osxfatbinarydrv.uefi" installKBytes='8' version='v2.5k.0.0.1566830592'>#OsxFatBinaryDrv.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.drivers64uefi.partitiondxe.uefi" installKBytes='24' version='v2.5k.0.0.1566830592'>#PartitionDxe.UEFI.pkg</pkg-ref>
+	<pkg-ref id="org.clover.rc.scripts.on.target" installKBytes='0' version='v2.5k.0.0.1566830592'>#rc.scripts.on.target.pkg</pkg-ref>
+	<pkg-ref id="org.clover.rc.scripts.on.all.volumes" installKBytes='0' version='v2.5k.0.0.1566830592'>#rc.scripts.on.all.volumes.pkg</pkg-ref>
+	<pkg-ref id="org.clover.rc.scripts.core" installKBytes='48' version='v2.5k.0.0.1566830592'>#rc.scripts.core.pkg</pkg-ref>
+	<pkg-ref id="org.clover.optional.rc.scripts.disable.sleep.proxy.client" installKBytes='0' version='v2.5k.0.0.1566830592'>#disable_sleep_proxy_client.pkg</pkg-ref>
+	<pkg-ref id="org.clover.cloverprefpane" installKBytes='2064' version='v2.5k.0.0.1566830592'>#CloverPrefpane.pkg</pkg-ref>
+	<pkg-ref id="org.clover.post" installKBytes='0' version='v2.5k.0.0.1566830592'>#Post.pkg</pkg-ref>
+
+</installer-gui-script>

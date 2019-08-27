@@ -1,0 +1,10 @@
+"Always" = "永遠";
+"Auto" = "Auto";
+"Boot Volume" = "開機磁區";
+"ESP on [%@] %@" = "在 [%1$@] %2$@ 的ESP";
+"Never" = "Never";
+"No" = "No";
+"No description available" = "沒有描述";
+"Select the EFI directory" = "選擇 EFI 資料夾";
+"Set EFI directory" = "設定 EFI 資料夾";
+"Unknown" = "未知";

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<pkg-info format-version="2" identifier="org.clover.drivers64uefi.osxlowmemfixdrv.uefi" version="v2.5k" install-location="/EFIROOTDIR/EFI/CLOVER/drivers/UEFI" auth="root">
+	<payload installKBytes="4" numberOfFiles="2"/>
+	<scripts>
+		<postinstall file="./postinstall"/>
+		<preinstall file="./preinstall"/>
+	</scripts>
+</pkg-info>

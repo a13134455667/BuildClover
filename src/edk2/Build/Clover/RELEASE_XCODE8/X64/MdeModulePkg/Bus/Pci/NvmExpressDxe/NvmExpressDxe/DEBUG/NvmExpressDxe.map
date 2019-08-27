@@ -1,0 +1,409 @@
+# Path: /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/DEBUG/NvmExpressDxe.dll
+# Arch: x86_64
+# Object files:
+[  0] linker synthesized
+[  1] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib(PcdLib.obj)
+[  2] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+[  3] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CheckSum.obj)
+[  4] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[  5] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes64.obj)
+[  6] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+[  7] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+[  8] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[  9] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 10] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+[ 11] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU64.obj)
+[ 12] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU32.obj)
+[ 13] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x64.obj)
+[ 14] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+[ 15] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultS64x64.obj)
+[ 16] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ModU64x32.obj)
+[ 17] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+[ 18] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU64.obj)
+[ 19] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU32.obj)
+[ 20] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet64.obj)
+[ 21] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet32.obj)
+[ 22] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet64.obj)
+[ 23] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet32.obj)
+[ 24] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo64.obj)
+[ 25] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo32.obj)
+[ 26] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x64Remainder.obj)
+[ 27] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+[ 28] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+[ 29] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivS64x64Remainder.obj)
+[ 30] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ARShiftU64.obj)
+[ 31] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+[ 32] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+[ 33] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Cpu.obj)
+[ 34] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+[ 35] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+[ 36] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+[ 37] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(FilePaths.obj)
+[ 38] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Thunk16.obj)
+[ 39] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(WriteTr.obj)
+[ 40] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Lfence.obj)
+[ 41] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Non-existing.obj)
+[ 42] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+[ 43] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+[ 44] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteIdtr.obj)
+[ 45] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteGdtr.obj)
+[ 46] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Thunk.obj)
+[ 47] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadIdtr.obj)
+[ 48] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadGdtr.obj)
+[ 49] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Msr.obj)
+[ 50] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86GetInterruptState.obj)
+[ 51] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxSave.obj)
+[ 52] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxRestore.obj)
+[ 53] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging64.obj)
+[ 54] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging32.obj)
+[ 55] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging64.obj)
+[ 56] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging32.obj)
+[ 57] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86RdRand.obj)
+[ 58] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86PatchInstruction.obj)
+[ 59] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86SpeculationBarrier.obj)
+[ 60] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GccInline.obj)
+[ 61] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[ 62] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 63] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[ 64] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableDisableInterrupts.obj)
+[ 65] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisablePaging64.obj)
+[ 66] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuId.obj)
+[ 67] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuIdEx.obj)
+[ 68] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableCache.obj)
+[ 69] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisableCache.obj)
+[ 70] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RdRand.obj)
+[ 71] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ChkStkGcc.obj)
+[ 72] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+[ 73] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem64Wrapper.obj)
+[ 74] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem32Wrapper.obj)
+[ 75] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem16Wrapper.obj)
+[ 76] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem8Wrapper.obj)
+[ 77] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+[ 78] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+[ 79] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+[ 80] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem32Wrapper.obj)
+[ 81] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem16Wrapper.obj)
+[ 82] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+[ 83] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+[ 84] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(IsZeroBufferWrapper.obj)
+[ 85] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+[ 86] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+[ 87] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+[ 88] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+[ 89] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+[ 90] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+[ 91] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+[ 92] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+[ 93] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilities.obj)
+[ 94] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathToText.obj)
+[ 95] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathFromText.obj)
+[ 96] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(UefiDevicePathLib.obj)
+[ 97] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+[ 98] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLibPrint.obj)
+[ 99] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiNotTiano.obj)
+[100] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiDriverModel.obj)
+[101] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Console.obj)
+[102] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLib.obj)
+[103] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Acpi.obj)
+[104] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull/OUTPUT/BaseReportStatusCodeLibNull.lib(BaseReportStatusCodeLib.obj)
+[105] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDxe.lib(NvmExpressBlockIo.obj)
+[106] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDxe.lib(ComponentName.obj)
+[107] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDxe.lib(NvmExpress.obj)
+[108] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDxe.lib(NvmExpressDiskInfo.obj)
+[109] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDxe.lib(NvmExpressHci.obj)
+[110] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDxe.lib(NvmExpressPassthru.obj)
+[111] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/OUTPUT/NvmExpressDxe.lib(AutoGen.obj)
+# Sections:
+# Address	Size    	Segment	Section
+0x00000240	0x00007683	__TEXT	__text
+0x000078D0	0x0000002D	__TEXT	__const
+0x000078FD	0x000002C7	__TEXT	__cstring
+0x00007BC4	0x00000054	__TEXT	__ustring
+0x00007C20	0x00000138	__DATA	__const
+0x00007D60	0x000001C8	__DATA	__data
+0x00007F28	0x00000028	__DATA	__common
+# Symbols:
+# Address	Size    	File  Name
+0x00000240	0x00000000	[  0] ___dso_handle
+0x00000240	0x00000008	[  2] _DebugCodeEnabled
+0x00000248	0x00000006	[  9] _InternalAssertJumpBuffer
+0x0000024E	0x0000000A	[ 10] _RShiftU64
+0x00000258	0x0000000A	[ 14] _MultU64x32
+0x00000262	0x0000000A	[ 17] _LShiftU64
+0x0000026C	0x0000000A	[ 26] _DivU64x64Remainder
+0x00000276	0x0000000A	[ 27] _DivU64x32Remainder
+0x00000280	0x00000010	[ 34] _InitializeListHead
+0x00000290	0x0000001A	[ 34] _InsertHeadList
+0x000002AA	0x0000001B	[ 34] _InsertTailList
+0x000002C5	0x00000009	[ 34] _GetFirstNode
+0x000002CE	0x00000009	[ 34] _GetNextNode
+0x000002D7	0x0000000C	[ 34] _IsListEmpty
+0x000002E3	0x0000000C	[ 34] _IsNull
+0x000002EF	0x0000001B	[ 34] _RemoveEntryList
+0x0000030A	0x00000031	[ 35] _StrnLenS
+0x0000033B	0x0000002F	[ 35] _AsciiStrnLenS
+0x0000036A	0x0000003C	[ 36] _StrSize
+0x000003A6	0x00000039	[ 36] _AsciiStrSize
+0x000003DF	0x000000B6	[ 36] _AsciiStrnCmp
+0x00000498	0x00000000	[ 38] SavedGdt
+0x00000498	0x0000000A	[ 38] _m16Start
+0x000004A2	0x00000008	[ 38] _BackFromUserCode
+0x000004AA	0x00000014	[ 38] _BackFromUserCode.Base
+0x000004BE	0x0000000D	[ 38] _BackFromUserCode.ThunkAttrEnd
+0x000004CB	0x0000000B	[ 38] _BackFromUserCode.1
+0x000004D6	0x00000036	[ 38] _BackFromUserCode.2
+0x0000050C	0x0000001C	[ 38] _BackFromUserCode.SavedCr4End
+0x00000528	0x0000000B	[ 38] _BackFromUserCode.SavedCr0End
+0x00000533	0x0000000B	[ 38] _BackFromUserCode.X64JmpEnd
+0x0000053E	0x00000002	[ 38] _BackFromUserCode.SavedSpEnd
+0x00000540	0x00000006	[ 38] _EntryPoint
+0x00000546	0x00000002	[ 38] _16Gdtr
+0x00000548	0x00000008	[ 38] _16GdtrBase
+0x00000550	0x00000006	[ 38] _16Idtr
+0x00000556	0x00000028	[ 38] _ToUserCode
+0x0000057E	0x0000000F	[ 38] _ToUserCode.Base
+0x0000058D	0x0000001B	[ 38] _ToUserCode.RealMode
+0x000005A8	0x00000008	[ 38] _NullSeg
+0x000005B0	0x00000008	[ 38] _16Code
+0x000005B8	0x00000008	[ 38] _16Data
+0x000005C0	0x00000008	[ 38] _32Data
+0x000005C8	0x000000B4	[ 38] _InternalAsmThunk16
+0x0000067C	0x00000020	[ 38] _InternalAsmThunk16.RetFromRealMode
+0x0000069C	0x00000006	[ 39] _AsmWriteTr
+0x000006A2	0x00000004	[ 40] _AsmLfence
+0x000006A6	0x0000000E	[ 42] _InternalMathLShiftU64
+0x000006B4	0x0000000E	[ 42] _InternalMathRShiftU64
+0x000006C2	0x0000000C	[ 42] _InternalMathMultU64x32
+0x000006CE	0x00000023	[ 42] _InternalMathDivRemU64x32
+0x000006F1	0x00000021	[ 42] _InternalMathDivRemU64x64
+0x00000712	0x00000009	[ 43] _ReadUnaligned16
+0x0000071B	0x0000000B	[ 43] _WriteUnaligned16
+0x00000726	0x0000000D	[ 43] _ReadUnaligned24
+0x00000733	0x00000008	[ 43] _ReadUnaligned32
+0x0000073B	0x0000000A	[ 43] _WriteUnaligned32
+0x00000745	0x00000009	[ 43] _ReadUnaligned64
+0x0000074E	0x0000000C	[ 43] _WriteUnaligned64
+0x0000075A	0x0000000F	[ 61] _InternalSwitchStack
+0x00000769	0x00000043	[ 62] _SetJump
+0x000007AC	0x0000007F	[ 62] CetDone
+0x0000082B	0x00000030	[ 63] _InternalLongJump
+0x0000085B	0x0000007C	[ 63] CetDone
+0x000008D7	0x00000003	[ 64] _EnableDisableInterrupts
+0x000008DA	0x0000003A	[ 65] _InternalX86DisablePaging64
+0x00000914	0x00000027	[ 65] _InternalX86DisablePaging64.0
+0x0000093B	0x00000000	[ 65] mTransitionEnd
+0x0000093B	0x0000000F	[ 66] _AsmCpuid
+0x0000094A	0x00000005	[ 66] _AsmCpuid.0
+0x0000094F	0x00000007	[ 66] _AsmCpuid.1
+0x00000956	0x00000009	[ 66] _AsmCpuid.2
+0x0000095F	0x00000003	[ 66] _AsmCpuid.3
+0x00000962	0x00000015	[ 67] _AsmCpuidEx
+0x00000977	0x00000007	[ 67] _AsmCpuidEx.0
+0x0000097E	0x00000007	[ 67] _AsmCpuidEx.1
+0x00000985	0x00000009	[ 67] _AsmCpuidEx.2
+0x0000098E	0x00000003	[ 67] _AsmCpuidEx.3
+0x00000991	0x00000013	[ 68] _AsmEnableCache
+0x000009A4	0x00000013	[ 69] _AsmDisableCache
+0x000009B7	0x00000009	[ 70] _InternalX86RdRand16
+0x000009C0	0x00000009	[ 70] rn16_ok
+0x000009C9	0x00000009	[ 70] _InternalX86RdRand32
+0x000009D2	0x00000008	[ 70] rn32_ok
+0x000009DA	0x0000000A	[ 70] _InternalX86RdRand64
+0x000009E4	0x00000009	[ 70] rn64_ok
+0x000009ED	0x000000E8	[ 72] _InternalMemSetMem
+0x00000AD5	0x00000014	[ 77] _ZeroMem
+0x00000AE9	0x00000019	[ 83] _CopyMem
+0x00000B02	0x0000000D	[ 85] _InternalMemZeroMem
+0x00000B0F	0x000001E2	[ 87] _InternalMemCopyMem
+0x00000CF1	0x00000021	[ 88] _UefiBootServicesTableLibConstructor
+0x00000D13	0x000010B9	[ 89] _BasePrintLibSPrintMarker
+0x00001DCC	0x000000AF	[ 89] _BasePrintLibSPrint
+0x00001E7B	0x000000B7	[ 90] _UnicodeSPrintAsciiFormat
+0x00001F32	0x0000003D	[ 91] _AllocatePool
+0x00001F6F	0x0000003B	[ 91] _InternalAllocateZeroPool
+0x00001FAA	0x00000097	[ 91] _AllocateZeroPool
+0x00002041	0x00000053	[ 91] _InternalAllocateCopyPool
+0x00002094	0x00000097	[ 91] _AllocateCopyPool
+0x0000212B	0x00000016	[ 91] _FreePool
+0x00002141	0x00000013	[ 92] _UefiRuntimeServicesTableLibConstructor
+0x00002154	0x000000DE	[ 93] _IsDevicePathValid
+0x00002232	0x00000016	[ 93] _IsDevicePathEnd
+0x00002248	0x0000001A	[ 93] _DevicePathNodeLength
+0x00002262	0x0000000E	[ 93] _SetDevicePathNodeLength
+0x00002270	0x00000066	[ 93] _UefiDevicePathLibGetDevicePathSize
+0x000022D6	0x0000002C	[ 93] _UefiDevicePathLibDuplicateDevicePath
+0x00002302	0x000000CD	[ 93] _UefiDevicePathLibAppendDevicePath
+0x000023CF	0x000000A3	[ 93] _UefiDevicePathLibAppendDevicePathNode
+0x00002472	0x0000000A	[ 96] _GetDevicePathSize
+0x0000247C	0x0000000A	[ 96] _DuplicateDevicePath
+0x00002486	0x0000000A	[ 96] _AppendDevicePath
+0x00002490	0x0000000A	[ 96] _AppendDevicePathNode
+0x0000249A	0x00000034	[ 97] __DriverUnloadHandler
+0x000024CE	0x00000096	[ 97] __ModuleEntryPoint
+0x00002564	0x000000C4	[100] _EfiLibInstallDriverBindingComponentName2
+0x00002628	0x00000008	[102] _UefiLibConstructor
+0x00002630	0x0000007F	[102] _EfiTestManagedDevice
+0x000026AF	0x0000007D	[102] _EfiTestChildHandle
+0x0000272C	0x0000015A	[102] _LookupUnicodeString2
+0x00002886	0x00000204	[102] _AddUnicodeString2
+0x00002A8A	0x0000004F	[102] _FreeUnicodeStringTable
+0x00002AD9	0x00000008	[104] _ReportStatusCode
+0x00002AE1	0x00000008	[104] _ReportProgressCodeEnabled
+0x00002AE9	0x00000008	[104] _ReportErrorCodeEnabled
+0x00002AF1	0x00000008	[104] _ReportDebugCodeEnabled
+0x00002AF9	0x000000F0	[105] _ReadSectors
+0x00002BE9	0x00000101	[105] _WriteSectors
+0x00002CEA	0x00000152	[105] _NvmeRead
+0x00002E3C	0x00000152	[105] _NvmeWrite
+0x00002F8E	0x00000093	[105] _NvmeFlush
+0x00003021	0x00000153	[105] _AsyncIoCallback
+0x00003174	0x000001DE	[105] _AsyncReadSectors
+0x00003352	0x000001E6	[105] _AsyncWriteSectors
+0x00003538	0x000001DE	[105] _NvmeAsyncRead
+0x00003716	0x000001DE	[105] _NvmeAsyncWrite
+0x000038F4	0x000000E1	[105] _NvmeBlockIoReset
+0x000039D5	0x00000148	[105] _NvmeBlockIoReadBlocks
+0x00003B1D	0x00000148	[105] _NvmeBlockIoWriteBlocks
+0x00003C65	0x000000D7	[105] _NvmeBlockIoFlushBlocks
+0x00003D3C	0x0000014D	[105] _NvmeBlockIoResetEx
+0x00003E89	0x000001A3	[105] _NvmeBlockIoReadBlocksEx
+0x0000402C	0x000001A3	[105] _NvmeBlockIoWriteBlocksEx
+0x000041CF	0x000000A7	[105] _NvmeBlockIoFlushBlocksEx
+0x00004276	0x000000EB	[105] _TrustTransferNvmeDevice
+0x00004361	0x000000EE	[105] _NvmeStorageSecurityReceiveData
+0x0000444F	0x000000E8	[105] _NvmeStorageSecuritySendData
+0x00004537	0x0000003A	[106] _NvmExpressComponentNameGetDriverName
+0x00004571	0x000000D3	[106] _NvmExpressComponentNameGetControllerName
+0x00004644	0x00000164	[107] _NvmExpressDriverBindingSupported
+0x000047A8	0x0000048E	[107] _NvmExpressDriverBindingStart
+0x00004C36	0x00000255	[107] _NvmExpressDriverBindingStop
+0x00004E8B	0x000004C6	[107] _EnumerateNvmeDevNamespace
+0x00005351	0x00000053	[107] _DiscoverAllNamespaces
+0x000053A4	0x0000021B	[107] _UnregisterNvmeNamespace
+0x000055BF	0x0000034D	[107] _ProcessAsyncTaskList
+0x0000590C	0x00000157	[107] _NvmExpressUnload
+0x00005A63	0x00000069	[107] _NvmExpressDriverEntry
+0x00005ACC	0x00000010	[108] _NvmExpressDiskInfoInquiry
+0x00005ADC	0x00000049	[108] _NvmExpressDiskInfoIdentify
+0x00005B25	0x00000010	[108] _NvmExpressDiskInfoSenseData
+0x00005B35	0x00000010	[108] _NvmExpressDiskInfoWhichIde
+0x00005B45	0x00000027	[108] _InitializeDiskInfo
+0x00005B6C	0x00000045	[109] _ReadNvmeControllerCapabilities
+0x00005BB1	0x00000047	[109] _ReadNvmeControllerConfiguration
+0x00005BF8	0x00000047	[109] _ReadNvmeControllerStatus
+0x00005C3F	0x000000F0	[109] _NvmeDisableController
+0x00005D2F	0x000000EF	[109] _NvmeEnableController
+0x00005E1E	0x000000A3	[109] _NvmeIdentifyController
+0x00005EC1	0x000000AA	[109] _NvmeIdentifyNamespace
+0x00005F6B	0x00000134	[109] _NvmeCreateIoCompletionQueue
+0x0000609F	0x00000149	[109] _NvmeCreateIoSubmissionQueue
+0x000061E8	0x00000394	[109] _NvmeControllerInit
+0x0000657C	0x00000294	[109] _NvmeShutdownAllControllers
+0x00006810	0x00000051	[109] _NvmeRegisterShutdownNotification
+0x00006861	0x00000044	[109] _NvmeUnregisterShutdownNotification
+0x000068A5	0x00000006	[110] _NvmeDumpStatus
+0x000068AB	0x0000018F	[110] _NvmeCreatePrpList
+0x00006A3A	0x000001AB	[110] _AbortAsyncPassThruTasks
+0x00006BE5	0x00000962	[110] _NvmExpressPassThru
+0x00007547	0x0000015D	[110] _NvmExpressGetNextNamespace
+0x000076A4	0x0000007A	[110] _NvmExpressGetNamespace
+0x0000771E	0x00000159	[110] _NvmExpressBuildDevicePath
+0x00007877	0x00000032	[111] _ProcessLibraryConstructorList
+0x000078A9	0x00000006	[111] _ProcessLibraryDestructorList
+0x000078AF	0x0000000A	[111] _ProcessModuleEntryPointList
+0x000078B9	0x0000000A	[111] _ProcessModuleUnloadList
+0x000078D0	0x00000010	[ 89] _mHexStr
+0x000078E0	0x00000004	[ 93] _mUefiDevicePathLibEndDevicePath
+0x000078E4	0x00000004	[111] __gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+0x000078E8	0x00000004	[111] __gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+0x000078EC	0x00000004	[111] __gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+0x000078F0	0x00000004	[111] __gPcd_FixedAtBuild_PcdMaximumDevicePathNodeCount
+0x000078F5	0x00000001	[111] __gPcd_FixedAtBuild_PcdComponentNameDisable
+0x000078F7	0x00000001	[111] __gPcd_FixedAtBuild_PcdComponentName2Disable
+0x000078F8	0x00000004	[111] __gUefiDriverRevision
+0x000078FC	0x00000001	[111] __gDriverUnloadImageCount
+0x000078FD	0x00000008	[ 89] literal string: Success
+0x00007905	0x00000016	[ 89] literal string: Warning Unknown Glyph
+0x0000791B	0x00000017	[ 89] literal string: Warning Delete Failure
+0x00007932	0x00000016	[ 89] literal string: Warning Write Failure
+0x00007948	0x00000019	[ 89] literal string: Warning Buffer Too Small
+0x00007961	0x00000013	[ 89] literal string: Warning Stale Data
+0x00007974	0x0000000B	[ 89] literal string: Load Error
+0x0000797F	0x00000012	[ 89] literal string: Invalid Parameter
+0x00007991	0x0000000C	[ 89] literal string: Unsupported
+0x0000799D	0x00000010	[ 89] literal string: Bad Buffer Size
+0x000079AD	0x00000011	[ 89] literal string: Buffer Too Small
+0x000079BE	0x0000000A	[ 89] literal string: Not Ready
+0x000079C8	0x0000000D	[ 89] literal string: Device Error
+0x000079D5	0x00000010	[ 89] literal string: Write Protected
+0x000079E5	0x00000011	[ 89] literal string: Out of Resources
+0x000079F6	0x0000000F	[ 89] literal string: Volume Corrupt
+0x00007A05	0x0000000C	[ 89] literal string: Volume Full
+0x00007A11	0x00000009	[ 89] literal string: No Media
+0x00007A1A	0x0000000E	[ 89] literal string: Media changed
+0x00007A28	0x0000000A	[ 89] literal string: Not Found
+0x00007A32	0x0000000E	[ 89] literal string: Access Denied
+0x00007A40	0x0000000C	[ 89] literal string: No Response
+0x00007A4C	0x0000000B	[ 89] literal string: No mapping
+0x00007A57	0x00000009	[ 89] literal string: Time out
+0x00007A60	0x0000000C	[ 89] literal string: Not started
+0x00007A6C	0x00000010	[ 89] literal string: Already started
+0x00007A7C	0x00000008	[ 89] literal string: Aborted
+0x00007A84	0x0000000B	[ 89] literal string: ICMP Error
+0x00007A8F	0x0000000B	[ 89] literal string: TFTP Error
+0x00007A9A	0x0000000F	[ 89] literal string: Protocol Error
+0x00007AA9	0x00000015	[ 89] literal string: Incompatible Version
+0x00007ABE	0x00000013	[ 89] literal string: Security Violation
+0x00007AD1	0x0000000A	[ 89] literal string: CRC Error
+0x00007ADB	0x0000000D	[ 89] literal string: End of Media
+0x00007AE8	0x0000000E	[ 89] literal string: Reserved (29)
+0x00007AF6	0x0000000E	[ 89] literal string: Reserved (30)
+0x00007B04	0x0000000C	[ 89] literal string: End of File
+0x00007B10	0x00000011	[ 89] literal string: Invalid Language
+0x00007B21	0x00000011	[ 89] literal string: Compromised Data
+0x00007B32	0x0000000E	[ 89] literal string: <null string>
+0x00007B40	0x0000000C	[ 89] literal string: <null guid>
+0x00007B4C	0x00000031	[ 89] literal string: %08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+0x00007B7D	0x0000000C	[ 89] literal string: <null time>
+0x00007B89	0x0000001A	[ 89] literal string: %02d/%02d/%04d  %02d:%02d
+0x00007BA3	0x00000005	[ 89] literal string: %08X
+0x00007BA8	0x00000003	[ 89] literal string: \n
+0x00007BAB	0x00000002	[ 89] literal string: 
+0x00007BAD	0x00000004	[106] literal string: eng
+0x00007BB1	0x00000003	[106] literal string: en
+0x00007BB4	0x00000007	[106] literal string: eng;en
+0x00007BBB	0x00000009	[107] literal string: %a-%a-%x
+0x00007BC4	0x00000026	[106] l_.str.3
+0x00007BEA	0x0000002E	[106] l_.str.4
+0x00007C20	0x00000138	[ 89] _mStatusString
+0x00007D60	0x00000002	[ 38] _m16Size
+0x00007D62	0x00000002	[ 38] _mThunk16Attr
+0x00007D64	0x00000002	[ 38] _m16Gdt
+0x00007D66	0x00000002	[ 38] _m16GdtrBase
+0x00007D68	0x00000002	[ 38] _mTransition
+0x00007D70	0x00000018	[106] _gNvmExpressComponentName
+0x00007D88	0x00000018	[106] _gNvmExpressComponentName2
+0x00007DA0	0x00000020	[106] _mNvmExpressDriverNameTable
+0x00007DC0	0x00000020	[106] _mNvmExpressControllerNameTable
+0x00007DE0	0x00000030	[107] _gNvmExpressDriverBinding
+0x00007E10	0x00000008	[107] _gNvmExpressDriverSupportedEfiVersion
+0x00007E18	0x0000000C	[107] _gEfiNvmExpressPassThruMode
+0x00007E28	0x00000030	[108] _gNvmExpressDiskInfoProtocolTemplate
+0x00007E58	0x00000010	[111] _gEfiPciIoProtocolGuid
+0x00007E68	0x00000010	[111] _gEfiDevicePathProtocolGuid
+0x00007E78	0x00000010	[111] _gEfiNvmExpressPassThruProtocolGuid
+0x00007E88	0x00000010	[111] _gEfiBlockIoProtocolGuid
+0x00007E98	0x00000010	[111] _gEfiBlockIo2ProtocolGuid
+0x00007EA8	0x00000010	[111] _gEfiDiskInfoProtocolGuid
+0x00007EB8	0x00000010	[111] _gEfiStorageSecurityCommandProtocolGuid
+0x00007EC8	0x00000010	[111] _gEfiDriverSupportedEfiVersionProtocolGuid
+0x00007ED8	0x00000010	[111] _gEfiResetNotificationProtocolGuid
+0x00007EE8	0x00000010	[111] _gEfiLoadedImageProtocolGuid
+0x00007EF8	0x00000010	[111] _gEfiDriverBindingProtocolGuid
+0x00007F08	0x00000010	[111] _gEfiComponentNameProtocolGuid
+0x00007F18	0x00000010	[111] _gEfiComponentName2ProtocolGuid
+0x00007F28	0x00000008	[ 88] _gImageHandle
+0x00007F30	0x00000008	[ 88] _gST
+0x00007F38	0x00000008	[ 88] _gBS
+0x00007F40	0x00000008	[ 92] _gRT
+0x00007F48	0x00000008	[109] _mNvmeControllerNumber

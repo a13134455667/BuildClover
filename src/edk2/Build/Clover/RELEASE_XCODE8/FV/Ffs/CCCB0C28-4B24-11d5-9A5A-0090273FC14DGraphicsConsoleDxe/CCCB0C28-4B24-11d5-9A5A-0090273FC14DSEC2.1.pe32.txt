@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/CCCB0C28-4B24-11d5-9A5A-0090273FC14DGraphicsConsoleDxe/CCCB0C28-4B24-11d5-9A5A-0090273FC14DSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/GraphicsConsoleDxe/GraphicsConsoleDxe/OUTPUT/GraphicsConsoleDxe.efi

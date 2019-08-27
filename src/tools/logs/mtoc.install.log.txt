@@ -1,0 +1,1 @@
+install -c -s -m 555 efitools/mtoc.NEW /Users/weisiyuan/src/opt/local/bin

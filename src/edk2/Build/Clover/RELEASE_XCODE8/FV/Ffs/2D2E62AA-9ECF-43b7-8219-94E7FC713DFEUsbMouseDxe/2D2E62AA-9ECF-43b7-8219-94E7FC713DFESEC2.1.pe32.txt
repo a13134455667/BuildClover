@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/2D2E62AA-9ECF-43b7-8219-94E7FC713DFEUsbMouseDxe/2D2E62AA-9ECF-43b7-8219-94E7FC713DFESEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Bus/Usb/UsbMouseDxe/UsbMouseDxe/OUTPUT/UsbMouseDxe.efi

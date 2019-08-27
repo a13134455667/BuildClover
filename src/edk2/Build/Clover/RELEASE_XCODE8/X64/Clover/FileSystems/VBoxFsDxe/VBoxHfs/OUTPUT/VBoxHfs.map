@@ -1,0 +1,418 @@
+# Path: /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/VBoxFsDxe/VBoxHfs/DEBUG/VBoxHfs.dll
+# Arch: x86_64
+# Object files:
+[  0] linker synthesized
+[  1] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib(PcdLib.obj)
+[  2] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+[  3] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CheckSum.obj)
+[  4] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[  5] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes64.obj)
+[  6] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+[  7] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+[  8] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[  9] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 10] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+[ 11] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU64.obj)
+[ 12] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU32.obj)
+[ 13] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x64.obj)
+[ 14] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+[ 15] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultS64x64.obj)
+[ 16] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ModU64x32.obj)
+[ 17] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+[ 18] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU64.obj)
+[ 19] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU32.obj)
+[ 20] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet64.obj)
+[ 21] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet32.obj)
+[ 22] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet64.obj)
+[ 23] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet32.obj)
+[ 24] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo64.obj)
+[ 25] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo32.obj)
+[ 26] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x64Remainder.obj)
+[ 27] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+[ 28] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+[ 29] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivS64x64Remainder.obj)
+[ 30] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ARShiftU64.obj)
+[ 31] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+[ 32] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+[ 33] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Cpu.obj)
+[ 34] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+[ 35] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+[ 36] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+[ 37] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(FilePaths.obj)
+[ 38] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Thunk16.obj)
+[ 39] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(WriteTr.obj)
+[ 40] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Lfence.obj)
+[ 41] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Non-existing.obj)
+[ 42] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+[ 43] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+[ 44] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteIdtr.obj)
+[ 45] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteGdtr.obj)
+[ 46] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Thunk.obj)
+[ 47] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadIdtr.obj)
+[ 48] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadGdtr.obj)
+[ 49] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Msr.obj)
+[ 50] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86GetInterruptState.obj)
+[ 51] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxSave.obj)
+[ 52] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxRestore.obj)
+[ 53] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging64.obj)
+[ 54] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging32.obj)
+[ 55] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging64.obj)
+[ 56] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging32.obj)
+[ 57] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86RdRand.obj)
+[ 58] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86PatchInstruction.obj)
+[ 59] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86SpeculationBarrier.obj)
+[ 60] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GccInline.obj)
+[ 61] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[ 62] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 63] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[ 64] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableDisableInterrupts.obj)
+[ 65] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisablePaging64.obj)
+[ 66] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuId.obj)
+[ 67] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuIdEx.obj)
+[ 68] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableCache.obj)
+[ 69] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisableCache.obj)
+[ 70] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RdRand.obj)
+[ 71] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ChkStkGcc.obj)
+[ 72] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+[ 73] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem64Wrapper.obj)
+[ 74] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem32Wrapper.obj)
+[ 75] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem16Wrapper.obj)
+[ 76] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem8Wrapper.obj)
+[ 77] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+[ 78] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+[ 79] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+[ 80] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem32Wrapper.obj)
+[ 81] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem16Wrapper.obj)
+[ 82] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+[ 83] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+[ 84] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(IsZeroBufferWrapper.obj)
+[ 85] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+[ 86] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+[ 87] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+[ 88] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+[ 89] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibMmioBuffer.obj)
+[ 90] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoHighLevel.obj)
+[ 91] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLibGcc.obj)
+[ 92] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoLib.obj)
+[ 93] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseIoLibIntrinsic/BaseIoLibIntrinsic/OUTPUT/BaseIoLibIntrinsic.lib(IoFifo.obj)
+[ 94] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+[ 95] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+[ 96] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+[ 97] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePciCf8Lib/BasePciCf8Lib/OUTPUT/BasePciCf8Lib.lib(PciCf8Lib.obj)
+[ 98] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilities.obj)
+[ 99] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathToText.obj)
+[100] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathFromText.obj)
+[101] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(UefiDevicePathLib.obj)
+[102] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+[103] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePciLibCf8/BasePciLibCf8/OUTPUT/BasePciLibCf8.lib(PciLib.obj)
+[104] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLibPrint.obj)
+[105] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiNotTiano.obj)
+[106] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiDriverModel.obj)
+[107] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Console.obj)
+[108] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLib.obj)
+[109] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Acpi.obj)
+[110] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+[111] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/Library/MemLogLibDefault/MemLogLibDefault/OUTPUT/MemLogLibDefault.lib(MemLogLib.obj)
+[112] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/VBoxFsDxe/VBoxHfs/OUTPUT/VBoxHfs.lib(fsw_hfs.obj)
+[113] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/VBoxFsDxe/VBoxHfs/OUTPUT/VBoxHfs.lib(fsw_core.obj)
+[114] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/VBoxFsDxe/VBoxHfs/OUTPUT/VBoxHfs.lib(fsw_efi_lib.obj)
+[115] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/VBoxFsDxe/VBoxHfs/OUTPUT/VBoxHfs.lib(fsw_efi.obj)
+[116] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/VBoxFsDxe/VBoxHfs/OUTPUT/VBoxHfs.lib(fsw_lib.obj)
+[117] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/VBoxFsDxe/VBoxHfs/OUTPUT/VBoxHfs.lib(AutoGen.obj)
+# Sections:
+# Address	Size    	Segment	Section
+0x00000240	0x0000689C	__TEXT	__text
+0x00006AE0	0x000002C5	__TEXT	__const
+0x00006DA5	0x000002C0	__TEXT	__cstring
+0x00007066	0x00000084	__TEXT	__ustring
+0x00007100	0x00000138	__DATA	__const
+0x00007240	0x000001A0	__DATA	__data
+0x000073E0	0x00000020	__DATA	__common
+# Symbols:
+# Address	Size    	File  Name
+0x00000240	0x00000000	[  0] ___dso_handle
+0x00000240	0x0000000A	[  5] _SwapBytes64
+0x0000024A	0x0000002F	[  6] _SwapBytes32
+0x00000279	0x0000000C	[  7] _SwapBytes16
+0x00000285	0x00000006	[  9] _InternalAssertJumpBuffer
+0x0000028B	0x0000000A	[ 10] _RShiftU64
+0x00000295	0x0000000A	[ 14] _MultU64x32
+0x0000029F	0x0000000A	[ 17] _LShiftU64
+0x000002A9	0x0000000A	[ 27] _DivU64x32Remainder
+0x000002B3	0x0000000A	[ 28] _DivU64x32
+0x000002BD	0x00000031	[ 35] _StrnLenS
+0x000002EE	0x0000002F	[ 35] _AsciiStrnLenS
+0x0000031D	0x00000033	[ 36] _StrLen
+0x00000350	0x00000000	[ 38] SavedGdt
+0x00000350	0x0000000A	[ 38] _m16Start
+0x0000035A	0x00000008	[ 38] _BackFromUserCode
+0x00000362	0x00000014	[ 38] _BackFromUserCode.Base
+0x00000376	0x0000000D	[ 38] _BackFromUserCode.ThunkAttrEnd
+0x00000383	0x0000000B	[ 38] _BackFromUserCode.1
+0x0000038E	0x00000036	[ 38] _BackFromUserCode.2
+0x000003C4	0x0000001C	[ 38] _BackFromUserCode.SavedCr4End
+0x000003E0	0x0000000B	[ 38] _BackFromUserCode.SavedCr0End
+0x000003EB	0x0000000B	[ 38] _BackFromUserCode.X64JmpEnd
+0x000003F6	0x00000002	[ 38] _BackFromUserCode.SavedSpEnd
+0x000003F8	0x00000006	[ 38] _EntryPoint
+0x000003FE	0x00000002	[ 38] _16Gdtr
+0x00000400	0x00000008	[ 38] _16GdtrBase
+0x00000408	0x00000006	[ 38] _16Idtr
+0x0000040E	0x00000028	[ 38] _ToUserCode
+0x00000436	0x0000000F	[ 38] _ToUserCode.Base
+0x00000445	0x0000001B	[ 38] _ToUserCode.RealMode
+0x00000460	0x00000008	[ 38] _NullSeg
+0x00000468	0x00000008	[ 38] _16Code
+0x00000470	0x00000008	[ 38] _16Data
+0x00000478	0x00000008	[ 38] _32Data
+0x00000480	0x000000B4	[ 38] _InternalAsmThunk16
+0x00000534	0x00000020	[ 38] _InternalAsmThunk16.RetFromRealMode
+0x00000554	0x00000006	[ 39] _AsmWriteTr
+0x0000055A	0x00000004	[ 40] _AsmLfence
+0x0000055E	0x0000000E	[ 42] _InternalMathLShiftU64
+0x0000056C	0x0000000E	[ 42] _InternalMathRShiftU64
+0x0000057A	0x00000033	[ 42] _InternalMathSwapBytes64
+0x000005AD	0x0000000C	[ 42] _InternalMathMultU64x32
+0x000005B9	0x00000011	[ 42] _InternalMathDivU64x32
+0x000005CA	0x00000023	[ 42] _InternalMathDivRemU64x32
+0x000005ED	0x00000009	[ 43] _ReadUnaligned16
+0x000005F6	0x00000008	[ 43] _ReadUnaligned32
+0x000005FE	0x00000009	[ 43] _ReadUnaligned64
+0x00000607	0x0000000F	[ 61] _InternalSwitchStack
+0x00000616	0x00000043	[ 62] _SetJump
+0x00000659	0x0000007F	[ 62] CetDone
+0x000006D8	0x00000030	[ 63] _InternalLongJump
+0x00000708	0x0000007C	[ 63] CetDone
+0x00000784	0x00000003	[ 64] _EnableDisableInterrupts
+0x00000787	0x0000003A	[ 65] _InternalX86DisablePaging64
+0x000007C1	0x00000027	[ 65] _InternalX86DisablePaging64.0
+0x000007E8	0x00000000	[ 65] mTransitionEnd
+0x000007E8	0x0000000F	[ 66] _AsmCpuid
+0x000007F7	0x00000005	[ 66] _AsmCpuid.0
+0x000007FC	0x00000007	[ 66] _AsmCpuid.1
+0x00000803	0x00000009	[ 66] _AsmCpuid.2
+0x0000080C	0x00000003	[ 66] _AsmCpuid.3
+0x0000080F	0x00000015	[ 67] _AsmCpuidEx
+0x00000824	0x00000007	[ 67] _AsmCpuidEx.0
+0x0000082B	0x00000007	[ 67] _AsmCpuidEx.1
+0x00000832	0x00000009	[ 67] _AsmCpuidEx.2
+0x0000083B	0x00000003	[ 67] _AsmCpuidEx.3
+0x0000083E	0x00000013	[ 68] _AsmEnableCache
+0x00000851	0x00000013	[ 69] _AsmDisableCache
+0x00000864	0x00000009	[ 70] _InternalX86RdRand16
+0x0000086D	0x00000009	[ 70] rn16_ok
+0x00000876	0x00000009	[ 70] _InternalX86RdRand32
+0x0000087F	0x00000008	[ 70] rn32_ok
+0x00000887	0x0000000A	[ 70] _InternalX86RdRand64
+0x00000891	0x00000009	[ 70] rn64_ok
+0x0000089A	0x000000E8	[ 72] _InternalMemSetMem
+0x00000982	0x00000014	[ 77] _ZeroMem
+0x00000996	0x00000018	[ 78] _CompareMem
+0x000009AE	0x00000019	[ 83] _CopyMem
+0x000009C7	0x0000000D	[ 85] _InternalMemZeroMem
+0x000009D4	0x0000002F	[ 85] _InternalMemCompareMem
+0x00000A03	0x00000055	[ 86] _CompareGuid
+0x00000A58	0x000001E2	[ 87] _InternalMemCopyMem
+0x00000C3A	0x00000021	[ 88] _UefiBootServicesTableLibConstructor
+0x00000C5B	0x0000000D	[ 93] _IoReadFifo8
+0x00000C68	0x0000000E	[ 93] _IoReadFifo16
+0x00000C76	0x0000000D	[ 93] _IoReadFifo32
+0x00000C83	0x0000000D	[ 93] _IoWriteFifo8
+0x00000C90	0x0000000E	[ 93] _IoWriteFifo16
+0x00000C9E	0x0000000D	[ 93] _IoWriteFifo32
+0x00000CAB	0x000010B9	[ 94] _BasePrintLibSPrintMarker
+0x00001D64	0x000000AF	[ 94] _BasePrintLibSPrint
+0x00001E13	0x000000B7	[ 95] _UnicodeSPrint
+0x00001ECA	0x000000B1	[ 95] _AsciiSPrint
+0x00001F7B	0x0000003D	[ 96] _AllocatePool
+0x00001FB8	0x0000003B	[ 96] _InternalAllocateZeroPool
+0x00001FF3	0x00000097	[ 96] _AllocateZeroPool
+0x0000208A	0x00000016	[ 96] _FreePool
+0x000020A0	0x00000013	[102] _UefiRuntimeServicesTableLibConstructor
+0x000020B3	0x00000008	[108] _UefiLibConstructor
+0x000020BB	0x00000034	[110] __DriverUnloadHandler
+0x000020EF	0x00000096	[110] __ModuleEntryPoint
+0x00002185	0x00000460	[112] _fsw_hfs_volume_mount
+0x000025E5	0x0000005B	[112] _fsw_hfs_volume_free
+0x00002640	0x00000049	[112] _fsw_hfs_volume_stat
+0x00002689	0x00000008	[112] _fsw_hfs_dnode_fill
+0x00002691	0x00000006	[112] _fsw_hfs_dnode_free
+0x00002697	0x0000006D	[112] _fsw_hfs_dnode_stat
+0x00002704	0x0000011B	[112] _fsw_hfs_get_extent
+0x0000281F	0x0000017E	[112] _fsw_hfs_dir_lookup
+0x0000299D	0x00000132	[112] _fsw_hfs_dir_read
+0x00002ACF	0x00000165	[112] _fsw_hfs_readlink
+0x00002C34	0x00000104	[112] _fsw_hfs_read_file
+0x00002D38	0x000001F3	[112] _fsw_hfs_btree_search
+0x00002F2B	0x00000032	[112] _fsw_hfs_cmp_extkey
+0x00002F5D	0x0000004D	[112] _fsw_hfs_btree_rec
+0x00002FAA	0x000000A1	[112] _fsw_hfs_cmp_catkey
+0x0000304B	0x00000138	[112] _fsw_hfs_cmpi_catkey
+0x00003183	0x00000302	[112] _fill_fileinfo
+0x00003485	0x000000E0	[112] _create_hfs_dnode
+0x00003565	0x000000E0	[112] _fsw_hfs_btree_iterate_node
+0x00003645	0x0000004C	[112] _fsw_hfs_cmp_id
+0x00003691	0x0000010D	[112] _fsw_hfs_btree_visit_node
+0x0000379E	0x00000084	[113] _fsw_mount
+0x00003822	0x00000049	[113] _fsw_unmount
+0x0000386B	0x00000082	[113] _fsw_dnode_release
+0x000038ED	0x00000066	[113] _fsw_blockcache_free
+0x00003953	0x0000001B	[113] _fsw_volume_stat
+0x0000396E	0x0000003F	[113] _fsw_set_blocksize_
+0x000039AD	0x000001FB	[113] _fsw_block_get_
+0x00003BA8	0x00000034	[113] _fsw_block_release_
+0x00003BDC	0x0000007D	[113] _fsw_dnode_create_root_
+0x00003C59	0x000000E6	[113] _fsw_dnode_create_
+0x00003D3F	0x00000019	[113] _fsw_dnode_fill
+0x00003D58	0x0000006E	[113] _fsw_dnode_stat
+0x00003DC6	0x000000A0	[113] _fsw_dnode_lookup_cache
+0x00003E66	0x00000130	[113] _fsw_dnode_lookup
+0x00003F96	0x000000CF	[113] _fsw_dnode_resolve
+0x00004065	0x00000126	[113] _fsw_dnode_lookup_path
+0x0000418B	0x00000048	[113] _fsw_dnode_dir_read
+0x000041D3	0x00000047	[113] _fsw_dnode_readlink
+0x0000421A	0x000000FC	[113] _fsw_dnode_readlink_data_
+0x00004316	0x0000004A	[113] _fsw_shandle_open_
+0x00004360	0x000001F6	[113] _fsw_shandle_read
+0x00004556	0x00000024	[113] _fsw_shandle_close
+0x0000457A	0x0000021F	[114] _fsw_efi_decode_time
+0x00004799	0x0000001B	[114] _fsw_efi_strsize
+0x000047B4	0x00000030	[114] _fsw_efi_strcpy
+0x000047E4	0x0000005E	[114] _fsw_streq_ISO88591_UTF16
+0x00004844	0x00000113	[115] _fsw_efi_DriverBinding_Supported
+0x00004957	0x00000325	[115] _fsw_efi_DriverBinding_Start
+0x00004C7C	0x00000169	[115] _fsw_efi_DriverBinding_Stop
+0x00004DE5	0x00000026	[115] _fsw_efi_ComponentName_GetDriverName
+0x00004E0B	0x00000010	[115] _fsw_efi_ComponentName_GetControllerName
+0x00004E1B	0x00000006	[115] _fsw_efi_change_blocksize
+0x00004E21	0x00000064	[115] _fsw_efi_read_block
+0x00004E85	0x0000009C	[115] _fsw_efi_main
+0x00004F24	0x0000009A	[115] _fsw_efi_FileSystem_OpenVolume
+0x00004FBE	0x000001F6	[115] _fsw_efi_dnode_to_FileHandle
+0x000051B4	0x000000B5	[115] _fsw_efi_FileHandle_Open
+0x00005269	0x00000163	[115] _fsw_efi_dir_open
+0x000053CC	0x000000B5	[115] _fsw_efi_FileHandle_OpenEx
+0x00005481	0x000000AC	[115] _fsw_efi_FileHandle_Close
+0x0000552D	0x0000001D	[115] _fsw_efi_FileHandle_Delete
+0x0000554A	0x000000C7	[115] _fsw_efi_FileHandle_Read
+0x00005611	0x000000B7	[115] _fsw_efi_file_read
+0x000056C8	0x000000C8	[115] _fsw_efi_dir_read
+0x00005790	0x00000012	[115] _fsw_efi_FileHandle_ReadEx
+0x000057A2	0x00000010	[115] _fsw_efi_FileHandle_Write
+0x000057B2	0x00000010	[115] _fsw_efi_FileHandle_WriteEx
+0x000057C2	0x00000025	[115] _fsw_efi_FileHandle_GetPosition
+0x000057E9	0x0000004B	[115] _fsw_efi_FileHandle_SetPosition
+0x00005834	0x0000009C	[115] _fsw_efi_FileHandle_GetInfo
+0x000058D0	0x00000184	[115] _fsw_efi_dnode_getinfo
+0x00005A54	0x00000010	[115] _fsw_efi_FileHandle_SetInfo
+0x00005A64	0x00000010	[115] _fsw_efi_FileHandle_Flush
+0x00005A74	0x00000010	[115] _fsw_efi_FileHandle_FlushEx
+0x00005A84	0x00000264	[115] _fsw_efi_dnode_fill_FileInfo
+0x00005CE8	0x00000030	[115] _fsw_efi_store_time_posix
+0x00005D18	0x00000014	[115] _fsw_efi_store_attr_posix
+0x00005D2C	0x00000035	[116] _fsw_alloc_zero
+0x00005D61	0x0000003A	[116] _fsw_memdup
+0x00005D9B	0x00000012	[116] _fsw_strlen
+0x00005DAD	0x0000001F	[116] _fsw_to_lower
+0x00005DCC	0x0000026A	[116] _fsw_streq
+0x00006036	0x000000D7	[116] _fsw_streq_ISO88591_UTF8
+0x0000610D	0x000000D9	[116] _fsw_streq_UTF8_UTF16
+0x000061E6	0x000000DE	[116] _fsw_streq_UTF8_UTF16_SWAPPED
+0x000062C4	0x00000038	[116] _fsw_streq_cstr
+0x000062FC	0x00000659	[116] _fsw_strdup_coerce
+0x00006955	0x00000116	[116] _fsw_strsplit
+0x00006A6B	0x00000027	[116] _fsw_strfree
+0x00006A92	0x00000032	[117] _ProcessLibraryConstructorList
+0x00006AC4	0x00000006	[117] _ProcessLibraryDestructorList
+0x00006ACA	0x0000000A	[117] _ProcessModuleEntryPointList
+0x00006AD4	0x00000008	[117] _ProcessModuleUnloadList
+0x00006AE0	0x00000010	[ 94] _mHexStr
+0x00006AF0	0x00000027	[112] _metaprefix
+0x00006B20	0x00000010	[114] _year_lengths
+0x00006B30	0x00000060	[114] _mon_lengths
+0x00006B90	0x00000200	[116] _fsw_latin_case_fold
+0x00006D90	0x00000004	[117] __gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+0x00006D94	0x00000004	[117] __gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+0x00006D98	0x00000004	[117] __gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+0x00006D9C	0x00000004	[117] __gUefiDriverRevision
+0x00006DA4	0x00000001	[117] __gDriverUnloadImageCount
+0x00006DA5	0x00000008	[ 94] literal string: Success
+0x00006DAD	0x00000016	[ 94] literal string: Warning Unknown Glyph
+0x00006DC3	0x00000017	[ 94] literal string: Warning Delete Failure
+0x00006DDA	0x00000016	[ 94] literal string: Warning Write Failure
+0x00006DF0	0x00000019	[ 94] literal string: Warning Buffer Too Small
+0x00006E09	0x00000013	[ 94] literal string: Warning Stale Data
+0x00006E1C	0x0000000B	[ 94] literal string: Load Error
+0x00006E27	0x00000012	[ 94] literal string: Invalid Parameter
+0x00006E39	0x0000000C	[ 94] literal string: Unsupported
+0x00006E45	0x00000010	[ 94] literal string: Bad Buffer Size
+0x00006E55	0x00000011	[ 94] literal string: Buffer Too Small
+0x00006E66	0x0000000A	[ 94] literal string: Not Ready
+0x00006E70	0x0000000D	[ 94] literal string: Device Error
+0x00006E7D	0x00000010	[ 94] literal string: Write Protected
+0x00006E8D	0x00000011	[ 94] literal string: Out of Resources
+0x00006E9E	0x0000000F	[ 94] literal string: Volume Corrupt
+0x00006EAD	0x0000000C	[ 94] literal string: Volume Full
+0x00006EB9	0x00000009	[ 94] literal string: No Media
+0x00006EC2	0x0000000E	[ 94] literal string: Media changed
+0x00006ED0	0x0000000A	[ 94] literal string: Not Found
+0x00006EDA	0x0000000E	[ 94] literal string: Access Denied
+0x00006EE8	0x0000000C	[ 94] literal string: No Response
+0x00006EF4	0x0000000B	[ 94] literal string: No mapping
+0x00006EFF	0x00000009	[ 94] literal string: Time out
+0x00006F08	0x0000000C	[ 94] literal string: Not started
+0x00006F14	0x00000010	[ 94] literal string: Already started
+0x00006F24	0x00000008	[ 94] literal string: Aborted
+0x00006F2C	0x0000000B	[ 94] literal string: ICMP Error
+0x00006F37	0x0000000B	[ 94] literal string: TFTP Error
+0x00006F42	0x0000000F	[ 94] literal string: Protocol Error
+0x00006F51	0x00000015	[ 94] literal string: Incompatible Version
+0x00006F66	0x00000013	[ 94] literal string: Security Violation
+0x00006F79	0x0000000A	[ 94] literal string: CRC Error
+0x00006F83	0x0000000D	[ 94] literal string: End of Media
+0x00006F90	0x0000000E	[ 94] literal string: Reserved (29)
+0x00006F9E	0x0000000E	[ 94] literal string: Reserved (30)
+0x00006FAC	0x0000000C	[ 94] literal string: End of File
+0x00006FB8	0x00000011	[ 94] literal string: Invalid Language
+0x00006FC9	0x00000011	[ 94] literal string: Compromised Data
+0x00006FDA	0x0000000E	[ 94] literal string: <null string>
+0x00006FE8	0x0000000C	[ 94] literal string: <null guid>
+0x00006FF4	0x00000031	[ 94] literal string: %08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+0x00007025	0x0000000C	[ 94] literal string: <null time>
+0x00007031	0x0000001A	[ 94] literal string: %02d/%02d/%04d  %02d:%02d
+0x0000704B	0x00000005	[ 94] literal string: %08X
+0x00007050	0x00000003	[ 94] literal string: \n
+0x00007053	0x00000002	[ 94] literal string: 
+0x00007055	0x00000004	[112] literal string: hfs
+0x00007059	0x00000003	[112] literal string: %d
+0x0000705C	0x00000002	[113] literal string: .
+0x0000705E	0x00000003	[113] literal string: ..
+0x00007061	0x00000004	[115] literal string: eng
+0x00007066	0x00000048	[112] l_.str.2
+0x000070AE	0x0000003C	[115] l_.str.2
+0x00007100	0x00000138	[ 94] _mStatusString
+0x00007240	0x00000002	[ 38] _m16Size
+0x00007242	0x00000002	[ 38] _mThunk16Attr
+0x00007244	0x00000002	[ 38] _m16Gdt
+0x00007246	0x00000002	[ 38] _m16GdtrBase
+0x00007248	0x00000002	[ 38] _mTransition
+0x00007250	0x00000070	[112] _fsw_hfs_table
+0x000072C0	0x00000030	[115] _fsw_efi_DriverBinding_table
+0x000072F0	0x00000018	[115] _fsw_efi_ComponentName_table
+0x00007308	0x00000018	[115] _fsw_efi_host_table
+0x00007320	0x00000010	[117] _gEfiFileInfoGuid
+0x00007330	0x00000010	[117] _gEfiFileSystemInfoGuid
+0x00007340	0x00000010	[117] _gEfiFileSystemVolumeLabelInfoIdGuid
+0x00007350	0x00000010	[117] _gEfiDiskIoProtocolGuid
+0x00007360	0x00000010	[117] _gEfiDiskIo2ProtocolGuid
+0x00007370	0x00000010	[117] _gEfiBlockIoProtocolGuid
+0x00007380	0x00000010	[117] _gEfiBlockIo2ProtocolGuid
+0x00007390	0x00000010	[117] _gEfiSimpleFileSystemProtocolGuid
+0x000073A0	0x00000010	[117] _gEfiDriverBindingProtocolGuid
+0x000073B0	0x00000010	[117] _gEfiComponentNameProtocolGuid
+0x000073C0	0x00000010	[117] _gEfiComponentName2ProtocolGuid
+0x000073D0	0x00000010	[117] _gEfiLoadedImageProtocolGuid
+0x000073E0	0x00000008	[ 88] _gImageHandle
+0x000073E8	0x00000008	[ 88] _gST
+0x000073F0	0x00000008	[ 88] _gBS
+0x000073F8	0x00000008	[102] _gRT

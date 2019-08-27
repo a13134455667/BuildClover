@@ -1,0 +1,4 @@
+gCommandLineDefines: {'NO_GRUB_DRIVERS_EMBEDDED': 'TRUE', 'USE_BIOS_BLOCKIO': 'TRUE', 'ARCH': 'X64', 'DISABLE_USB_SUPPORT': 'TRUE', 'USE_LOW_EBDA': 'TRUE'}
+BuildOptionPcd: []
+Active Platform: /Users/weisiyuan/src/edk2/Clover/Clover.dsc
+Flash Image Definition: /Users/weisiyuan/src/edk2/Clover/Clover.fdf

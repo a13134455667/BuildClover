@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/35C0C168-2607-4e51-BB53-448E3ED1A87FPciBusNoEnumerationDxe/35C0C168-2607-4e51-BB53-448E3ED1A87FSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/OsxPciBusNoEnumerationDxe/PciBusNoEnumeration/OUTPUT/PciBusNoEnumerationDxe.efi

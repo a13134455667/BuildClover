@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/EC2BEECA-E84A-445B-869B-F7A73C96F58ALegacyRegion2Dxe/EC2BEECA-E84A-445B-869B-F7A73C96F58ASEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/LegacyBios/Region2Dxe/LegacyRegion2Dxe/OUTPUT/LegacyRegion2Dxe.efi

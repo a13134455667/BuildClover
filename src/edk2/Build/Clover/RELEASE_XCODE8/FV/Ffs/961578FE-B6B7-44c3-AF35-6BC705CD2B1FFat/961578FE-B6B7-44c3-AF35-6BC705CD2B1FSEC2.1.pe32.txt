@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/961578FE-B6B7-44c3-AF35-6BC705CD2B1FFat/961578FE-B6B7-44c3-AF35-6BC705CD2B1FSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/FatPkg/EnhancedFatDxe/Fat/OUTPUT/Fat.efi

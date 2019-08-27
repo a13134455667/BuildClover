@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/29CF55F8-B675-4f5d-8F2F-B87A3ECFD063BiosVideo/29CF55F8-B675-4f5d-8F2F-B87A3ECFD063SEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/BiosVideo/BiosVideo/OUTPUT/BiosVideo.efi

@@ -1,0 +1,643 @@
+# Path: /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/DEBUG/SetupBrowser.dll
+# Arch: x86_64
+# Object files:
+[  0] linker synthesized
+[  1] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib(PcdLib.obj)
+[  2] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+[  3] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+[  4] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem64Wrapper.obj)
+[  5] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem32Wrapper.obj)
+[  6] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem16Wrapper.obj)
+[  7] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem8Wrapper.obj)
+[  8] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+[  9] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+[ 10] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+[ 11] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem32Wrapper.obj)
+[ 12] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem16Wrapper.obj)
+[ 13] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+[ 14] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+[ 15] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(IsZeroBufferWrapper.obj)
+[ 16] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+[ 17] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+[ 18] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+[ 19] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CheckSum.obj)
+[ 20] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[ 21] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes64.obj)
+[ 22] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+[ 23] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+[ 24] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[ 25] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 26] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+[ 27] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU64.obj)
+[ 28] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU32.obj)
+[ 29] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x64.obj)
+[ 30] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+[ 31] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultS64x64.obj)
+[ 32] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ModU64x32.obj)
+[ 33] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+[ 34] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU64.obj)
+[ 35] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU32.obj)
+[ 36] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet64.obj)
+[ 37] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet32.obj)
+[ 38] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet64.obj)
+[ 39] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet32.obj)
+[ 40] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo64.obj)
+[ 41] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo32.obj)
+[ 42] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x64Remainder.obj)
+[ 43] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+[ 44] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+[ 45] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivS64x64Remainder.obj)
+[ 46] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ARShiftU64.obj)
+[ 47] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+[ 48] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+[ 49] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Cpu.obj)
+[ 50] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+[ 51] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+[ 52] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+[ 53] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(FilePaths.obj)
+[ 54] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Thunk16.obj)
+[ 55] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(WriteTr.obj)
+[ 56] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Lfence.obj)
+[ 57] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Non-existing.obj)
+[ 58] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+[ 59] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+[ 60] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteIdtr.obj)
+[ 61] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteGdtr.obj)
+[ 62] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Thunk.obj)
+[ 63] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadIdtr.obj)
+[ 64] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadGdtr.obj)
+[ 65] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Msr.obj)
+[ 66] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86GetInterruptState.obj)
+[ 67] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxSave.obj)
+[ 68] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxRestore.obj)
+[ 69] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging64.obj)
+[ 70] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging32.obj)
+[ 71] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging64.obj)
+[ 72] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging32.obj)
+[ 73] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86RdRand.obj)
+[ 74] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86PatchInstruction.obj)
+[ 75] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86SpeculationBarrier.obj)
+[ 76] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GccInline.obj)
+[ 77] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[ 78] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 79] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[ 80] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableDisableInterrupts.obj)
+[ 81] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisablePaging64.obj)
+[ 82] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuId.obj)
+[ 83] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuIdEx.obj)
+[ 84] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableCache.obj)
+[ 85] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisableCache.obj)
+[ 86] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RdRand.obj)
+[ 87] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ChkStkGcc.obj)
+[ 88] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+[ 89] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+[ 90] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+[ 91] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+[ 92] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilities.obj)
+[ 93] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathToText.obj)
+[ 94] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathFromText.obj)
+[ 95] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(UefiDevicePathLib.obj)
+[ 96] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+[ 97] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/Library/UefiHiiServicesLib/UefiHiiServicesLib/OUTPUT/UefiHiiServicesLib.lib(UefiHiiServicesLib.obj)
+[ 98] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLibPrint.obj)
+[ 99] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiNotTiano.obj)
+[100] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiDriverModel.obj)
+[101] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Console.obj)
+[102] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLib.obj)
+[103] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Acpi.obj)
+[104] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+[105] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiLib.obj)
+[106] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiString.obj)
+[107] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib/OUTPUT/UefiHiiLib.lib(HiiLanguage.obj)
+[108] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/SetupBrowser.lib(Setup.obj)
+[109] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/SetupBrowser.lib(IfrParse.obj)
+[110] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/SetupBrowser.lib(Expression.obj)
+[111] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/SetupBrowser.lib(Presentation.obj)
+[112] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/OUTPUT/SetupBrowser.lib(AutoGen.obj)
+# Sections:
+# Address	Size    	Segment	Section
+0x00000240	0x00013A93	__TEXT	__text
+0x00013CE0	0x00000039	__TEXT	__const
+0x00013D19	0x000002B8	__TEXT	__cstring
+0x00013FD2	0x000001E6	__TEXT	__ustring
+0x000141C0	0x00000160	__DATA	__const
+0x00014320	0x00000268	__DATA	__data
+0x00014588	0x00000243	__DATA	__common
+# Symbols:
+# Address	Size    	File  Name
+0x00000240	0x00000000	[  0] ___dso_handle
+0x00000240	0x000000E8	[  3] _InternalMemSetMem
+0x00000328	0x00000014	[  8] _ZeroMem
+0x0000033C	0x00000018	[  9] _CompareMem
+0x00000354	0x00000019	[ 14] _CopyMem
+0x0000036D	0x0000000D	[ 16] _InternalMemZeroMem
+0x0000037A	0x0000002F	[ 16] _InternalMemCompareMem
+0x000003A9	0x00000048	[ 17] _CopyGuid
+0x000003F1	0x00000055	[ 17] _CompareGuid
+0x00000446	0x0000002F	[ 17] _IsZeroGuid
+0x00000475	0x000001E2	[ 18] _InternalMemCopyMem
+0x00000657	0x00000006	[ 25] _InternalAssertJumpBuffer
+0x0000065D	0x0000000A	[ 26] _RShiftU64
+0x00000667	0x0000000A	[ 30] _MultU64x32
+0x00000671	0x0000000A	[ 33] _LShiftU64
+0x0000067B	0x0000000A	[ 43] _DivU64x32Remainder
+0x00000685	0x0000000A	[ 44] _DivU64x32
+0x0000068F	0x00000020	[ 47] _BitFieldRead32
+0x000006AF	0x0000003E	[ 47] _BitFieldWrite32
+0x000006ED	0x00000010	[ 50] _InitializeListHead
+0x000006FD	0x0000001A	[ 50] _InsertHeadList
+0x00000717	0x0000001B	[ 50] _InsertTailList
+0x00000732	0x00000009	[ 50] _GetFirstNode
+0x0000073B	0x00000009	[ 50] _GetNextNode
+0x00000744	0x0000000C	[ 50] _IsListEmpty
+0x00000750	0x0000000C	[ 50] _IsNull
+0x0000075C	0x0000001B	[ 50] _RemoveEntryList
+0x00000777	0x00000031	[ 51] _StrnLenS
+0x000007A8	0x00000063	[ 51] _StrCpyS
+0x0000080B	0x000000CE	[ 51] _StrnCpyS
+0x000008D9	0x00000090	[ 51] _StrCatS
+0x00000969	0x0000009D	[ 51] _StrDecimalToUint64S
+0x00000A06	0x000000D5	[ 51] _StrHexToUint64S
+0x00000ADB	0x0000002F	[ 51] _AsciiStrnLenS
+0x00000B0A	0x00000033	[ 52] _StrLen
+0x00000B3D	0x0000003C	[ 52] _StrSize
+0x00000B79	0x0000016D	[ 52] _StrCmp
+0x00000CE6	0x00000104	[ 52] _StrStr
+0x00000DEA	0x00000012	[ 52] _InternalIsDecimalDigitCharacter
+0x00000DFC	0x00000018	[ 52] _CharToUpper
+0x00000E14	0x00000039	[ 52] _InternalHexCharToUintn
+0x00000E4D	0x00000023	[ 52] _InternalIsHexaDecimalDigitCharacter
+0x00000E70	0x0000002C	[ 52] _StrDecimalToUint64
+0x00000E9C	0x0000002C	[ 52] _StrHexToUint64
+0x00000EC8	0x00000030	[ 52] _AsciiStrLen
+0x00000EF8	0x00000039	[ 52] _AsciiStrSize
+0x00000F31	0x000000B6	[ 52] _AsciiStrnCmp
+0x00000FE8	0x00000000	[ 54] SavedGdt
+0x00000FE8	0x0000000A	[ 54] _m16Start
+0x00000FF2	0x00000008	[ 54] _BackFromUserCode
+0x00000FFA	0x00000014	[ 54] _BackFromUserCode.Base
+0x0000100E	0x0000000D	[ 54] _BackFromUserCode.ThunkAttrEnd
+0x0000101B	0x0000000B	[ 54] _BackFromUserCode.1
+0x00001026	0x00000036	[ 54] _BackFromUserCode.2
+0x0000105C	0x0000001C	[ 54] _BackFromUserCode.SavedCr4End
+0x00001078	0x0000000B	[ 54] _BackFromUserCode.SavedCr0End
+0x00001083	0x0000000B	[ 54] _BackFromUserCode.X64JmpEnd
+0x0000108E	0x00000002	[ 54] _BackFromUserCode.SavedSpEnd
+0x00001090	0x00000006	[ 54] _EntryPoint
+0x00001096	0x00000002	[ 54] _16Gdtr
+0x00001098	0x00000008	[ 54] _16GdtrBase
+0x000010A0	0x00000006	[ 54] _16Idtr
+0x000010A6	0x00000028	[ 54] _ToUserCode
+0x000010CE	0x0000000F	[ 54] _ToUserCode.Base
+0x000010DD	0x0000001B	[ 54] _ToUserCode.RealMode
+0x000010F8	0x00000008	[ 54] _NullSeg
+0x00001100	0x00000008	[ 54] _16Code
+0x00001108	0x00000008	[ 54] _16Data
+0x00001110	0x00000008	[ 54] _32Data
+0x00001118	0x000000B4	[ 54] _InternalAsmThunk16
+0x000011CC	0x00000020	[ 54] _InternalAsmThunk16.RetFromRealMode
+0x000011EC	0x00000006	[ 55] _AsmWriteTr
+0x000011F2	0x00000004	[ 56] _AsmLfence
+0x000011F6	0x0000000E	[ 58] _InternalMathLShiftU64
+0x00001204	0x0000000E	[ 58] _InternalMathRShiftU64
+0x00001212	0x0000000C	[ 58] _InternalMathMultU64x32
+0x0000121E	0x00000011	[ 58] _InternalMathDivU64x32
+0x0000122F	0x00000023	[ 58] _InternalMathDivRemU64x32
+0x00001252	0x00000009	[ 59] _ReadUnaligned16
+0x0000125B	0x00000008	[ 59] _ReadUnaligned32
+0x00001263	0x00000009	[ 59] _ReadUnaligned64
+0x0000126C	0x0000000C	[ 59] _WriteUnaligned64
+0x00001278	0x0000000F	[ 77] _InternalSwitchStack
+0x00001287	0x00000043	[ 78] _SetJump
+0x000012CA	0x0000007F	[ 78] CetDone
+0x00001349	0x00000030	[ 79] _InternalLongJump
+0x00001379	0x0000007C	[ 79] CetDone
+0x000013F5	0x00000003	[ 80] _EnableDisableInterrupts
+0x000013F8	0x0000003A	[ 81] _InternalX86DisablePaging64
+0x00001432	0x00000027	[ 81] _InternalX86DisablePaging64.0
+0x00001459	0x00000000	[ 81] mTransitionEnd
+0x00001459	0x0000000F	[ 82] _AsmCpuid
+0x00001468	0x00000005	[ 82] _AsmCpuid.0
+0x0000146D	0x00000007	[ 82] _AsmCpuid.1
+0x00001474	0x00000009	[ 82] _AsmCpuid.2
+0x0000147D	0x00000003	[ 82] _AsmCpuid.3
+0x00001480	0x00000015	[ 83] _AsmCpuidEx
+0x00001495	0x00000007	[ 83] _AsmCpuidEx.0
+0x0000149C	0x00000007	[ 83] _AsmCpuidEx.1
+0x000014A3	0x00000009	[ 83] _AsmCpuidEx.2
+0x000014AC	0x00000003	[ 83] _AsmCpuidEx.3
+0x000014AF	0x00000013	[ 84] _AsmEnableCache
+0x000014C2	0x00000013	[ 85] _AsmDisableCache
+0x000014D5	0x00000009	[ 86] _InternalX86RdRand16
+0x000014DE	0x00000009	[ 86] rn16_ok
+0x000014E7	0x00000009	[ 86] _InternalX86RdRand32
+0x000014F0	0x00000008	[ 86] rn32_ok
+0x000014F8	0x0000000A	[ 86] _InternalX86RdRand64
+0x00001502	0x00000009	[ 86] rn64_ok
+0x0000150B	0x00000021	[ 88] _UefiBootServicesTableLibConstructor
+0x0000152C	0x00000353	[ 89] _BasePrintLibConvertValueToStringS
+0x0000187F	0x000010B9	[ 89] _BasePrintLibSPrintMarker
+0x00002938	0x000000AF	[ 89] _BasePrintLibSPrint
+0x000029E7	0x000000B7	[ 90] _UnicodeSPrint
+0x00002A9E	0x000000AB	[ 90] _UnicodeValueToStringS
+0x00002B49	0x0000003D	[ 91] _AllocatePool
+0x00002B86	0x0000003B	[ 91] _InternalAllocateZeroPool
+0x00002BC1	0x00000097	[ 91] _AllocateZeroPool
+0x00002C58	0x00000053	[ 91] _InternalAllocateCopyPool
+0x00002CAB	0x00000097	[ 91] _AllocateCopyPool
+0x00002D42	0x00000016	[ 91] _FreePool
+0x00002D58	0x000000DE	[ 92] _IsDevicePathValid
+0x00002E36	0x00000016	[ 92] _IsDevicePathEnd
+0x00002E4C	0x00000066	[ 92] _UefiDevicePathLibGetDevicePathSize
+0x00002EB2	0x0000003B	[ 92] _DevicePathFromHandle
+0x00002EED	0x0000000A	[ 95] _GetDevicePathSize
+0x00002EF7	0x00000013	[ 96] _UefiRuntimeServicesTableLibConstructor
+0x00002F0A	0x000000A1	[ 97] _UefiHiiServicesLibConstructor
+0x00002FAB	0x00000008	[102] _UefiLibConstructor
+0x00002FB3	0x00000059	[102] _EfiCreateProtocolNotifyEvent
+0x0000300C	0x00000006	[102] _EfiEventEmptyFunction
+0x00003012	0x000000CF	[102] _GetVariable2
+0x000030E1	0x0000001A	[102] _GetEfiGlobalVariable2
+0x000030FB	0x0000011D	[102] _GetBestLanguage
+0x00003218	0x00000034	[104] __DriverUnloadHandler
+0x0000324C	0x00000096	[104] __ModuleEntryPoint
+0x000032E4	0x00000099	[105] _InternalHiiExtractGuidFromHiiHandle
+0x0000337D	0x000000ED	[105] _HiiGetHiiHandles
+0x0000346B	0x00000255	[105] _HiiConstructConfigHdr
+0x000036C0	0x00000156	[106] _HiiSetString
+0x00003816	0x00000145	[106] _HiiGetString
+0x0000395B	0x00000077	[107] _HiiGetSupportedLanguages
+0x000039D4	0x0000033C	[108] _SendForm
+0x00003D10	0x00000293	[108] _BrowserCallback
+0x00003FA3	0x0000005B	[108] _SetScope
+0x00003FFE	0x0000019C	[108] _RegisterHotKey
+0x0000419A	0x0000000D	[108] _RegiserExitHandler
+0x000041A7	0x00000158	[108] _SaveReminder
+0x000042FF	0x00000173	[108] _IsBrowserDataModified
+0x00004472	0x000001C2	[108] _ExecuteAction
+0x00004634	0x0000000C	[108] _IsResetRequired
+0x00004640	0x00000071	[108] _UiAddMenuList
+0x000046B4	0x0000012F	[108] _UiFindMenuList
+0x000047E3	0x00000080	[108] _UiFindParentMenu
+0x00004863	0x00000033	[108] _UiFreeMenuList
+0x00004896	0x000000A6	[108] _UiCopyMenuList
+0x0000493C	0x000000D8	[108] _LoadAllHiiFormset
+0x00004A14	0x0000008E	[108] _GetFormSetFromHiiHandle
+0x00004AA2	0x000000A1	[108] _InitializeFormSet
+0x00004B43	0x000000BB	[108] _InitializeCurrentSetting
+0x00004BFE	0x00000061	[108] _LoadFormSetConfig
+0x00004C5F	0x00000090	[108] _PopupErrorMessage
+0x00004CEF	0x00000165	[108] _SaveBrowserContext
+0x00004E54	0x0000004F	[108] _ValidateHiiHandle
+0x00004EA3	0x00000095	[108] _CleanBrowserStorage
+0x00004F38	0x00000139	[108] _RestoreBrowserContext
+0x00005071	0x0000012B	[108] _ProcessStorage
+0x0000519C	0x0000011C	[108] _StorageToConfigResp
+0x000052B8	0x00000137	[108] _ConfigRespToStorage
+0x000053EF	0x00000183	[108] _ConfigRequestAdjust
+0x00005572	0x00000031	[108] _FormDisplayCallback
+0x000055A3	0x000001CE	[108] _InitializeSetup
+0x00005771	0x00000021	[108] _NewString
+0x00005792	0x00000027	[108] _DeleteString
+0x000057B9	0x00000044	[108] _GetToken
+0x000057FD	0x00000031	[108] _NewStringCpy
+0x0000582E	0x00000077	[108] _NewStringCat
+0x000058A5	0x0000009D	[108] _GetValueByName
+0x00005942	0x000000CE	[108] _SetValueByName
+0x00005A10	0x0000005E	[108] _GetBitsQuestionValue
+0x00005A6E	0x00000068	[108] _SetBitsQuestionValue
+0x00005AD6	0x000001FB	[108] _BufferToValue
+0x00005CD1	0x000004D7	[108] _GetQuestionValue
+0x000061A8	0x00000580	[108] _SetQuestionValue
+0x00006728	0x00000161	[108] _ValidateQuestion
+0x00006889	0x0000007D	[108] _ValueChangedValidation
+0x00006906	0x0000010F	[108] _NoSubmitCheck
+0x00006A15	0x00000161	[108] _SynchronizeStorage
+0x00006B76	0x00000111	[108] _SendDiscardInfoToDriver
+0x00006C87	0x000000C9	[108] _SubmitCallbackForForm
+0x00006D50	0x0000006F	[108] _SubmitCallback
+0x00006DBF	0x0000004F	[108] _ValidateFormSet
+0x00006E0E	0x000000AF	[108] _UpdateFlagForForm
+0x00006EBD	0x000001F5	[108] _IsQuestionValueChanged
+0x000070B2	0x00000096	[108] _ValueChangeResetFlagUpdate
+0x00007148	0x00000205	[108] _FindQuestionFromProgress
+0x0000734D	0x00000163	[108] _GetSyncRestoreConfigRequest
+0x000074B0	0x00000095	[108] _ConfirmSaveFail
+0x00007545	0x00000095	[108] _ConfirmNoSubmitFail
+0x000075DA	0x0000021D	[108] _DiscardForm
+0x000077F7	0x00000072	[108] _IsHiiHandleInBrowserContext
+0x00007869	0x000002CD	[108] _SubmitForForm
+0x00007B36	0x00000431	[108] _SubmitForFormSet
+0x00007F67	0x000003BE	[108] _SubmitForSystem
+0x00008325	0x00000032	[108] _SubmitForm
+0x00008357	0x00000048	[108] _HiiToLower
+0x0000839F	0x00000155	[108] _GetOffsetFromConfigResp
+0x000084F4	0x00000107	[108] _GetDefaultValueFromAltCfg
+0x000085FB	0x0000005E	[108] _GetDefaultIdForCallBack
+0x00008659	0x00000047	[108] _GetArrayData
+0x000086A0	0x000000A2	[108] _ValueToOption
+0x00008742	0x000007BE	[108] _GetQuestionDefault
+0x00008F00	0x0000015F	[108] _ExtractAltCfgForForm
+0x0000905F	0x00000065	[108] _CleanAltCfgForForm
+0x000090C4	0x000000FF	[108] _ExtractAltCfgForFormSet
+0x000091C3	0x0000006C	[108] _CleanAltCfgForFormSet
+0x0000922F	0x0000031E	[108] _ExtractDefault
+0x0000954D	0x000000A0	[108] _LoadFormConfig
+0x000095ED	0x00000059	[108] _RemoveElement
+0x00009646	0x000000E4	[108] _RemoveConfigRequest
+0x0000972A	0x000000A9	[108] _AppendConfigRequest
+0x000097D3	0x00000152	[108] _LoadStorage
+0x00009925	0x000000AD	[108] _SyncStatusForQuestion
+0x000099D2	0x000000AB	[108] _SyncStatusForFormSet
+0x00009A7D	0x000002CE	[108] _GetIfrBinaryData
+0x00009D4B	0x00000156	[108] _PasswordCheck
+0x00009EA1	0x0000006C	[108] _GetHotKeyFromRegisterList
+0x00009F10	0x00000164	[109] _CreateStatement
+0x0000A074	0x00000060	[109] _UpdateCheckBoxStringToken
+0x0000A0D4	0x00000040	[109] _IsNextOpCodeGuidedVarEqName
+0x0000A114	0x000001E0	[109] _CreateQuestion
+0x0000A2F6	0x00000049	[109] _InitializeConfigHdr
+0x0000A33F	0x000000C2	[109] _FindStorageInList
+0x0000A401	0x000000D9	[109] _IntializeBrowserStorage
+0x0000A4DA	0x00000182	[109] _CreateStorage
+0x0000A65C	0x00000052	[109] _GetFstStgFromVarId
+0x0000A6AE	0x000000C1	[109] _GetFstStgFromBrsStg
+0x0000A76F	0x0000025B	[109] _InitializeRequestElement
+0x0000A9CA	0x000000A3	[109] _DestroyExpression
+0x0000AA6D	0x00000029	[109] _DestroyStorage
+0x0000AA96	0x0000018F	[109] _DestroyStatement
+0x0000AC25	0x000000D0	[109] _DestroyForm
+0x0000ACF5	0x0000012F	[109] _DestroyFormSet
+0x0000AE24	0x0000004B	[109] _IsExpressionOpCode
+0x0000AE6F	0x0000002D	[109] _IsStatementOpCode
+0x0000AE9F	0x00000082	[109] _CountOpCodes
+0x0000AF21	0x0000229F	[109] _ParseOpCodes
+0x0000D1C0	0x000000AA	[110] _GrowStack
+0x0000D26A	0x00000061	[110] _PushStack
+0x0000D2CE	0x0000003E	[110] _ResetCurrentExpressionStack
+0x0000D30C	0x00000033	[110] _PushCurrentExpression
+0x0000D33F	0x00000050	[110] _PopCurrentExpression
+0x0000D38F	0x00000014	[110] _ResetMapExpressionListStack
+0x0000D3A3	0x000000A1	[110] _GrowConditionalStack
+0x0000D444	0x0000004B	[110] _PushConditionalStack
+0x0000D492	0x0000004E	[110] _GetConditionalExpressionCount
+0x0000D4E0	0x00000032	[110] _GetConditionalExpressionList
+0x0000D512	0x00000079	[110] _PushConditionalExpression
+0x0000D58B	0x00000093	[110] _PopConditionalExpression
+0x0000D61E	0x00000033	[110] _PushMapExpressionList
+0x0000D651	0x00000050	[110] _PopMapExpressionList
+0x0000D6A1	0x00000014	[110] _ResetScopeStack
+0x0000D6B5	0x00000033	[110] _PushScope
+0x0000D6E8	0x0000004E	[110] _PopScope
+0x0000D736	0x00000052	[110] _IdToForm
+0x0000D788	0x0000005B	[110] _IdToQuestion2
+0x0000D7E3	0x000000BD	[110] _IdToQuestion
+0x0000D8A0	0x00000068	[110] _RuleIdToExpression
+0x0000D908	0x000001DC	[110] _IfrToString
+0x0000DAE4	0x0000015B	[110] _IfrToUint
+0x0000DC3F	0x00000369	[110] _IfrCatenate
+0x0000DFA8	0x00000153	[110] _IfrMatch
+0x0000E0FB	0x0000038C	[110] _IfrMatch2
+0x0000E487	0x0000023A	[110] _IfrFind
+0x0000E6C1	0x00000273	[110] _IfrMid
+0x0000E934	0x00000203	[110] _IfrToken
+0x0000EB37	0x00000233	[110] _IfrSpan
+0x0000ED6A	0x0000005A	[110] _ExtendValueToU64
+0x0000EDC4	0x0000005C	[110] _HiiValueToUINT64
+0x0000EE20	0x0000027C	[110] _CompareHiiValue
+0x0000F09C	0x000001C2	[110] _CheckUserPrivilege
+0x0000F25E	0x00000136	[110] _GetQuestionValueFromForm
+0x0000F394	0x0000200C	[110] _EvaluateExpression
+0x000113A0	0x0000005C	[110] _IsTrue
+0x000113FC	0x000000A5	[110] _EvaluateExpressionList
+0x000114A4	0x000000A5	[111] _EvaluateFormExpressions
+0x00011549	0x00000066	[111] _GetDisplayStatement
+0x000115AF	0x0000005A	[111] _FreeRefreshEvent
+0x00011609	0x00000074	[111] _UpdateStatement
+0x0001167D	0x00000587	[111] _ProcessCallBackFunction
+0x00011C04	0x000000A2	[111] _RefreshEventNotifyForStatement
+0x00011CA6	0x00000025	[111] _RefreshEventNotifyForForm
+0x00011CCB	0x00000064	[111] _CreateRefreshEventForStatement
+0x00011D2F	0x00000061	[111] _CreateRefreshEventForForm
+0x00011D90	0x00000268	[111] _InitializeDisplayStatement
+0x00011FF8	0x0000011F	[111] _RefreshIntervalProcess
+0x00012117	0x000000A8	[111] _UpdateHotkeyList
+0x000121BF	0x000000A6	[111] _ProcessQuestionExtraAttr
+0x00012265	0x000002F8	[111] _AddStatementToDisplayForm
+0x0001255D	0x000000B7	[111] _UpdateDataChangedFlag
+0x00012614	0x0000004E	[111] _IsNvUpdateRequiredForForm
+0x00012662	0x0000005E	[111] _IsNvUpdateRequiredForFormSet
+0x000126C0	0x0000007C	[111] _InitializeDisplayFormData
+0x0001273C	0x00000062	[111] _FreeHotkeyList
+0x0001279E	0x0000008C	[111] _UpdateDisplayFormData
+0x0001282A	0x00000091	[111] _FreeStatementData
+0x000128BB	0x00000027	[111] _FreeDisplayFormData
+0x000128E2	0x0000006E	[111] _GetBrowserStatement
+0x00012950	0x0000007F	[111] _UpdateStatementStatusForForm
+0x000129CF	0x00000058	[111] _UpdateStatementStatusForFormSet
+0x00012A27	0x000000A1	[111] _UpdateStatementStatus
+0x00012AC8	0x0000012C	[111] _ProcessAction
+0x00012BF4	0x0000012F	[111] _FindNextMenu
+0x00012D23	0x0000013F	[111] _GetFormsetGuidFromHiiHandle
+0x00012E62	0x000000CA	[111] _DevicePathToHiiHandle
+0x00012F2C	0x00000067	[111] _FormSetGuidToHiiHandle
+0x00012F93	0x00000061	[111] _ProcessChangedData
+0x00012FF4	0x0000005F	[111] _FindParentFormSet
+0x00013053	0x00000272	[111] _ProcessGotoOpCode
+0x000132C5	0x00000056	[111] _ProcessQuestionConfig
+0x0001331B	0x00000275	[111] _ProcessUserInput
+0x00013590	0x000000DA	[111] _DisplayForm
+0x0001366A	0x0000000F	[111] _FormUpdateNotify
+0x00013679	0x00000050	[111] _ReconnectController
+0x000136C9	0x000000EF	[111] _ProcessRetrieveForQuestion
+0x000137B8	0x000004C6	[111] _SetupBrowser
+0x00013C7E	0x0000003D	[112] _ProcessLibraryConstructorList
+0x00013CBB	0x00000006	[112] _ProcessLibraryDestructorList
+0x00013CC1	0x0000000A	[112] _ProcessModuleEntryPointList
+0x00013CCB	0x00000008	[112] _ProcessModuleUnloadList
+0x00013CE0	0x00000010	[ 89] _mHexStr
+0x00013CF0	0x0000000D	[109] l_switch.table.ParseOpCodes
+0x00013D00	0x00000001	[112] __gPcd_FixedAtBuild_PcdFrameworkCompatibilitySupport
+0x00013D04	0x00000004	[112] __gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+0x00013D08	0x00000004	[112] __gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+0x00013D0C	0x00000004	[112] __gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+0x00013D10	0x00000004	[112] __gPcd_FixedAtBuild_PcdMaximumDevicePathNodeCount
+0x00013D14	0x00000004	[112] __gUefiDriverRevision
+0x00013D18	0x00000001	[112] __gDriverUnloadImageCount
+0x00013D19	0x00000008	[ 89] literal string: Success
+0x00013D21	0x00000016	[ 89] literal string: Warning Unknown Glyph
+0x00013D37	0x00000017	[ 89] literal string: Warning Delete Failure
+0x00013D4E	0x00000016	[ 89] literal string: Warning Write Failure
+0x00013D64	0x00000019	[ 89] literal string: Warning Buffer Too Small
+0x00013D7D	0x00000013	[ 89] literal string: Warning Stale Data
+0x00013D90	0x0000000B	[ 89] literal string: Load Error
+0x00013D9B	0x00000012	[ 89] literal string: Invalid Parameter
+0x00013DAD	0x0000000C	[ 89] literal string: Unsupported
+0x00013DB9	0x00000010	[ 89] literal string: Bad Buffer Size
+0x00013DC9	0x00000011	[ 89] literal string: Buffer Too Small
+0x00013DDA	0x0000000A	[ 89] literal string: Not Ready
+0x00013DE4	0x0000000D	[ 89] literal string: Device Error
+0x00013DF1	0x00000010	[ 89] literal string: Write Protected
+0x00013E01	0x00000011	[ 89] literal string: Out of Resources
+0x00013E12	0x0000000F	[ 89] literal string: Volume Corrupt
+0x00013E21	0x0000000C	[ 89] literal string: Volume Full
+0x00013E2D	0x00000009	[ 89] literal string: No Media
+0x00013E36	0x0000000E	[ 89] literal string: Media changed
+0x00013E44	0x0000000A	[ 89] literal string: Not Found
+0x00013E4E	0x0000000E	[ 89] literal string: Access Denied
+0x00013E5C	0x0000000C	[ 89] literal string: No Response
+0x00013E68	0x0000000B	[ 89] literal string: No mapping
+0x00013E73	0x00000009	[ 89] literal string: Time out
+0x00013E7C	0x0000000C	[ 89] literal string: Not started
+0x00013E88	0x00000010	[ 89] literal string: Already started
+0x00013E98	0x00000008	[ 89] literal string: Aborted
+0x00013EA0	0x0000000B	[ 89] literal string: ICMP Error
+0x00013EAB	0x0000000B	[ 89] literal string: TFTP Error
+0x00013EB6	0x0000000F	[ 89] literal string: Protocol Error
+0x00013EC5	0x00000015	[ 89] literal string: Incompatible Version
+0x00013EDA	0x00000013	[ 89] literal string: Security Violation
+0x00013EED	0x0000000A	[ 89] literal string: CRC Error
+0x00013EF7	0x0000000D	[ 89] literal string: End of Media
+0x00013F04	0x0000000E	[ 89] literal string: Reserved (29)
+0x00013F12	0x0000000E	[ 89] literal string: Reserved (30)
+0x00013F20	0x0000000C	[ 89] literal string: End of File
+0x00013F2C	0x00000011	[ 89] literal string: Invalid Language
+0x00013F3D	0x00000011	[ 89] literal string: Compromised Data
+0x00013F4E	0x0000000E	[ 89] literal string: <null string>
+0x00013F5C	0x0000000C	[ 89] literal string: <null guid>
+0x00013F68	0x00000031	[ 89] literal string: %08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+0x00013F99	0x0000000C	[ 89] literal string: <null time>
+0x00013FA5	0x0000001A	[ 89] literal string: %02d/%02d/%04d  %02d:%02d
+0x00013FBF	0x00000005	[ 89] literal string: %08X
+0x00013FC4	0x00000003	[ 89] literal string: \n
+0x00013FC7	0x00000002	[ 89] literal string: 
+0x00013FC9	0x00000007	[106] literal string: x-UEFI
+0x00013FD0	0x00000001	[106] literal string: 
+0x00013FD2	0x0000000C	[105] l_.str
+0x00013FDE	0x0000000E	[105] l_.str.1
+0x00013FEC	0x0000000E	[105] l_.str.2
+0x00013FFA	0x0000001A	[106] l_.str.1
+0x00014014	0x00000004	[108] l_.str
+0x00014018	0x00000002	[108] l_.str.1
+0x0001401A	0x0000000A	[108] l_.str.2
+0x00014024	0x00000004	[108] l_.str.3
+0x00014028	0x00000004	[108] l_.str.4
+0x0001402C	0x0000000E	[108] l_.str.5
+0x0001403A	0x00000010	[108] l_.str.6
+0x0001404A	0x0000000C	[108] l_.str.7
+0x00014056	0x00000012	[108] l_.str.8
+0x00014068	0x00000034	[108] l_.str.9
+0x0001409C	0x00000042	[108] l_.str.10
+0x000140DE	0x00000010	[108] l_.str.11
+0x000140EE	0x0000002E	[108] l_.str.12
+0x0001411C	0x0000000E	[108] l_.str.13
+0x0001412A	0x00000030	[109] l_.str
+0x0001415A	0x00000008	[109] l_.str.1
+0x00014162	0x00000008	[110] l_.str
+0x0001416A	0x00000008	[110] l_.str.1
+0x00014172	0x00000008	[110] l_.str.2
+0x0001417A	0x0000000A	[110] l_.str.3
+0x00014184	0x0000000C	[110] l_.str.4
+0x00014190	0x00000006	[110] l_.str.5
+0x00014196	0x00000006	[110] l_.str.6
+0x0001419C	0x00000006	[110] l_.str.7
+0x000141A2	0x0000000A	[110] l_.str.8
+0x000141AC	0x0000000C	[110] l_.str.9
+0x000141C0	0x00000138	[ 89] _mStatusString
+0x00014300	0x00000020	[110] l_switch.table.IfrToString
+0x00014320	0x00000002	[ 54] _m16Size
+0x00014322	0x00000002	[ 54] _mThunk16Attr
+0x00014324	0x00000002	[ 54] _m16Gdt
+0x00014326	0x00000002	[ 54] _m16GdtrBase
+0x00014328	0x00000002	[ 54] _mTransition
+0x00014330	0x00000098	[108] _mPrivateData
+0x000143C8	0x00000010	[108] _gBrowserContextList
+0x000143D8	0x00000010	[108] _gBrowserFormSetList
+0x000143E8	0x00000010	[108] _gBrowserHotKeyList
+0x000143F8	0x00000010	[108] _gBrowserStorageList
+0x00014408	0x00000010	[108] _gBrowserSaveFailFormSetList
+0x00014418	0x00000004	[108] _gBrowserSettingScope
+0x0001441C	0x00000004	[108] _mBrowserScopeFirstSet
+0x00014420	0x00000008	[108] _mUnknownString
+0x00014428	0x00000010	[111] _mRefreshEventList
+0x00014438	0x00000010	[112] _gEfiIfrFrameworkGuid
+0x00014448	0x00000010	[112] _gEfiHiiPlatformSetupFormsetGuid
+0x00014458	0x00000010	[112] _gEfiHiiStandardFormGuid
+0x00014468	0x00000010	[112] _gEdkiiIfrBitVarstoreGuid
+0x00014478	0x00000010	[112] _gEfiGlobalVariableGuid
+0x00014488	0x00000010	[112] _gEfiHiiConfigAccessProtocolGuid
+0x00014498	0x00000010	[112] _gEfiFormBrowser2ProtocolGuid
+0x000144A8	0x00000010	[112] _gEdkiiFormBrowserEx2ProtocolGuid
+0x000144B8	0x00000010	[112] _gEfiHiiConfigRoutingProtocolGuid
+0x000144C8	0x00000010	[112] _gEfiHiiDatabaseProtocolGuid
+0x000144D8	0x00000010	[112] _gEfiUnicodeCollation2ProtocolGuid
+0x000144E8	0x00000010	[112] _gEfiUserManagerProtocolGuid
+0x000144F8	0x00000010	[112] _gEfiDevicePathFromTextProtocolGuid
+0x00014508	0x00000010	[112] _gEdkiiFormDisplayEngineProtocolGuid
+0x00014518	0x00000010	[112] _gEdkiiFormBrowserExProtocolGuid
+0x00014528	0x00000010	[112] _gEfiRegularExpressionProtocolGuid
+0x00014538	0x00000010	[112] _gEfiDevicePathProtocolGuid
+0x00014548	0x00000010	[112] _gEfiHiiFontProtocolGuid
+0x00014558	0x00000010	[112] _gEfiHiiStringProtocolGuid
+0x00014568	0x00000010	[112] _gEfiHiiImageProtocolGuid
+0x00014578	0x00000010	[112] _gEfiLoadedImageProtocolGuid
+0x00014588	0x00000008	[ 88] _gImageHandle
+0x00014590	0x00000008	[ 88] _gST
+0x00014598	0x00000008	[ 88] _gBS
+0x000145A0	0x00000008	[ 96] _gRT
+0x000145A8	0x00000008	[ 97] _gHiiFont
+0x000145B0	0x00000008	[ 97] _gHiiString
+0x000145B8	0x00000008	[ 97] _gHiiImage
+0x000145C0	0x00000008	[ 97] _gHiiDatabase
+0x000145C8	0x00000008	[ 97] _gHiiConfigRouting
+0x000145D0	0x00000008	[108] _gBrowserContextCount
+0x000145D8	0x00000001	[108] _mSystemSubmit
+0x000145D9	0x00000007	[108] _gResetRequiredSystemLevel
+0x000145E0	0x00000008	[108] _ExitHandlerFunction
+0x000145E8	0x00000008	[110] _mOpCodeScopeStack
+0x000145F0	0x00000008	[110] _mOpCodeScopeStackEnd
+0x000145F8	0x00000008	[110] _mOpCodeScopeStackPointer
+0x00014600	0x00000008	[110] _mExpressionEvaluationStack
+0x00014608	0x00000008	[110] _mExpressionEvaluationStackEnd
+0x00014610	0x00000008	[110] _mExpressionEvaluationStackPointer
+0x00014618	0x00000008	[110] _mExpressionEvaluationStackOffset
+0x00014620	0x00000008	[110] _mCurrentExpressionStack
+0x00014628	0x00000008	[110] _mCurrentExpressionEnd
+0x00014630	0x00000008	[110] _mCurrentExpressionPointer
+0x00014638	0x00000008	[110] _mMapExpressionListStack
+0x00014640	0x00000008	[110] _mMapExpressionListEnd
+0x00014648	0x00000008	[110] _mMapExpressionListPointer
+0x00014650	0x00000008	[110] _mFormExpressionStack
+0x00014658	0x00000008	[110] _mFormExpressionEnd
+0x00014660	0x00000008	[110] _mFormExpressionPointer
+0x00014668	0x00000008	[110] _mStatementExpressionStack
+0x00014670	0x00000008	[110] _mStatementExpressionEnd
+0x00014678	0x00000008	[110] _mStatementExpressionPointer
+0x00014680	0x00000008	[110] _mOptionExpressionStack
+0x00014688	0x00000008	[110] _mOptionExpressionEnd
+0x00014690	0x00000008	[110] _mOptionExpressionPointer
+0x00014698	0x00000008	[110] _mUnicodeCollation
+0x000146A0	0x00000008	[110] _mUserManager
+0x000146A8	0x00000008	[111] _mCurrentHiiHandle
+0x000146B0	0x00000010	[111] _mCurrentFormSetGuid
+0x000146C0	0x00000008	[111] _mCurrentFormId
+0x000146C8	0x00000008	[111] _mValueChangedEvent
+0x000146D0	0x00000001	[111] _mFinishRetrieveCall
+0x000146D8	0x00000010	[112] _gZeroGuid
+0x000146E8	0x00000001	[108] _gCallbackReconnect
+0x000146F0	0x00000008	[108] _gEmptyString
+0x000146F8	0x00000001	[108] _gExitRequired
+0x000146F9	0x00000001	[108] _gFlagReconnect
+0x000146FA	0x00000001	[108] _gResetRequiredFormLevel
+0x00014700	0x00000008	[108] _mFormDisplay
+0x00014708	0x00000008	[108] _mHiiConfigRouting
+0x00014710	0x00000008	[108] _mHiiDatabase
+0x00014718	0x00000008	[108] _mPathFromText
+0x00014720	0x00000008	[108] _mSystemLevelFormSet
+0x00014728	0x00000002	[109] _mExpressionOpCodeIndex
+0x0001472A	0x00000002	[109] _mStatementIndex
+0x0001472C	0x00000002	[109] _mUsedQuestionId
+0x00014730	0x00000008	[111] _gCurrentSelection
+0x00014738	0x00000090	[111] _gDisplayFormData
+0x000147C8	0x00000002	[111] _mCurFakeQestId
+0x000147CA	0x00000001	[111] _mHiiPackageListUpdated

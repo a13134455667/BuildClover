@@ -1,0 +1,102 @@
+## @file
+# Generic watchdog timer driver producing Watchdog Timer Architectural Protocol using UEFI APIs.
+#
+# Copyright (c) 2006 - 2018, Intel Corporation. All rights reserved.<BR>
+#
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution. The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = WatchdogTimer
+  FILE_GUID                  = F099D67F-71AE-4c36-B2A3-DCEB0EB2B7D8
+  MODULE_TYPE                = DXE_DRIVER
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = WatchdogTimerDriverInitialize
+  MODULE_UNI_FILE            = WatchdogTimer.uni
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+
+[Binaries.X64]
+  PE32|WatchdogTimer.efi
+  DXE_DEPEX|WatchdogTimer.depex
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  ## PRODUCES
+  gEfiWatchdogTimerArchProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+
+[Depex.X64]
+#  (gEfiTimerArchProtocolGuid) AND (gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid)
+
+[UserExtensions.TianoCore."ExtraFiles"]
+WatchdogTimerExtra.uni
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+# [Event]
+# EVENT_TYPE_RELATIVE_TIMER ## CONSUMES
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   GCC:RELEASE_XCODE8_X64_VFR_FLAGS = -l -n
+##   GCC:RELEASE_XCODE8_X64_PP_FLAGS = -E -x assembler-with-cpp -include $(DEST_DIR_DEBUG)/AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_ASLCC_FLAGS = -x c -save-temps -g -O0 -fshort-wchar -fno-strict-aliasing -Wall -Werror -Wno-missing-braces -c -include AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:RELEASE_XCODE8_X64_OPTROM_FLAGS = -e
+##   GCC:RELEASE_XCODE8_X64_MTOC_FLAGS = -align 0x20
+##   GCC:RELEASE_XCODE8_X64_NASMB_FLAGS = -f bin
+##   GCC:RELEASE_XCODE8_X64_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_NASM_FLAGS = -f macho64
+##   GCC:RELEASE_XCODE8_X64_GENFW_FLAGS = 
+##   GCC:RELEASE_XCODE8_X64_APP_FLAGS = -E -x assembler-with-cpp -include $(DEST_DIR_DEBUG)/AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_ASLDLINK_FLAGS = -nostdlib -Wl,-e,_ReferenceAcpiTable,-preload,-segalign,0x20,-pie,-seg1addr,0x240,-read_only_relocs,suppress,-map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map
+##   GCC:RELEASE_XCODE8_X64_SLINK_FLAGS = -static -o
+##   GCC:RELEASE_XCODE8_X64_DLINK_FLAGS = -arch x86_64 -nostdlib -Wl,-u,_$(IMAGE_ENTRY_POINT),-e,_$(IMAGE_ENTRY_POINT),-preload,-segalign,0x20,-pie,-all_load,-dead_strip,-seg1addr,0x240,-map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map
+##   GCC:RELEASE_XCODE8_X64_DTC_FLAGS = -H epapr
+##   GCC:RELEASE_XCODE8_X64_ASM_FLAGS = -c -x assembler -arch x86_64
+##   GCC:RELEASE_XCODE8_X64_VFRPP_FLAGS = -x c -E -P -DVFRCOMPILE -include $(DEST_DIR_DEBUG)/$(MODULE_NAME)StrDefs.h
+##   GCC:RELEASE_XCODE8_X64_DTCPP_FLAGS = -E -x assembler-with-cpp -imacros $(DEST_DIR_DEBUG)/AutoGen.h -nostdinc -undef
+##   GCC:RELEASE_XCODE8_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:RELEASE_XCODE8_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   GCC:RELEASE_XCODE8_X64_CC_FLAGS = -c    -Os       -Wall -Werror -Wextra -include AutoGen.h -funsigned-char -fno-ms-extensions -fno-stack-protector -fno-builtin -fshort-wchar -mno-implicit-float -mms-bitfields -Wno-unused-parameter -Wno-missing-braces -Wno-missing-field-initializers -Wno-tautological-compare -Wno-sign-compare "-DEFIAPI=__attribute__((ms_abi))" -mno-red-zone -fno-unwind-tables -Wno-msvc-include -Os -DMDEPKG_NDEBUG -DCLOVER_BUILD $(VBIOS_PATCH_CLOVEREFI_FLAG) $(ONLY_SATA_0_FLAG) -DUSE_BIOS_BLOCKIO -DDISABLE_USB_SUPPORT $(NOUDMA_FLAG) -DAMD_SUPPORT $(SECURE_BOOT_FLAG) -DANDX86 -DLODEPNG $(PS2MOUSE_LEGACYBOOT_FLAG) $(DEBUG_ON_SERIAL_PORT_FLAG) $(EXIT_USBKB_FLAG) $(DISABLE_LTO_FLAG)
+##   GCC:RELEASE_XCODE8_X64_ASL_FLAGS = 

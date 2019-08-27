@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/928EF6D4-72BC-4686-B57B-1EEB6ABD4F93AcpiReset/928EF6D4-72BC-4686-B57B-1EEB6ABD4F93SEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/CloverEFI/AcpiReset/Reset/OUTPUT/AcpiReset.efi

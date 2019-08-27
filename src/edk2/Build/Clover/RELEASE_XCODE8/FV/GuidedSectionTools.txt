@@ -1,0 +1,6 @@
+a31280ad-481e-41b6-95e8-127f4c984779 TIANO /Users/weisiyuan/src/edk2/BaseTools/BinWrappers/PosixLike/TianoCompress
+d42ae6bd-1352-4bfb-909a-ca72a6eae889 LZMAF86 /Users/weisiyuan/src/edk2/BaseTools/BinWrappers/PosixLike/LzmaF86Compress
+fc1bcdb0-7d31-49aa-936a-a4600d9dd083 CRC32 /Users/weisiyuan/src/edk2/BaseTools/BinWrappers/PosixLike/GenCrc32
+8c3d856a-9be6-468e-850a-24f7a8d38e08 VPDTOOL /Users/weisiyuan/src/edk2/BaseTools/BinWrappers/PosixLike/BPDG
+a7717414-c616-4977-9420-844712a735bf RSA2048SHA256SIGN /Users/weisiyuan/src/edk2/BaseTools/BinWrappers/PosixLike/Rsa2048Sha256Sign
+ee4e5898-3914-4259-9d6e-dc7bd79403cf LZMA /Users/weisiyuan/src/edk2/BaseTools/BinWrappers/PosixLike/LzmaCompress

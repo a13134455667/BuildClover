@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/0167CCC4-D0F7-4f21-A3EF-9E64B7CDCE8BScsiBus/0167CCC4-D0F7-4f21-A3EF-9E64B7CDCE8BSEC2.1.pe32 /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/Drivers/DVDBus/ScsiBusDxe/OUTPUT/ScsiBus.efi

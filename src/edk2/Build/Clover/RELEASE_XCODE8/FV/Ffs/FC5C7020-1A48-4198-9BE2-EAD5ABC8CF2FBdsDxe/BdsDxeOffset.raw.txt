@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/FC5C7020-1A48-4198-9BE2-EAD5ABC8CF2FBdsDxe/BdsDxeOffset.raw /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/FC5C7020-1A48-4198-9BE2-EAD5ABC8CF2FBdsDxe/BdsDxe.offset

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/FV/Ffs/E660EA85-058E-4b55-A54B-F02F83A24707DisplayEngine/E660EA85-058E-4b55-A54B-F02F83A24707SEC1.1.dpx /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/OUTPUT/DisplayEngine.depex

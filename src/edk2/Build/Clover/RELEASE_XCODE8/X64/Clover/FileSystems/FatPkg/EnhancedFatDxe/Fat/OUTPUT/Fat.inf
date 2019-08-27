@@ -1,0 +1,246 @@
+## @file
+#  Component description file for FAT module.
+#
+#  This UEFI driver detects the FAT file system in the disk.
+#  It also produces the Simple File System protocol for the consumer to
+#  perform file and directory operations on the disk.
+#  Copyright (c) 2007 - 2014, Intel Corporation. All rights reserved.<BR>
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions are
+#  met:
+#
+#    Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#
+#    Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in
+#    the documentation and/or other materials provided with the
+#    distribution.
+#
+#    Neither the name of Intel nor the names of its contributors may
+#    be used to endorse or promote products derived from this software
+#    without specific prior written permission.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+#  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+#  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+#  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+#  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+#  Additional terms: In addition to the forgoing, redistribution and use
+#  of the code is conditioned upon the FAT 32 File System Driver and all
+#  derivative works thereof being used for and designed only to read
+#  and/or write to a file system that is directly managed by an
+#  Extensible Firmware Interface (EFI) implementation or by an emulator
+#  of an EFI implementation.
+#
+#
+##
+
+# DO NOT EDIT
+# FILE auto-generated
+
+[Defines]
+  INF_VERSION                = 0x00010017
+  BASE_NAME                  = Fat
+  FILE_GUID                  = 961578FE-B6B7-44c3-AF35-6BC705CD2B1F
+  MODULE_TYPE                = UEFI_DRIVER
+  VERSION_STRING             = 1.0
+  ENTRY_POINT                = FatEntryPoint
+  UNLOAD_IMAGE               = FatUnload
+  MODULE_UNI_FILE            = Fat.uni
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+
+[Binaries.X64]
+  PE32|Fat.efi
+
+[PatchPcd.X64]
+
+[Protocols.X64]
+  ## TO_START
+  gEfiDiskIoProtocolGuid
+
+  ## TO_START
+  gEfiDiskIo2ProtocolGuid
+
+  ## TO_START
+  gEfiBlockIoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  ## BY_START
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## TO_START
+  gEfiUnicodeCollationProtocolGuid
+
+  ## TO_START
+  gEfiUnicodeCollation2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## UNDEFINED
+  gEfiDebugPortProtocolGuid
+
+  ## SOMETIMES_PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES # Consumes if gEfiGraphicsOutputProtocolGuid uninstalled
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_PRODUCES # User chooses to produce it
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+
+[Ppis.X64]
+
+[Guids.X64]
+  ## SOMETIMES_CONSUMES   ## UNDEFINED
+  gEfiFileInfoGuid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED
+  gEfiFileSystemInfoGuid
+
+  ## SOMETIMES_CONSUMES   ## UNDEFINED
+  gEfiFileSystemVolumeLabelInfoIdGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVTUTF8Guid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVT100Guid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVT100PlusGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPcAnsiGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiUartDevicePathGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiSasDevicePathGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVirtualDiskGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiVirtualCdGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPersistentVirtualDiskGuid
+
+  ## SOMETIMES_CONSUMES  ## GUID
+  gEfiPersistentVirtualCdGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## SOMETIMES_CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi20TableGuid
+
+  ## SOMETIMES_CONSUMES  ## SystemTable
+  gEfiAcpi10TableGuid
+
+
+[PcdEx.X64]
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf
+#  MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+#  MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf
+
+[Depex.X64]
+#  gEfiBdsArchProtocolGuid AND gEfiCpuArchProtocolGuid AND gEfiMetronomeArchProtocolGuid AND gEfiMonotonicCounterArchProtocolGuid AND gEfiRealTimeClockArchProtocolGuid AND gEfiResetArchProtocolGuid AND gEfiRuntimeArchProtocolGuid AND gEfiSecurityArchProtocolGuid AND gEfiTimerArchProtocolGuid AND gEfiVariableWriteArchProtocolGuid AND gEfiVariableArchProtocolGuid AND gEfiWatchdogTimerArchProtocolGuid
+
+[UserExtensions.TianoCore."ExtraFiles"]
+FatExtra.uni
+
+
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+#  DRIVER_BINDING                =  gFatDriverBinding
+#  COMPONENT_NAME                =  gFatComponentName
+#  COMPONENT_NAME2               =  gFatComponentName2
+#
+
+[BuildOptions.X64]
+## @AsBuilt
+##   GCC:RELEASE_XCODE8_X64_VFR_FLAGS = -l -n
+##   GCC:RELEASE_XCODE8_X64_PP_FLAGS = -E -x assembler-with-cpp -include $(DEST_DIR_DEBUG)/AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_ASLCC_FLAGS = -x c -save-temps -g -O0 -fshort-wchar -fno-strict-aliasing -Wall -Werror -Wno-missing-braces -c -include AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_ASMLINK_FLAGS = /nologo /tiny
+##   GCC:RELEASE_XCODE8_X64_OPTROM_FLAGS = -e
+##   GCC:RELEASE_XCODE8_X64_MTOC_FLAGS = -align 0x20
+##   GCC:RELEASE_XCODE8_X64_NASMB_FLAGS = -f bin
+##   GCC:RELEASE_XCODE8_X64_ASLPP_FLAGS = -x c -E -include AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_NASM_FLAGS = -f macho64
+##   GCC:RELEASE_XCODE8_X64_GENFW_FLAGS = 
+##   GCC:RELEASE_XCODE8_X64_APP_FLAGS = -E -x assembler-with-cpp -include $(DEST_DIR_DEBUG)/AutoGen.h
+##   GCC:RELEASE_XCODE8_X64_ASLDLINK_FLAGS = -nostdlib -Wl,-e,_ReferenceAcpiTable,-preload,-segalign,0x20,-pie,-seg1addr,0x240,-read_only_relocs,suppress,-map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map
+##   GCC:RELEASE_XCODE8_X64_SLINK_FLAGS = -static -o
+##   GCC:RELEASE_XCODE8_X64_DLINK_FLAGS = -arch x86_64 -nostdlib -Wl,-u,_$(IMAGE_ENTRY_POINT),-e,_$(IMAGE_ENTRY_POINT),-preload,-segalign,0x20,-pie,-all_load,-dead_strip,-seg1addr,0x240,-map,$(DEST_DIR_DEBUG)/$(BASE_NAME).map
+##   GCC:RELEASE_XCODE8_X64_DTC_FLAGS = -H epapr
+##   GCC:RELEASE_XCODE8_X64_ASM_FLAGS = -c -x assembler -arch x86_64
+##   GCC:RELEASE_XCODE8_X64_VFRPP_FLAGS = -x c -E -P -DVFRCOMPILE -include $(DEST_DIR_DEBUG)/$(MODULE_NAME)StrDefs.h
+##   GCC:RELEASE_XCODE8_X64_DTCPP_FLAGS = -E -x assembler-with-cpp -imacros $(DEST_DIR_DEBUG)/AutoGen.h -nostdinc -undef
+##   GCC:RELEASE_XCODE8_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   GCC:RELEASE_XCODE8_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   GCC:RELEASE_XCODE8_X64_CC_FLAGS = -c    -Os       -Wall -Werror -Wextra -include AutoGen.h -funsigned-char -fno-ms-extensions -fno-stack-protector -fno-builtin -fshort-wchar -mno-implicit-float -mms-bitfields -Wno-unused-parameter -Wno-missing-braces -Wno-missing-field-initializers -Wno-tautological-compare -Wno-sign-compare "-DEFIAPI=__attribute__((ms_abi))" -mno-red-zone -fno-unwind-tables -Wno-msvc-include -Os -DMDEPKG_NDEBUG -DCLOVER_BUILD $(VBIOS_PATCH_CLOVEREFI_FLAG) $(ONLY_SATA_0_FLAG) -DUSE_BIOS_BLOCKIO -DDISABLE_USB_SUPPORT $(NOUDMA_FLAG) -DAMD_SUPPORT $(SECURE_BOOT_FLAG) -DANDX86 -DLODEPNG $(PS2MOUSE_LEGACYBOOT_FLAG) $(DEBUG_ON_SERIAL_PORT_FLAG) $(EXIT_USBKB_FLAG) $(DISABLE_LTO_FLAG)
+##   GCC:RELEASE_XCODE8_X64_ASL_FLAGS = 

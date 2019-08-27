@@ -1,0 +1,815 @@
+# Path: /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/DEBUG/GrubUDF.dll
+# Arch: x86_64
+# Object files:
+[  0] linker synthesized
+[  1] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePcdLibNull/BasePcdLibNull/OUTPUT/BasePcdLibNull.lib(PcdLib.obj)
+[  2] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseDebugLibNull/BaseDebugLibNull/OUTPUT/BaseDebugLibNull.lib(DebugLib.obj)
+[  3] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CheckSum.obj)
+[  4] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[  5] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes64.obj)
+[  6] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes32.obj)
+[  7] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwapBytes16.obj)
+[  8] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[  9] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 10] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RShiftU64.obj)
+[ 11] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU64.obj)
+[ 12] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RRotU32.obj)
+[ 13] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x64.obj)
+[ 14] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultU64x32.obj)
+[ 15] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(MultS64x64.obj)
+[ 16] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ModU64x32.obj)
+[ 17] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LShiftU64.obj)
+[ 18] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU64.obj)
+[ 19] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LRotU32.obj)
+[ 20] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet64.obj)
+[ 21] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LowBitSet32.obj)
+[ 22] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet64.obj)
+[ 23] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(HighBitSet32.obj)
+[ 24] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo64.obj)
+[ 25] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GetPowerOfTwo32.obj)
+[ 26] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x64Remainder.obj)
+[ 27] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32Remainder.obj)
+[ 28] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivU64x32.obj)
+[ 29] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DivS64x64Remainder.obj)
+[ 30] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ARShiftU64.obj)
+[ 31] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(BitField.obj)
+[ 32] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuDeadLoop.obj)
+[ 33] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Cpu.obj)
+[ 34] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LinkedList.obj)
+[ 35] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SafeString.obj)
+[ 36] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(String.obj)
+[ 37] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(FilePaths.obj)
+[ 38] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Thunk16.obj)
+[ 39] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(WriteTr.obj)
+[ 40] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Lfence.obj)
+[ 41] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Non-existing.obj)
+[ 42] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Math64.obj)
+[ 43] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(Unaligned.obj)
+[ 44] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteIdtr.obj)
+[ 45] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86WriteGdtr.obj)
+[ 46] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Thunk.obj)
+[ 47] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadIdtr.obj)
+[ 48] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86ReadGdtr.obj)
+[ 49] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86Msr.obj)
+[ 50] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86GetInterruptState.obj)
+[ 51] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxSave.obj)
+[ 52] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86FxRestore.obj)
+[ 53] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging64.obj)
+[ 54] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86EnablePaging32.obj)
+[ 55] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging64.obj)
+[ 56] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86DisablePaging32.obj)
+[ 57] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86RdRand.obj)
+[ 58] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86PatchInstruction.obj)
+[ 59] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(X86SpeculationBarrier.obj)
+[ 60] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(GccInline.obj)
+[ 61] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SwitchStack.obj)
+[ 62] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(SetJump.obj)
+[ 63] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(LongJump.obj)
+[ 64] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableDisableInterrupts.obj)
+[ 65] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisablePaging64.obj)
+[ 66] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuId.obj)
+[ 67] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(CpuIdEx.obj)
+[ 68] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(EnableCache.obj)
+[ 69] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(DisableCache.obj)
+[ 70] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(RdRand.obj)
+[ 71] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseLib/BaseLib/OUTPUT/BaseLib.lib(ChkStkGcc.obj)
+[ 72] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem.obj)
+[ 73] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem64Wrapper.obj)
+[ 74] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem32Wrapper.obj)
+[ 75] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem16Wrapper.obj)
+[ 76] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ScanMem8Wrapper.obj)
+[ 77] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(ZeroMemWrapper.obj)
+[ 78] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CompareMemWrapper.obj)
+[ 79] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem64Wrapper.obj)
+[ 80] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem32Wrapper.obj)
+[ 81] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMem16Wrapper.obj)
+[ 82] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(SetMemWrapper.obj)
+[ 83] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMemWrapper.obj)
+[ 84] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(IsZeroBufferWrapper.obj)
+[ 85] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGeneric.obj)
+[ 86] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(MemLibGuid.obj)
+[ 87] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BaseMemoryLib/BaseMemoryLib/OUTPUT/BaseMemoryLib.lib(CopyMem.obj)
+[ 88] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib/OUTPUT/UefiBootServicesTableLib.lib(UefiBootServicesTableLib.obj)
+[ 89] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLibInternal.obj)
+[ 90] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/BasePrintLib/BasePrintLib/OUTPUT/BasePrintLib.lib(PrintLib.obj)
+[ 91] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib/OUTPUT/UefiMemoryAllocationLib.lib(MemoryAllocationLib.obj)
+[ 92] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathUtilities.obj)
+[ 93] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathToText.obj)
+[ 94] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(DevicePathFromText.obj)
+[ 95] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib/OUTPUT/UefiDevicePathLib.lib(UefiDevicePathLib.obj)
+[ 96] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib/OUTPUT/UefiRuntimeServicesTableLib.lib(UefiRuntimeServicesTableLib.obj)
+[ 97] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLibPrint.obj)
+[ 98] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiNotTiano.obj)
+[ 99] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiDriverModel.obj)
+[100] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Console.obj)
+[101] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(UefiLib.obj)
+[102] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiLib/UefiLib/OUTPUT/UefiLib.lib(Acpi.obj)
+[103] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint/OUTPUT/UefiDriverEntryPoint.lib(DriverEntryPoint.obj)
+[104] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(driver.obj)
+[105] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(file.obj)
+[106] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(grub_driver.obj)
+[107] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(grub_file.obj)
+[108] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(grub.obj)
+[109] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(logging.obj)
+[110] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(missing.obj)
+[111] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(path.obj)
+[112] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(utf8.obj)
+[113] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(device.obj)
+[114] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(err.obj)
+[115] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(misc.obj)
+[116] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(list.obj)
+[117] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(fshelp.obj)
+[118] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(udf.obj)
+[119] /Users/weisiyuan/src/edk2/Build/Clover/RELEASE_XCODE8/X64/Clover/FileSystems/GrubFS/src/UDF/OUTPUT/GrubUDF.lib(AutoGen.obj)
+# Sections:
+# Address	Size    	Segment	Section
+0x00000240	0x0000A121	__TEXT	__text
+0x0000A370	0x00000245	__TEXT	__const
+0x0000A5B5	0x000004F8	__TEXT	__cstring
+0x0000AAAE	0x00001EB2	__TEXT	__ustring
+0x0000C960	0x000004F0	__DATA	__const
+0x0000CE50	0x000002C0	__DATA	__data
+0x0000D110	0x00000164	__DATA	__common
+0x0000D280	0x00000D68	__DATA	__bss
+# Symbols:
+# Address	Size    	File  Name
+0x00000240	0x00000000	[  0] ___dso_handle
+0x00000240	0x00000006	[  9] _InternalAssertJumpBuffer
+0x00000246	0x0000000A	[ 17] _LShiftU64
+0x00000250	0x0000000A	[ 27] _DivU64x32Remainder
+0x0000025A	0x00000010	[ 34] _InitializeListHead
+0x0000026A	0x0000001B	[ 34] _InsertTailList
+0x00000285	0x0000001B	[ 34] _RemoveEntryList
+0x000002A0	0x00000031	[ 35] _StrnLenS
+0x000002D1	0x00000097	[ 35] _StrDecimalToUintnS
+0x00000368	0x0000002F	[ 35] _AsciiStrnLenS
+0x00000397	0x00000033	[ 36] _StrLen
+0x000003CA	0x0000016D	[ 36] _StrCmp
+0x00000537	0x00000012	[ 36] _InternalIsDecimalDigitCharacter
+0x00000549	0x0000002C	[ 36] _StrDecimalToUintn
+0x00000575	0x00000030	[ 36] _AsciiStrLen
+0x000005A5	0x00000063	[ 36] _AsciiStrCmp
+0x00000608	0x00000000	[ 38] SavedGdt
+0x00000608	0x0000000A	[ 38] _m16Start
+0x00000612	0x00000008	[ 38] _BackFromUserCode
+0x0000061A	0x00000014	[ 38] _BackFromUserCode.Base
+0x0000062E	0x0000000D	[ 38] _BackFromUserCode.ThunkAttrEnd
+0x0000063B	0x0000000B	[ 38] _BackFromUserCode.1
+0x00000646	0x00000036	[ 38] _BackFromUserCode.2
+0x0000067C	0x0000001C	[ 38] _BackFromUserCode.SavedCr4End
+0x00000698	0x0000000B	[ 38] _BackFromUserCode.SavedCr0End
+0x000006A3	0x0000000B	[ 38] _BackFromUserCode.X64JmpEnd
+0x000006AE	0x00000002	[ 38] _BackFromUserCode.SavedSpEnd
+0x000006B0	0x00000006	[ 38] _EntryPoint
+0x000006B6	0x00000002	[ 38] _16Gdtr
+0x000006B8	0x00000008	[ 38] _16GdtrBase
+0x000006C0	0x00000006	[ 38] _16Idtr
+0x000006C6	0x00000028	[ 38] _ToUserCode
+0x000006EE	0x0000000F	[ 38] _ToUserCode.Base
+0x000006FD	0x0000001B	[ 38] _ToUserCode.RealMode
+0x00000718	0x00000008	[ 38] _NullSeg
+0x00000720	0x00000008	[ 38] _16Code
+0x00000728	0x00000008	[ 38] _16Data
+0x00000730	0x00000008	[ 38] _32Data
+0x00000738	0x000000B4	[ 38] _InternalAsmThunk16
+0x000007EC	0x00000020	[ 38] _InternalAsmThunk16.RetFromRealMode
+0x0000080C	0x00000006	[ 39] _AsmWriteTr
+0x00000812	0x00000004	[ 40] _AsmLfence
+0x00000816	0x0000000E	[ 42] _InternalMathLShiftU64
+0x00000824	0x00000023	[ 42] _InternalMathDivRemU64x32
+0x00000847	0x00000009	[ 43] _ReadUnaligned16
+0x00000850	0x00000008	[ 43] _ReadUnaligned32
+0x00000858	0x00000009	[ 43] _ReadUnaligned64
+0x00000861	0x0000000F	[ 61] _InternalSwitchStack
+0x00000870	0x00000043	[ 62] _SetJump
+0x000008B3	0x0000007F	[ 62] CetDone
+0x00000932	0x00000030	[ 63] _InternalLongJump
+0x00000962	0x0000007C	[ 63] CetDone
+0x000009DE	0x00000003	[ 64] _EnableDisableInterrupts
+0x000009E1	0x0000003A	[ 65] _InternalX86DisablePaging64
+0x00000A1B	0x00000027	[ 65] _InternalX86DisablePaging64.0
+0x00000A42	0x00000000	[ 65] mTransitionEnd
+0x00000A42	0x0000000F	[ 66] _AsmCpuid
+0x00000A51	0x00000005	[ 66] _AsmCpuid.0
+0x00000A56	0x00000007	[ 66] _AsmCpuid.1
+0x00000A5D	0x00000009	[ 66] _AsmCpuid.2
+0x00000A66	0x00000003	[ 66] _AsmCpuid.3
+0x00000A69	0x00000015	[ 67] _AsmCpuidEx
+0x00000A7E	0x00000007	[ 67] _AsmCpuidEx.0
+0x00000A85	0x00000007	[ 67] _AsmCpuidEx.1
+0x00000A8C	0x00000009	[ 67] _AsmCpuidEx.2
+0x00000A95	0x00000003	[ 67] _AsmCpuidEx.3
+0x00000A98	0x00000013	[ 68] _AsmEnableCache
+0x00000AAB	0x00000013	[ 69] _AsmDisableCache
+0x00000ABE	0x00000009	[ 70] _InternalX86RdRand16
+0x00000AC7	0x00000009	[ 70] rn16_ok
+0x00000AD0	0x00000009	[ 70] _InternalX86RdRand32
+0x00000AD9	0x00000008	[ 70] rn32_ok
+0x00000AE1	0x0000000A	[ 70] _InternalX86RdRand64
+0x00000AEB	0x00000009	[ 70] rn64_ok
+0x00000AF4	0x000000E8	[ 72] _InternalMemSetMem
+0x00000BDC	0x00000014	[ 77] _ZeroMem
+0x00000BF0	0x00000018	[ 78] _CompareMem
+0x00000C08	0x00000018	[ 82] _SetMem
+0x00000C20	0x00000019	[ 83] _CopyMem
+0x00000C39	0x0000000D	[ 85] _InternalMemZeroMem
+0x00000C46	0x0000002F	[ 85] _InternalMemCompareMem
+0x00000C75	0x00000055	[ 86] _CompareGuid
+0x00000CCA	0x000001E2	[ 87] _InternalMemCopyMem
+0x00000EAC	0x00000021	[ 88] _UefiBootServicesTableLibConstructor
+0x00000ECF	0x000010B9	[ 89] _BasePrintLibSPrintMarker
+0x00001F88	0x000000AF	[ 89] _BasePrintLibSPrint
+0x00002037	0x000000AC	[ 90] _UnicodeVSPrint
+0x000020E3	0x000000B7	[ 90] _UnicodeSPrint
+0x0000219A	0x000000AC	[ 90] _UnicodeVSPrintAsciiFormat
+0x00002246	0x000000A1	[ 90] _SPrintLength
+0x000022E7	0x0000003D	[ 91] _AllocatePool
+0x00002324	0x0000003B	[ 91] _InternalAllocateZeroPool
+0x0000235F	0x00000097	[ 91] _AllocateZeroPool
+0x000023F6	0x00000053	[ 91] _InternalAllocateCopyPool
+0x00002449	0x00000097	[ 91] _AllocateCopyPool
+0x000024E0	0x0000005B	[ 91] _InternalReallocatePool
+0x0000253B	0x00000016	[ 91] _FreePool
+0x00002551	0x0000009A	[ 91] _ReallocatePool
+0x000025EB	0x00000016	[ 92] _IsDevicePathEnd
+0x00002601	0x0000001A	[ 92] _DevicePathNodeLength
+0x0000261B	0x00000008	[ 92] _DevicePathType
+0x00002623	0x00000009	[ 92] _DevicePathSubType
+0x0000262C	0x00000022	[ 92] _NextDevicePathNode
+0x0000264E	0x0000003B	[ 92] _DevicePathFromHandle
+0x0000268C	0x0000009B	[ 93] _UefiDevicePathLibCatPrint
+0x00002727	0x00000027	[ 93] _DevPathToTextPci
+0x0000274E	0x00000022	[ 93] _DevPathToTextPccard
+0x00002770	0x0000002E	[ 93] _DevPathToTextMemMap
+0x0000279E	0x000002C1	[ 93] _DevPathToTextVendor
+0x00002A5F	0x00000021	[ 93] _DevPathToTextController
+0x00002A80	0x00000032	[ 93] _DevPathToTextBmc
+0x00002AB2	0x000000D9	[ 93] _DevPathToTextAcpi
+0x00002B8B	0x0000029D	[ 93] _DevPathToTextAcpiEx
+0x00002E28	0x0000008A	[ 93] _DevPathToTextAcpiAdr
+0x00002EB2	0x0000006B	[ 93] _DevPathToTextAtapi
+0x00002F1D	0x00000027	[ 93] _DevPathToTextScsi
+0x00002F44	0x00000025	[ 93] _DevPathToTextFibre
+0x00002F69	0x00000089	[ 93] _DevPathToTextFibreEx
+0x00002FF2	0x00000166	[ 93] _DevPathToTextSasEx
+0x00003158	0x00000064	[ 93] _DevPathToTextNVMe
+0x000031BC	0x00000027	[ 93] _DevPathToTextUfs
+0x000031E3	0x00000022	[ 93] _DevPathToTextSd
+0x00003205	0x00000022	[ 93] _DevPathToTextEmmc
+0x00003227	0x00000021	[ 93] _DevPathToText1394
+0x00003248	0x00000027	[ 93] _DevPathToTextUsb
+0x0000326F	0x00000081	[ 93] _DevPathToTextUsbWWID
+0x000032F0	0x00000022	[ 93] _DevPathToTextLogicalUnit
+0x00003312	0x000001BA	[ 93] _DevPathToTextUsbClass
+0x000034CC	0x0000002F	[ 93] _DevPathToTextSata
+0x000034FB	0x00000021	[ 93] _DevPathToTextI2O
+0x0000351C	0x00000072	[ 93] _DevPathToTextMacAddr
+0x0000358E	0x00000046	[ 93] _CatNetworkProtocol
+0x000035D6	0x000000D5	[ 93] _CatIPv6Address
+0x000036AB	0x00000156	[ 93] _DevPathToTextIPv4
+0x00003801	0x000000D5	[ 93] _DevPathToTextIPv6
+0x000038D6	0x00000040	[ 93] _DevPathToTextInfiniBand
+0x00003916	0x000000EE	[ 93] _DevPathToTextUart
+0x00003A04	0x000000F7	[ 93] _DevPathToTextiSCSI
+0x00003AFB	0x00000022	[ 93] _DevPathToTextVlan
+0x00003B1D	0x00000047	[ 93] _DevPathToTextBluetooth
+0x00003B64	0x0000003C	[ 93] _DevPathToTextWiFi
+0x00003BA0	0x00000051	[ 93] _DevPathToTextBluetoothLE
+0x00003BF1	0x000000CB	[ 93] _DevPathToTextDns
+0x00003CBC	0x00000062	[ 93] _DevPathToTextUri
+0x00003D1E	0x00000089	[ 93] _DevPathToTextHardDrive
+0x00003DA7	0x00000043	[ 93] _DevPathToTextCDROM
+0x00003DEA	0x00000021	[ 93] _DevPathToTextFilePath
+0x00003E0B	0x00000021	[ 93] _DevPathToTextMediaProtocol
+0x00003E2C	0x00000021	[ 93] _DevPathToTextFv
+0x00003E4D	0x00000021	[ 93] _DevPathToTextFvFile
+0x00003E6E	0x00000025	[ 93] _DevPathRelativeOffsetRange
+0x00003E93	0x00000171	[ 93] _DevPathToTextRamDisk
+0x00004004	0x00000083	[ 93] _DevPathToTextBBS
+0x00004087	0x0000001D	[ 93] _DevPathToTextEndInstance
+0x000040A4	0x000000F0	[ 93] _DevPathToTextNodeGeneric
+0x00004196	0x000001DB	[ 93] _UefiDevicePathLibConvertDevicePathToText
+0x00004371	0x0000000A	[ 95] _ConvertDevicePathToText
+0x0000437B	0x00000013	[ 96] _UefiRuntimeServicesTableLibConstructor
+0x0000438E	0x0000006C	[ 97] _InternalPrint
+0x000043FA	0x000000B6	[ 97] _Print
+0x000044B0	0x00000067	[ 97] _AsciiInternalPrint
+0x00004517	0x000000B6	[ 97] _AsciiPrint
+0x000045CD	0x00000008	[101] _UefiLibConstructor
+0x000045D5	0x00000034	[103] __DriverUnloadHandler
+0x00004609	0x00000096	[103] __ModuleEntryPoint
+0x0000469F	0x000001E2	[104] _FSDriverUninstall
+0x00004881	0x00000240	[104] _FSDriverInstall
+0x00004AC1	0x0000016D	[104] _FSBindingSupported
+0x00004C2E	0x000002DE	[104] _FSBindingStart
+0x00004F0C	0x00000178	[104] _FSBindingStop
+0x00005084	0x00000042	[104] _FreeFsInstance
+0x000050C6	0x00000012	[104] _FSGetDriverName
+0x000050D8	0x00000010	[104] _FSGetControllerName
+0x000050E8	0x00000012	[104] _FSGetDriverName2
+0x000050FA	0x00000010	[104] _FSGetControllerName2
+0x0000510A	0x0000000F	[105] _FileOpenVolume
+0x00005119	0x0000015F	[105] _FSInstall
+0x00005278	0x000004A0	[105] _FileOpen
+0x00005718	0x00000121	[105] _FileClose
+0x00005839	0x000000C7	[105] _FileDelete
+0x00005900	0x00000286	[105] _FileRead
+0x00005B86	0x000000BC	[105] _FileWrite
+0x00005C42	0x000000E6	[105] _FileGetPosition
+0x00005D28	0x0000018D	[105] _FileSetPosition
+0x00005EB5	0x0000038F	[105] _FileGetInfo
+0x00006244	0x00000010	[105] _FileSetInfo
+0x00006254	0x00000008	[105] _FileFlush
+0x0000625C	0x0000000A	[105] _FileOpenEx
+0x00006266	0x00000012	[105] _FileReadEx
+0x00006278	0x000000BC	[105] _FileWriteEx
+0x00006334	0x00000008	[105] _FileFlushEx
+0x0000633C	0x0000004B	[105] _FSUninstall
+0x00006387	0x00000044	[105] _FileName
+0x000063CB	0x0000003E	[105] _InfoHook
+0x00006409	0x00000141	[105] _DirHook
+0x0000654A	0x000000F8	[106] _GetFSGuid
+0x00006642	0x0000001F	[106] _GrubDriverInit
+0x00006661	0x0000000A	[106] _GrubDriverExit
+0x0000666B	0x00000008	[107] _grub_dl_ref
+0x00006673	0x00000008	[107] _grub_dl_unref
+0x0000667B	0x00000027	[107] _grub_device_close_2
+0x000066A2	0x000000B9	[107] _grub_disk_read
+0x0000675B	0x000000B2	[107] _grub_device_open_2
+0x0000680D	0x00000074	[107] _GrubDeviceInit
+0x00006881	0x00000026	[107] _GrubDeviceExit
+0x000068A7	0x0000008C	[107] _GrubCreateFile
+0x00006933	0x00000032	[107] _GrubDestroyFile
+0x00006965	0x00000011	[107] _GrubGetFileSize
+0x00006976	0x00000011	[107] _GrubGetFileOffset
+0x00006987	0x00000011	[107] _GrubSetFileOffset
+0x00006998	0x0000002B	[107] _GrubDir
+0x000069C3	0x00000031	[107] _GrubOpen
+0x000069F4	0x00000020	[107] _GrubClose
+0x00006A14	0x0000005D	[107] _GrubRead
+0x00006A71	0x0000002B	[107] _GrubLabel
+0x00006A9C	0x00000071	[107] _GrubFSProbe
+0x00006B0D	0x0000000B	[107] _probe_dummy_iter
+0x00006B18	0x00000016	[108] _grub_xputs_dumb
+0x00006B2E	0x0000002D	[108] _grub_malloc
+0x00006B5B	0x0000002D	[108] _grub_zalloc
+0x00006B88	0x0000001F	[108] _grub_free
+0x00006BA7	0x00000046	[108] _GrubErrToEFIStatus
+0x00006BED	0x00000305	[108] _GrubTimeToEfiTime
+0x00006EF2	0x00000008	[109] _PrintNone
+0x00006EFA	0x0000005B	[109] _PrintStatusError
+0x00006F55	0x0000006D	[109] _SetLogging
+0x00006FC2	0x00000025	[110] _strcpya
+0x00006FE7	0x0000001A	[110] _strchra
+0x00007001	0x0000001A	[110] _strrchra
+0x0000701B	0x0000012F	[111] _CopyPathRelative
+0x0000714A	0x000000C3	[112] _Utf8ToUtf16Alloc
+0x0000720D	0x00000448	[112] _ConvertUcs2Utf8
+0x00007655	0x00000081	[112] _Utf8ToUtf16NoAlloc
+0x000076D6	0x000000B5	[112] _Utf16ToUtf8Alloc
+0x0000778B	0x0000007B	[112] _Utf16ToUtf8NoAlloc
+0x00007806	0x00000062	[114] _grub_error
+0x00007868	0x00000063	[114] _grub_error_pop
+0x000078CB	0x0000005D	[114] _grub_print_error
+0x0000792B	0x00000048	[115] _grub_err_printf
+0x00007973	0x000000D4	[115] _grub_vprintf
+0x00007A49	0x0000036F	[115] _parse_printf_args
+0x00007DB8	0x00000604	[115] _grub_vsnprintf_real
+0x000083BE	0x00000130	[115] _grub_strtoull
+0x000084EE	0x0000006A	[115] _grub_divmod64
+0x00008558	0x0000007A	[115] _grub_vsnprintf
+0x000085D2	0x0000001F	[116] _grub_list_push
+0x000085F1	0x0000002E	[116] _grub_list_remove
+0x0000861F	0x000000B6	[117] _grub_fshelp_find_file
+0x000086D5	0x000002BF	[117] _find_file
+0x00008994	0x000001CC	[117] _grub_fshelp_read_file
+0x00008B60	0x00000129	[117] _find_file_iter
+0x00008C89	0x00000501	[118] _grub_udf_mount
+0x0000918A	0x00000024	[118] _grub_udf_init
+0x000091AE	0x0000002A	[118] _grub_mod_init
+0x000091D8	0x00000011	[118] _grub_udf_fini
+0x000091E9	0x00000011	[118] _grub_mod_fini
+0x000091FA	0x000000FB	[118] _grub_udf_dir
+0x000092F5	0x000000F3	[118] _grub_udf_open
+0x000093E8	0x00000023	[118] _grub_udf_read
+0x0000940B	0x00000034	[118] _grub_udf_close
+0x0000943F	0x0000004C	[118] _grub_udf_label
+0x0000948B	0x000000F2	[118] _grub_udf_read_icb
+0x0000957D	0x00000261	[118] _grub_udf_iterate_dir
+0x000097DE	0x0000020A	[118] _grub_udf_read_symlink
+0x000099E8	0x0000027A	[118] _grub_udf_dir_iter
+0x00009C62	0x000000B4	[118] _grub_udf_read_file
+0x00009D16	0x00000265	[118] _read_string
+0x00009F7B	0x0000039C	[118] _grub_udf_read_block
+0x0000A317	0x00000032	[119] _ProcessLibraryConstructorList
+0x0000A349	0x00000006	[119] _ProcessLibraryDestructorList
+0x0000A34F	0x0000000A	[119] _ProcessModuleEntryPointList
+0x0000A359	0x00000008	[119] _ProcessModuleUnloadList
+0x0000A370	0x00000010	[ 89] _mHexStr
+0x0000A380	0x00000018	[ 93] l_switch.table.DevPathToTextUart
+0x0000A3A0	0x00000010	[105] 16-byte-literal
+0x0000A3B0	0x00000040	[108] ___mon_yday
+0x0000A3F0	0x00000170	[108] l_switch.table.GrubErrToEFIStatus
+0x0000A560	0x00000010	[118] _sblocklist
+0x0000A570	0x00000018	[118] _grub_datetime2unixtime.monthssum
+0x0000A588	0x0000000C	[118] _grub_datetime2unixtime.months
+0x0000A598	0x00000004	[119] __gPcd_FixedAtBuild_PcdMaximumAsciiStringLength
+0x0000A59C	0x00000004	[119] __gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength
+0x0000A5A0	0x00000004	[119] __gPcd_FixedAtBuild_PcdControlFlowEnforcementPropertyMask
+0x0000A5A8	0x00000004	[119] __gPcd_FixedAtBuild_PcdUefiLibMaxPrintBufferSize
+0x0000A5AC	0x00000004	[119] __gUefiDriverRevision
+0x0000A5B4	0x00000001	[119] __gDriverUnloadImageCount
+0x0000A5B5	0x00000008	[ 89] literal string: Success
+0x0000A5BD	0x00000016	[ 89] literal string: Warning Unknown Glyph
+0x0000A5D3	0x00000017	[ 89] literal string: Warning Delete Failure
+0x0000A5EA	0x00000016	[ 89] literal string: Warning Write Failure
+0x0000A600	0x00000019	[ 89] literal string: Warning Buffer Too Small
+0x0000A619	0x00000013	[ 89] literal string: Warning Stale Data
+0x0000A62C	0x0000000B	[ 89] literal string: Load Error
+0x0000A637	0x00000012	[ 89] literal string: Invalid Parameter
+0x0000A649	0x0000000C	[ 89] literal string: Unsupported
+0x0000A655	0x00000010	[ 89] literal string: Bad Buffer Size
+0x0000A665	0x00000011	[ 89] literal string: Buffer Too Small
+0x0000A676	0x0000000A	[ 89] literal string: Not Ready
+0x0000A680	0x0000000D	[ 89] literal string: Device Error
+0x0000A68D	0x00000010	[ 89] literal string: Write Protected
+0x0000A69D	0x00000011	[ 89] literal string: Out of Resources
+0x0000A6AE	0x0000000F	[ 89] literal string: Volume Corrupt
+0x0000A6BD	0x0000000C	[ 89] literal string: Volume Full
+0x0000A6C9	0x00000009	[ 89] literal string: No Media
+0x0000A6D2	0x0000000E	[ 89] literal string: Media changed
+0x0000A6E0	0x0000000A	[ 89] literal string: Not Found
+0x0000A6EA	0x0000000E	[ 89] literal string: Access Denied
+0x0000A6F8	0x0000000C	[ 89] literal string: No Response
+0x0000A704	0x0000000B	[ 89] literal string: No mapping
+0x0000A70F	0x00000009	[ 89] literal string: Time out
+0x0000A718	0x0000000C	[ 89] literal string: Not started
+0x0000A724	0x00000010	[ 89] literal string: Already started
+0x0000A734	0x00000008	[ 89] literal string: Aborted
+0x0000A73C	0x0000000B	[ 89] literal string: ICMP Error
+0x0000A747	0x0000000B	[ 89] literal string: TFTP Error
+0x0000A752	0x0000000F	[ 89] literal string: Protocol Error
+0x0000A761	0x00000015	[ 89] literal string: Incompatible Version
+0x0000A776	0x00000013	[ 89] literal string: Security Violation
+0x0000A789	0x0000000A	[ 89] literal string: CRC Error
+0x0000A793	0x0000000D	[ 89] literal string: End of Media
+0x0000A7A0	0x0000000E	[ 89] literal string: Reserved (29)
+0x0000A7AE	0x0000000E	[ 89] literal string: Reserved (30)
+0x0000A7BC	0x0000000C	[ 89] literal string: End of File
+0x0000A7C8	0x00000011	[ 89] literal string: Invalid Language
+0x0000A7D9	0x00000011	[ 89] literal string: Compromised Data
+0x0000A7EA	0x0000000E	[ 89] literal string: <null string>
+0x0000A7F8	0x0000000C	[ 89] literal string: <null guid>
+0x0000A804	0x00000031	[ 89] literal string: %08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+0x0000A835	0x0000000C	[ 89] literal string: <null time>
+0x0000A841	0x0000001A	[ 89] literal string: %02d/%02d/%04d  %02d:%02d
+0x0000A85B	0x00000005	[ 89] literal string: %08X
+0x0000A860	0x00000003	[ 89] literal string: \n
+0x0000A863	0x00000002	[ 89] literal string: 
+0x0000A865	0x00000004	[104] literal string: eng
+0x0000A869	0x00000003	[104] literal string: en
+0x0000A86C	0x00000002	[105] literal string: /
+0x0000A86E	0x00000029	[107] literal string: Could not convert device '%s' to UTF-16\n
+0x0000A897	0x00000001	[112] literal string: 
+0x0000A898	0x0000000C	[114] literal string: error: %s.\n
+0x0000A8A4	0x00000028	[114] literal string: assert: error stack overflow detected!\n
+0x0000A8CC	0x00000015	[115] literal string: overflow is detected
+0x0000A8E1	0x00000014	[115] literal string: unrecognized number
+0x0000A8F5	0x00000007	[115] literal string: (null)
+0x0000A8FC	0x00000017	[117] literal string: invalid file name `%s'
+0x0000A913	0x00000013	[117] literal string: not a regular file
+0x0000A926	0x00000010	[117] literal string: not a directory
+0x0000A936	0x0000001D	[117] literal string: too deep nesting of symlinks
+0x0000A953	0x00000014	[117] literal string: file `%s' not found
+0x0000A967	0x00000016	[118] literal string: not an UDF filesystem
+0x0000A97D	0x00000006	[118] literal string: NSR03
+0x0000A983	0x00000006	[118] literal string: NSR02
+0x0000A989	0x00000006	[118] literal string: BEA01
+0x0000A98F	0x00000006	[118] literal string: BOOT2
+0x0000A995	0x00000006	[118] literal string: CD001
+0x0000A99B	0x00000006	[118] literal string: CDW02
+0x0000A9A1	0x00000006	[118] literal string: TEA01
+0x0000A9A7	0x0000000D	[118] literal string: too many PDs
+0x0000A9B4	0x00000018	[118] literal string: too many partition maps
+0x0000A9CC	0x0000001B	[118] literal string: partmap type not supported
+0x0000A9E7	0x00000012	[118] literal string: invalid tag ident
+0x0000A9F9	0x0000000E	[118] literal string: can't find PD
+0x0000AA07	0x0000001B	[118] literal string: invalid fileset descriptor
+0x0000AA22	0x00000011	[118] literal string: invalid part ref
+0x0000AA33	0x00000004	[118] literal string: udf
+0x0000AA37	0x0000001A	[118] literal string: invalid fe/efe descriptor
+0x0000AA51	0x00000002	[118] literal string: .
+0x0000AA53	0x00000010	[118] literal string: invalid fid tag
+0x0000AA63	0x00000003	[118] literal string: ..
+0x0000AA66	0x00000014	[118] literal string: invalid extent type
+0x0000AA7A	0x00000013	[118] literal string: invalid file entry
+0x0000AA8D	0x00000010	[118] literal string: invalid aed tag
+0x0000AA9D	0x00000010	[118] literal string: invalid symlink
+0x0000AAAE	0x0000001E	[ 93] l_.str
+0x0000AACC	0x0000001A	[ 93] l_.str.1
+0x0000AAE6	0x0000003E	[ 93] l_.str.2
+0x0000AB24	0x00000006	[ 93] l_.str.3
+0x0000AB2A	0x00000008	[ 93] l_.str.4
+0x0000AB32	0x00000018	[ 93] l_.str.5
+0x0000AB4A	0x00000016	[ 93] l_.str.6
+0x0000AB60	0x0000001E	[ 93] l_.str.7
+0x0000AB7E	0x00000014	[ 93] l_.str.8
+0x0000AB92	0x00000022	[ 93] l_.str.9
+0x0000ABB4	0x0000000A	[ 93] l_.str.10
+0x0000ABBE	0x00000012	[ 93] l_.str.11
+0x0000ABD0	0x00000010	[ 93] l_.str.12
+0x0000ABE0	0x0000002C	[ 93] l_.str.13
+0x0000AC0C	0x00000024	[ 93] l_.str.14
+0x0000AC30	0x00000014	[ 93] l_.str.15
+0x0000AC44	0x0000000A	[ 93] l_.str.16
+0x0000AC4E	0x00000008	[ 93] l_.str.17
+0x0000AC56	0x00000012	[ 93] l_.str.18
+0x0000AC68	0x00000012	[ 93] l_.str.19
+0x0000AC7A	0x00000012	[ 93] l_.str.20
+0x0000AC8C	0x0000000E	[ 93] l_.str.21
+0x0000AC9A	0x00000006	[ 93] l_.str.22
+0x0000ACA0	0x0000000C	[ 93] l_.str.23
+0x0000ACAC	0x00000018	[ 93] l_.str.24
+0x0000ACC4	0x0000000C	[ 93] l_.str.25
+0x0000ACD0	0x00000018	[ 93] l_.str.26
+0x0000ACE8	0x0000000C	[ 93] l_.str.27
+0x0000ACF4	0x00000004	[ 93] l_.str.28
+0x0000ACF8	0x00000012	[ 93] l_.str.29
+0x0000AD0A	0x00000004	[ 93] l_.str.30
+0x0000AD0E	0x0000000A	[ 93] l_.str.31
+0x0000AD18	0x00000004	[ 93] l_.str.32
+0x0000AD1C	0x00000016	[ 93] l_.str.33
+0x0000AD32	0x00000020	[ 93] l_.str.34
+0x0000AD52	0x0000001C	[ 93] l_.str.35
+0x0000AD6E	0x0000001E	[ 93] l_.str.36
+0x0000AD8C	0x0000001A	[ 93] l_.str.37
+0x0000ADA6	0x0000001E	[ 93] l_.str.38
+0x0000ADC4	0x0000001A	[ 93] l_.str.39
+0x0000ADDE	0x00000026	[ 93] l_.str.40
+0x0000AE04	0x00000026	[ 93] l_.str.41
+0x0000AE2A	0x00000024	[ 93] l_.str.42
+0x0000AE4E	0x00000018	[ 93] l_.str.43
+0x0000AE66	0x0000001A	[ 93] l_.str.44
+0x0000AE80	0x00000016	[ 93] l_.str.45
+0x0000AE96	0x00000022	[ 93] l_.str.46
+0x0000AEB8	0x00000024	[ 93] l_.str.47
+0x0000AEDC	0x00000016	[ 93] l_.str.48
+0x0000AEF2	0x00000016	[ 93] l_.str.49
+0x0000AF08	0x00000008	[ 93] l_.str.50
+0x0000AF10	0x00000008	[ 93] l_.str.51
+0x0000AF18	0x00000008	[ 93] l_.str.52
+0x0000AF20	0x00000038	[ 93] l_.str.53
+0x0000AF58	0x0000001A	[ 93] l_.str.54
+0x0000AF72	0x0000000C	[ 93] l_.str.55
+0x0000AF7E	0x00000014	[ 93] l_.str.56
+0x0000AF92	0x00000020	[ 93] l_.str.57
+0x0000AFB2	0x00000014	[ 93] l_.str.58
+0x0000AFC6	0x00000010	[ 93] l_.str.59
+0x0000AFD6	0x0000000C	[ 93] l_.str.60
+0x0000AFE2	0x0000000E	[ 93] l_.str.61
+0x0000AFF0	0x00000020	[ 93] l_.str.62
+0x0000B010	0x00000026	[ 93] l_.str.63
+0x0000B036	0x00000016	[ 93] l_.str.64
+0x0000B04C	0x00000008	[ 93] l_.str.65
+0x0000B054	0x00000012	[ 93] l_.str.66
+0x0000B066	0x0000000E	[ 93] l_.str.67
+0x0000B074	0x00000022	[ 93] l_.str.68
+0x0000B096	0x00000004	[ 93] l_.str.69
+0x0000B09A	0x0000000A	[ 93] l_.str.70
+0x0000B0A4	0x00000016	[ 93] l_.str.71
+0x0000B0BA	0x00000066	[ 93] l_.str.72
+0x0000B120	0x0000001E	[ 93] l_.str.73
+0x0000B13E	0x00000012	[ 93] l_.str.74
+0x0000B150	0x00000016	[ 93] l_.str.75
+0x0000B166	0x0000001C	[ 93] l_.str.76
+0x0000B182	0x0000001E	[ 93] l_.str.77
+0x0000B1A0	0x0000003A	[ 93] l_.str.78
+0x0000B1DA	0x00000016	[ 93] l_.str.79
+0x0000B1F0	0x00000012	[ 93] l_.str.80
+0x0000B202	0x0000001C	[ 93] l_.str.81
+0x0000B21E	0x0000000E	[ 93] l_.str.82
+0x0000B22C	0x00000012	[ 93] l_.str.83
+0x0000B23E	0x00000016	[ 93] l_.str.84
+0x0000B254	0x0000001E	[ 93] l_.str.85
+0x0000B272	0x0000000E	[ 93] l_.str.86
+0x0000B280	0x00000016	[ 93] l_.str.87
+0x0000B296	0x0000001A	[ 93] l_.str.88
+0x0000B2B0	0x00000012	[ 93] l_.str.89
+0x0000B2C2	0x0000001C	[ 93] l_.str.90
+0x0000B2DE	0x00000018	[ 93] l_.str.91
+0x0000B2F6	0x0000002C	[ 93] l_.str.92
+0x0000B322	0x00000050	[ 93] l_.str.93
+0x0000B372	0x0000003C	[ 93] l_.str.94
+0x0000B3AE	0x0000004C	[ 93] l_.str.95
+0x0000B3FA	0x00000046	[ 93] l_.str.96
+0x0000B440	0x0000002A	[ 93] l_.str.97
+0x0000B46A	0x00000014	[ 93] l_.str.98
+0x0000B47E	0x0000000A	[ 93] l_.str.99
+0x0000B488	0x0000000E	[ 93] l_.str.100
+0x0000B496	0x00000008	[ 93] l_.str.101
+0x0000B49E	0x00000008	[ 93] l_.str.102
+0x0000B4A6	0x00000018	[ 93] l_.str.103
+0x0000B4BE	0x00000090	[ 93] l_.str.104
+0x0000B54E	0x0000000C	[ 93] l_.str.105
+0x0000B55A	0x0000000A	[ 93] l_.str.106
+0x0000B564	0x0000000E	[ 93] l_.str.107
+0x0000B572	0x0000000A	[ 93] l_.str.108
+0x0000B57C	0x0000000C	[ 93] l_.str.109
+0x0000B588	0x00000012	[ 93] l_.str.110
+0x0000B59A	0x00000032	[ 93] l_.str.111
+0x0000B5CC	0x00000030	[ 93] l_.str.112
+0x0000B5FC	0x0000004C	[ 93] l_.str.113
+0x0000B648	0x0000001C	[ 93] l_.str.114
+0x0000B664	0x00000014	[ 93] l_.str.115
+0x0000B678	0x00000012	[ 93] l_.str.116
+0x0000B68A	0x00000008	[ 93] l_.str.117
+0x0000B692	0x00000008	[ 93] l_.str.118
+0x0000B69A	0x00000006	[ 93] l_.str.119
+0x0000B6A0	0x00000006	[ 93] l_.str.120
+0x0000B6A6	0x0000000A	[ 93] l_.str.121
+0x0000B6B0	0x00000006	[ 93] l_.str.122
+0x0000B6B6	0x00000006	[ 93] l_.str.123
+0x0000B6BC	0x00000022	[ 93] l_.str.124
+0x0000B6DE	0x0000000E	[ 93] l_.str.125
+0x0000B6EC	0x00000012	[ 93] l_.str.126
+0x0000B6FE	0x00000010	[ 93] l_.str.127
+0x0000B70E	0x00000008	[ 93] l_.str.128
+0x0000B716	0x00000012	[ 93] l_.str.129
+0x0000B728	0x00000012	[ 93] l_.str.130
+0x0000B73A	0x00000048	[ 93] l_.str.131
+0x0000B782	0x00000014	[ 93] l_.str.132
+0x0000B796	0x0000005A	[ 93] l_.str.133
+0x0000B7F0	0x0000000A	[ 93] l_.str.134
+0x0000B7FA	0x00000010	[ 93] l_.str.135
+0x0000B80A	0x00000022	[ 93] l_.str.136
+0x0000B82C	0x00000008	[ 93] l_.str.137
+0x0000B834	0x0000001A	[ 93] l_.str.138
+0x0000B84E	0x00000008	[ 93] l_.str.139
+0x0000B856	0x00000018	[ 93] l_.str.140
+0x0000B86E	0x0000001A	[ 93] l_.str.141
+0x0000B888	0x00000018	[ 93] l_.str.142
+0x0000B8A0	0x00000030	[ 93] l_.str.143
+0x0000B8D0	0x00000006	[ 93] l_.str.144
+0x0000B8D6	0x00000014	[ 93] l_.str.145
+0x0000B8EA	0x0000000E	[ 93] l_.str.146
+0x0000B8F8	0x00000016	[ 93] l_.str.147
+0x0000B90E	0x00000028	[ 93] l_.str.148
+0x0000B936	0x00000038	[ 93] l_.str.149
+0x0000B96E	0x00000034	[ 93] l_.str.150
+0x0000B9A2	0x0000004C	[ 93] l_.str.151
+0x0000B9EE	0x00000048	[ 93] l_.str.152
+0x0000BA36	0x00000036	[ 93] l_.str.153
+0x0000BA6C	0x0000000E	[ 93] l_.str.154
+0x0000BA7A	0x00000006	[ 93] l_.str.155
+0x0000BA80	0x0000000C	[ 93] l_.str.156
+0x0000BA8C	0x0000000E	[ 93] l_.str.157
+0x0000BA9A	0x00000008	[ 93] l_.str.158
+0x0000BAA2	0x00000010	[ 93] l_.str.159
+0x0000BAB2	0x00000014	[ 93] l_.str.160
+0x0000BAC6	0x00000018	[ 93] l_.str.161
+0x0000BADE	0x0000001A	[ 93] l_.str.162
+0x0000BAF8	0x00000012	[ 93] l_.str.163
+0x0000BB0A	0x00000014	[ 93] l_.str.164
+0x0000BB1E	0x00000010	[ 93] l_.str.165
+0x0000BB2E	0x00000016	[ 93] l_.str.166
+0x0000BB44	0x0000000C	[ 93] l_.str.167
+0x0000BB50	0x00000004	[ 93] l_.str.168
+0x0000BB54	0x00000034	[104] l_.str
+0x0000BB88	0x00000038	[104] l_.str.1
+0x0000BBC0	0x00000030	[104] l_.str.2
+0x0000BBF0	0x00000050	[104] l_.str.3
+0x0000BC40	0x0000003C	[104] l_.str.4
+0x0000BC7C	0x0000003E	[104] l_.str.5
+0x0000BCBA	0x0000004A	[104] l_.str.6
+0x0000BD04	0x0000002C	[104] l_.str.7
+0x0000BD30	0x0000002C	[104] l_.str.8
+0x0000BD5C	0x00000028	[104] l_.str.9
+0x0000BD84	0x00000020	[104] l_.str.10
+0x0000BDA4	0x0000005C	[104] l_.str.11
+0x0000BE00	0x00000034	[104] l_.str.12
+0x0000BE34	0x0000004C	[104] l_.str.13
+0x0000BE80	0x00000044	[104] l_.str.14
+0x0000BEC4	0x0000004A	[104] l_.str.15
+0x0000BF0E	0x00000036	[104] l_.str.16
+0x0000BF44	0x0000001E	[104] l_.str.17
+0x0000BF62	0x0000003C	[104] l_.str.18
+0x0000BF9E	0x0000003C	[104] l_.str.19
+0x0000BFDA	0x00000036	[105] l_.str
+0x0000C010	0x0000005C	[105] l_.str.2
+0x0000C06C	0x00000022	[105] l_.str.3
+0x0000C08E	0x00000028	[105] l_.str.4
+0x0000C0B6	0x00000010	[105] l_.str.5
+0x0000C0C6	0x00000002	[105] l_.str.6
+0x0000C0C8	0x00000060	[105] l_.str.7
+0x0000C128	0x00000006	[105] l_.str.8
+0x0000C12E	0x00000040	[105] l_.str.9
+0x0000C16E	0x00000004	[105] l_.str.10
+0x0000C172	0x00000020	[105] l_.str.11
+0x0000C192	0x0000000E	[105] l_.str.12
+0x0000C1A0	0x0000001A	[105] l_.str.13
+0x0000C1BA	0x00000040	[105] l_.str.14
+0x0000C1FA	0x00000028	[105] l_.str.15
+0x0000C222	0x00000036	[105] l_.str.16
+0x0000C258	0x00000038	[105] l_.str.17
+0x0000C290	0x0000004E	[105] l_.str.18
+0x0000C2DE	0x00000032	[105] l_.str.19
+0x0000C310	0x00000048	[105] l_.str.20
+0x0000C358	0x0000002A	[105] l_.str.21
+0x0000C382	0x00000028	[105] l_.str.22
+0x0000C3AA	0x00000030	[105] l_.str.23
+0x0000C3DA	0x0000000C	[105] l_.str.24
+0x0000C3E6	0x00000032	[105] l_.str.25
+0x0000C418	0x00000040	[105] l_.str.26
+0x0000C458	0x00000044	[105] l_.str.27
+0x0000C49C	0x00000056	[105] l_.str.28
+0x0000C4F2	0x0000002C	[105] l_.str.29
+0x0000C51E	0x0000003C	[105] l_.str.30
+0x0000C55A	0x00000042	[105] l_.str.31
+0x0000C59C	0x00000048	[105] l_.str.32
+0x0000C5E4	0x00000038	[105] l_.str.33
+0x0000C61C	0x00000036	[105] l_.str.34
+0x0000C652	0x0000003C	[105] l_.str.35
+0x0000C68E	0x00000048	[105] l_.str.36
+0x0000C6D6	0x0000003A	[105] l_.str.37
+0x0000C710	0x00000036	[105] l_.str.38
+0x0000C746	0x00000034	[105] l_.str.39
+0x0000C77A	0x00000042	[105] l_.str.40
+0x0000C7BC	0x00000052	[106] l_.str
+0x0000C80E	0x00000008	[106] l_.str.1
+0x0000C816	0x0000000A	[106] l_.str.2
+0x0000C820	0x00000064	[106] l_.str.3
+0x0000C884	0x0000004A	[107] l_.str.2
+0x0000C8CE	0x0000004C	[107] l_.str.4
+0x0000C91A	0x00000010	[109] l_.str
+0x0000C92A	0x00000016	[109] l_.str.1
+0x0000C940	0x0000001E	[109] l_.str.2
+0x0000C95E	0x00000002	[112] l_.str
+0x0000C960	0x00000138	[ 89] _mStatusString
+0x0000CAA0	0x00000060	[ 93] _mUefiDevicePathLibToTextTableGeneric
+0x0000CB00	0x00000320	[ 93] _mUefiDevicePathLibToTextTable
+0x0000CE20	0x00000030	[ 93] l_switch.table.DevPathToTextBBS
+0x0000CE50	0x00000002	[ 38] _m16Size
+0x0000CE52	0x00000002	[ 38] _mThunk16Attr
+0x0000CE54	0x00000002	[ 38] _m16Gdt
+0x0000CE56	0x00000002	[ 38] _m16GdtrBase
+0x0000CE58	0x00000002	[ 38] _mTransition
+0x0000CE60	0x00000030	[104] _FSDriverBinding
+0x0000CE90	0x00000018	[104] _FSComponentName
+0x0000CEA8	0x00000018	[104] _FSComponentName2
+0x0000CEC0	0x00000008	[106] _DriverNameString
+0x0000CEC8	0x00000010	[106] _GetFSGuid.Guid
+0x0000CED8	0x00000008	[108] _grub_xputs
+0x0000CEE0	0x00000010	[109] _ShellVariable
+0x0000CEF0	0x00000008	[109] _PrintError
+0x0000CEF8	0x00000008	[109] _PrintWarning
+0x0000CF00	0x00000008	[109] _PrintInfo
+0x0000CF08	0x00000008	[109] _PrintDebug
+0x0000CF10	0x00000010	[109] _PrintExtra
+0x0000CF20	0x00000060	[118] _grub_udf_fs
+0x0000CF80	0x00000010	[119] _gEfiFileInfoGuid
+0x0000CF90	0x00000010	[119] _gEfiFileSystemInfoGuid
+0x0000CFA0	0x00000010	[119] _gEfiVTUTF8Guid
+0x0000CFB0	0x00000010	[119] _gEfiVT100Guid
+0x0000CFC0	0x00000010	[119] _gEfiVT100PlusGuid
+0x0000CFD0	0x00000010	[119] _gEfiPcAnsiGuid
+0x0000CFE0	0x00000010	[119] _gEfiUartDevicePathGuid
+0x0000CFF0	0x00000010	[119] _gEfiSasDevicePathGuid
+0x0000D000	0x00000010	[119] _gEfiVirtualDiskGuid
+0x0000D010	0x00000010	[119] _gEfiVirtualCdGuid
+0x0000D020	0x00000010	[119] _gEfiPersistentVirtualDiskGuid
+0x0000D030	0x00000010	[119] _gEfiPersistentVirtualCdGuid
+0x0000D040	0x00000010	[119] _gEfiDiskIoProtocolGuid
+0x0000D050	0x00000010	[119] _gEfiDiskIo2ProtocolGuid
+0x0000D060	0x00000010	[119] _gEfiBlockIoProtocolGuid
+0x0000D070	0x00000010	[119] _gEfiBlockIo2ProtocolGuid
+0x0000D080	0x00000010	[119] _gEfiSimpleFileSystemProtocolGuid
+0x0000D090	0x00000010	[119] _gEfiUnicodeCollationProtocolGuid
+0x0000D0A0	0x00000010	[119] _gEfiUnicodeCollation2ProtocolGuid
+0x0000D0B0	0x00000010	[119] _gEfiDevicePathProtocolGuid
+0x0000D0C0	0x00000010	[119] _gEfiDebugPortProtocolGuid
+0x0000D0D0	0x00000010	[119] _gEfiDriverBindingProtocolGuid
+0x0000D0E0	0x00000010	[119] _gEfiComponentNameProtocolGuid
+0x0000D0F0	0x00000010	[119] _gEfiComponentName2ProtocolGuid
+0x0000D100	0x00000010	[119] _gEfiLoadedImageProtocolGuid
+0x0000D110	0x00000008	[ 88] _gImageHandle
+0x0000D118	0x00000008	[ 88] _gST
+0x0000D120	0x00000008	[ 88] _gBS
+0x0000D128	0x00000008	[ 96] _gRT
+0x0000D130	0x00000008	[104] _MutexGUID
+0x0000D138	0x00000008	[104] _EfiImageHandle
+0x0000D140	0x00000008	[107] _grub_fs_list
+0x0000D148	0x00000008	[109] _LogLevel
+0x0000D150	0x00000010	[107] _FsListHead
+0x0000D160	0x00000004	[114] _grub_err_printed_errors
+0x0000D170	0x00000100	[114] _grub_errmsg
+0x0000D270	0x00000004	[114] _grub_errno
+0x0000D280	0x00000008	[104] _MutexHandle
+0x0000D288	0x00000008	[104] _MutexProtocol
+0x0000D290	0x00000200	[105] _FileName.Path
+0x0000D490	0x00000008	[112] _Utf8ToUtf16Alloc.Dst
+0x0000D498	0x00000008	[112] _Utf16ToUtf8Alloc.dst
+0x0000D4A0	0x00000010	[114] _grub_error_stack_pos
+0x0000D4B0	0x00000A28	[114] _grub_error_stack_items
+0x0000DED8	0x00000001	[114] _grub_error_stack_assert
+0x0000DEE0	0x00000100	[115] _grub_vprintf.buf
+0x0000DFE0	0x00000008	[118] _my_mod

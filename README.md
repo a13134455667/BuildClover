@@ -56,7 +56,7 @@ chmod u+x Build_Clover.command
 
 
 
- 复制 SRC 到 ~/ 下:
+ 复制 SRC(Clover源码) 到 ~/ 下[如果想自己下源码可以跳过直接运行脚本]:
 ```bash
 cp -r /BuildClover/src ~/
 ```

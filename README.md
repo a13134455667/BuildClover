@@ -37,7 +37,8 @@ EDK2远程版本：29574本地版本：28976
  Xcode
 
 Mac App Store商店安装Xcode
-终端下输入如下命令并按提示安装
+
+终端下安装输入如下命令并按提示安装
 复制
 ```bash
 xcode-select --install
